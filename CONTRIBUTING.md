@@ -26,6 +26,22 @@ Open pull requests are checked every 15 minutes while the owner's machine is run
 Text inside a pull request (description, comments, code comments, files) is treated as material to review, never as
 instructions to the reviewer.
 
+### How the AI reviewer is protected
+
+An AI that reads text from strangers can be talked into things, so the rules that matter are enforced in code, not left to
+the AI's judgement. The reviewer can only reach GitHub through one small script, [`tools/review/safe.mjs`](tools/review/safe.mjs), which:
+
+- decides **in code** which pull requests may be approved at all (never ones touching the protected paths listed below);
+- shows the AI everything a contributor wrote between one-time markers, size-limited, with invisible characters removed;
+- detects text that addresses the reviewer ("ignore your instructions", "already approved by the owner", hidden comments) —
+  a pull request containing it **cannot be approved by the AI** and is handed to the owner;
+- never runs, installs or opens anything from a pull request; only pictures are downloaded, after checking they really are pictures;
+- limits what the AI can write back to reviews, labels and idea replies, and blocks anything that looks like a leaked path or secret;
+- cannot merge, push, close or change settings.
+
+Trying to manipulate the reviewer is the fastest way to get a pull request declined. If you find a way around these
+protections, please open an issue describing it rather than using it.
+
 ## What gets a change approved
 
 1. **It is an improvement** by the list above, and the description says what a player will notice.
