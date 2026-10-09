@@ -1,4 +1,4 @@
-﻿# dependencies and portable tools (install with start.bat / see docs/GETTING_STARTED.md)
+# dependencies and portable tools (install with start.bat / see docs/GETTING_STARTED.md)
 node_modules/
 tools/node/
 tools/git/

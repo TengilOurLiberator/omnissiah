@@ -65,4 +65,6 @@ also said yes, however good it is:
 2. Open a pull request and fill in the template: what it improves, how you tested it, anything risky.
 3. Answer review comments. A request for changes is not a no.
 
+Looking for something to do? [docs/IMPROVEMENTS.md](docs/IMPROVEMENTS.md) lists tasks, each with where to look and what "done" means; it is written for AI coding agents and people alike.
+
 Bugs and ideas without code are welcome as issues.

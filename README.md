@@ -1,10 +1,10 @@
-﻿# Omnissiah
+# Omnissiah
 
 A game for the Meta Quest 3 that also runs flat on your PC. You stand in a quiet meadow under the Omnissiah, a giant fractal
 machine-god played by Claude through the Claude Code program on your PC. Talk to him and ask for anything: he builds it in
 front of you. (Tested in a desktop browser only; nothing here has been tried in a headset yet.)
 
-**New here?** Follow [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md). Want to improve the game? See [CONTRIBUTING.md](CONTRIBUTING.md).
+**New here?** Follow [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md). Want to improve the game? See [CONTRIBUTING.md](CONTRIBUTING.md) and the task list in [docs/IMPROVEMENTS.md](docs/IMPROVEMENTS.md).
 
 ## Start
 
