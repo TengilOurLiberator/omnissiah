@@ -1,4 +1,4 @@
-# Omnissiah
+﻿# Omnissiah
 
 A game for the Meta Quest 3 that also runs flat on your PC. You stand in a quiet meadow under the Omnissiah, a giant fractal
 machine-god played by Claude through the Claude Code program on your PC. Talk to him and ask for anything: he builds it in
@@ -109,4 +109,4 @@ Docs: `docs/CONTRACT.md` (module API), `docs/STORY.md`, `docs/WISHES.md`, `docs/
 
 ## Licence
 
-Public domain ([The Unlicense](LICENSE)): use it for anything, no credit required. Third-party model packs are CC0 and npm libraries keep their own licences; see [LICENSE](LICENSE) and [docs/ASSETS.md](docs/ASSETS.md). Not affiliated with Games Workshop, Meta or Anthropic.
+Public domain ([The Unlicense](LICENSE)): use it for anything, no credit required. Third-party model packs are CC0 and npm libraries keep their own licences; see [NOTICE.md](NOTICE.md) and [docs/ASSETS.md](docs/ASSETS.md). Not affiliated with Games Workshop, Meta or Anthropic.
