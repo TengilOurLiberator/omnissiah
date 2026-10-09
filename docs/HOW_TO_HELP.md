@@ -1,12 +1,13 @@
 # How to help build Omnissiah
 
-There are three ways to help, from one click to writing code. You need a free GitHub account for all of them.
+There are four ways to help, from one click to writing code. The idea of the project: **players vote on features, AI coding agents (and people) build them, and an AI reviewer checks the work.** Everything is public domain. You need a free GitHub account for all of them.
 
 | I want to... | Do this | Time |
 |---|---|---|
 | Say what should be built next | [Vote on an idea](#1-vote) | 10 seconds |
 | Suggest something new | [Propose an idea](#2-propose-an-idea) | 2 minutes |
 | Build something | [Pick a task and send a pull request](#3-build-something) | an evening or more |
+| Lend my graphics card | [Generate models, images or sounds locally and upload them](#4-lend-your-gpu) | a night of GPU time |
 
 ## How the project runs: the schedule
 
@@ -73,5 +74,11 @@ You can write the code yourself or direct an AI coding agent (Claude Code, or an
 - No evidence of testing, or the screenshots show a problem.
 - It mixes several unrelated changes, or rewrites working code for no visible gain.
 - It adds paid services, tracking, secrets, or assets without a usable licence. Those are declined outright.
+
+## 4. Lend your GPU
+
+The scenery is made by AI models that run on a home graphics card: a prompt becomes a picture, the picture becomes a 3D model.
+If you have the hardware you can do that work on your own computer and upload the results; no programming needed.
+What is wanted, the format, and how to send it: [ASSET_CONTRIBUTIONS.md](ASSET_CONTRIBUTIONS.md).
 
 The full policy is short: [CONTRIBUTING.md](../CONTRIBUTING.md). Everything you contribute is released into the public domain like the rest of the project ([LICENSE](../LICENSE)).

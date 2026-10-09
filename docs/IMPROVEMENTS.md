@@ -127,7 +127,16 @@ Each task below gives: **Why**, **Where**, **Done when**. Sizes: S = hours, M = 
 - **E2 (S):** `creations/spell-bloom-brush.js` leaves ~10k triangles in the scene; make it clean up.
 - **E3 (S):** the campfire uses the single shared `setGrassMask`; move it to `addGrassHole` once A3 lands.
 - **E4 (M):** one-command setup scripts and notes for the optional local AI workers under `server/` (they were configured by hand on one machine).
+- **E6 (S–M):** load community assets: scan `public/assets/community/*/meta.json` (see [ASSET_CONTRIBUTIONS.md](ASSET_CONTRIBUTIONS.md)) into `world.gen` (`core/genset.js`, `lib/gen.js`), using `q.glb` on the Quest tier, so merged contributions are usable without hand-editing `index.json`. Add a script that validates a community folder (triangle counts, sizes, normalisation, required fields).
 - **E5 (S):** a `docs/HEADSET_CHECKLIST.md`: the things only a person in VR can verify (frame rate, scale, grip offsets, text sharpness, hand tracking, microphone, mixed reality), so testers can report in a consistent format.
+
+---
+
+## Voted by players
+
+Ideas accepted in the daily review of [Discussions → Ideas](https://github.com/TengilOurLiberator/omnissiah/discussions/categories/ideas) are added here, most-voted first. Each links back to its discussion.
+
+<!-- VOTED-TASKS (the daily review appends below this line) -->
 
 ---
 

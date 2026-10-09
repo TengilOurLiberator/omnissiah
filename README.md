@@ -4,7 +4,7 @@ A game for the Meta Quest 3 that also runs flat on your PC. You stand in a quiet
 machine-god played by Claude through the Claude Code program on your PC. Talk to him and ask for anything: he builds it in
 front of you. (Tested in a desktop browser only; nothing here has been tried in a headset yet.)
 
-**New here?** Follow [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md). **Want to help?** Vote on ideas, propose your own, or build one: [docs/HOW_TO_HELP.md](docs/HOW_TO_HELP.md). The task list is [docs/IMPROVEMENTS.md](docs/IMPROVEMENTS.md), the policy is [CONTRIBUTING.md](CONTRIBUTING.md).
+**New here?** Follow [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md). **Want to help?** This is an open, public-domain game built by AI coding agents from what players vote for. Vote on ideas, propose your own, build one, or generate assets on your own GPU: [docs/HOW_TO_HELP.md](docs/HOW_TO_HELP.md). The task list is [docs/IMPROVEMENTS.md](docs/IMPROVEMENTS.md), the policy is [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Start
 
