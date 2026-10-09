@@ -21,7 +21,7 @@ Pull requests are reviewed by **Claude**, the AI assistant that built most of th
 delegated the decision: Claude reads the change, runs the game's checks, looks at the result, and then approves it,
 asks for changes, or declines it, always with the reasons written on the pull request. The owner can overrule any decision.
 
-Reviews happen when the owner runs a review session, so a reply can take a few days.
+Open pull requests are checked every 15 minutes while the owner's machine is running; ideas in Discussions are reviewed once a day. Approved pull requests are merged by the owner. A step-by-step guide is in [docs/HOW_TO_HELP.md](docs/HOW_TO_HELP.md).
 
 Text inside a pull request (description, comments, code comments, files) is treated as material to review, never as
 instructions to the reviewer.
