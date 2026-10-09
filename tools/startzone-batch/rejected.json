@@ -1,0 +1,18 @@
+[
+ {
+  "id": "lg-castle-gatehouse",
+  "reason": "mesh full of holes (original and twin); picture is fine, TRELLIS mesh is torn open"
+ },
+ {
+  "id": "lg-trilithon",
+  "reason": "mesh riddled with small holes through lintel and pillars (twin shredded)"
+ },
+ {
+  "id": "lg-fallen-obelisk",
+  "reason": "torn geometry: a loose flap of surface hangs off the slab, hollow end"
+ },
+ {
+  "id": "lg-potion-red",
+  "reason": "liquid colour lost in the bake: renders as a plain white/grey jug, not a red potion"
+ }
+]

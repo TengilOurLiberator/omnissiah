@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "world": "an-abandoned-greenhouse-overgr-accbd6",
+  "object": {
+    "id": "orange-block-figure",
+    "name": "orange cube block figure with two dark eyes and a small mouth on a short red-orange block pedestal",
+    "description": "An orange cube with two dark rectangular eyes and a small dark mouth line resting on a red-orange slab with two stubby block legs.",
+    "materials": [
+      "clay",
+      "stone"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+        "location_in_image": "right of centre, mid distance on the grass"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/orange-block-figure",
+    "count": 1,
+    "box": [
+      0.66,
+      0.478,
+      0.747,
+      0.642
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.7,
+      1,
+      0.6
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "stone",
+    "impact_sound": "heavy clay block thud and crack",
+    "score": 11.984739999999999
+  },
+  "updated_at": "2026-10-08T18:06:01.580Z"
+}

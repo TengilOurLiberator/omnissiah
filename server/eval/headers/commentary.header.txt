@@ -1,0 +1,5 @@
+// core/commentary.js — LIVE COMMENTARY: you watch the player and remark on it unprompted (outside wish turns; the server asks a quick separate run for one line). This module only observes and sends digests.
+// ---- API for you / creations: world.commentary --------------------------------------------------------------------------------------
+//   .enabled (boolean, persists, assignable)   .setEnabled(bool)   "stop commenting" -> setEnabled(false); "comment more" -> setEnabled(true) and frequency = 'chatty'
+//   .frequency  'chatty' | 'normal' | 'rare'   (min gap 12 s / 25 s / 60 s; idle remark 60 s / 2 min / 5 min). Assignable; persists.  "talk less" -> 'rare'
+//   .note(line, { dramatic })   feed an observation from a creation, e.g. commentary.note('The player beat the racetrack lap record: 41 s.', { dramatic: true }). A plain factual sentence with numbers.

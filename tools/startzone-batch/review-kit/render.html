@@ -1,0 +1,54 @@
+﻿<!doctype html><meta charset=utf8><style>body{margin:0;background:#fff}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+<canvas id=out></canvas>
+<script type=module>
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+const q=new URLSearchParams(location.search); const SETS=(q.get('sets')||'o,q').split(','); const IDS=q.get('ids'); const TAG=q.get('tag')||'';
+const N=+q.get('n')||35, COLS=+q.get('cols')||7, C=+q.get('c')||224; const BACK=q.get('back')==='1';
+let meta=await (await fetch('/gs/meta.json')).json();
+if(IDS){const w=IDS.split(',');meta=w.map(i=>meta.find(m=>m.id===i)).filter(Boolean);if(BACK)meta=meta.flatMap(m=>[{...m,flip:0},{...m,flip:1,id:m.id}]);}
+const out=document.getElementById('out');
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true}); r.setSize(C,C,false); r.setClearColor(0xf2efe8,1);
+r.outputColorSpace=THREE.SRGBColorSpace; r.toneMapping=THREE.NoToneMapping;
+const scene=new THREE.Scene(); scene.add(new THREE.HemisphereLight(0xffffff,0x998877,1.6)); const d=new THREE.DirectionalLight(0xfff4e0,2.2); d.position.set(3,5,4); scene.add(d);
+const gnd=new THREE.Mesh(new THREE.PlaneGeometry(20,20),new THREE.MeshBasicMaterial({color:0xdedad0})); gnd.rotation.x=-Math.PI/2; gnd.position.y=-0.001; scene.add(gnd);
+const cam=new THREE.PerspectiveCamera(30,1,0.01,50);
+const loader=new GLTFLoader();
+for(const set of SETS){ const diag=[];
+ for(let from=0;from<meta.length;from+=N){
+  const part=meta.slice(from,from+N); const ROWS=Math.ceil(part.length/COLS);
+  out.width=COLS*C; out.height=ROWS*(C+16);
+  const g=out.getContext('2d'); g.fillStyle='#fff'; g.fillRect(0,0,out.width,out.height);
+  for(let i=0;i<part.length;i++){
+  const id=part[i].id; const url='/assets/generated/startzone/'+(set==='q'?'q/':'')+id+'.glb';
+  const x=(i%COLS)*C, y=Math.floor(i/COLS)*(C+16); let note='';
+  const dg={id,set};
+  try{
+    const gl=await loader.loadAsync(url); const s=gl.scene; scene.add(s); s.updateMatrixWorld(true);
+    let tris=0,nan=0,nomap=0,meshes=0; const mats=new Set();
+    s.traverse(o=>{if(!o.isMesh)return;meshes++;const gm=o.geometry;tris+=(gm.index?gm.index.count:gm.attributes.position.count)/3;
+      const a=gm.attributes.position.array;for(let k=0;k<a.length;k++)if(!Number.isFinite(a[k])){nan++;break;}
+      const m=o.material; mats.add(m); if(!m.map)nomap++;});
+    s.traverse(o=>{if(o.isMesh&&o.material){const m=o.material;if(m.map)m.map.anisotropy=4;if(q.get('ds')==='1')m.side=THREE.DoubleSide;if('metalness' in m){m.metalness=Math.min(m.metalness,0.1);m.roughness=Math.max(m.roughness,0.75);}}});
+    const b=new THREE.Box3().setFromObject(s), sz=b.getSize(new THREE.Vector3()), c=b.getCenter(new THREE.Vector3());
+    Object.assign(dg,{tris,nan,nomap,meshes,mats:mats.size,size:[+sz.x.toFixed(3),+sz.y.toFixed(3),+sz.z.toFixed(3)],minY:+b.min.y.toFixed(3)});
+    const rad=sz.length()/2; const dist=rad/Math.sin(THREE.MathUtils.degToRad(15))*1.02;
+    cam.position.copy(c).add(new THREE.Vector3(part[i].flip?-0.75:0.75,0.55,part[i].flip?-1:1).normalize().multiplyScalar(dist)); cam.lookAt(c); cam.updateMatrixWorld();
+    r.render(scene,cam); scene.remove(s);
+    g.drawImage(r.domElement,x,y,C,C);
+    note=Math.round(tris/100)/10+'k'+(nan?' NAN':'')+(nomap?' nomap':'');
+  }catch(e){dg.error=String(e);g.fillStyle='#fbb';g.fillRect(x,y,C,C);note='ERR';}
+  diag.push(dg);
+  g.fillStyle=part[i].opt&&part[i].opt.warn&&set==='q'?'#a30':'#222'; g.fillRect(x,y+C,C,16);
+  g.fillStyle='#fff'; g.font='11px Arial'; g.textAlign='center'; g.fillText(id+'  '+note,x+C/2,y+C+12);
+  }
+  await fetch('/png?name=glb_'+TAG+set+'_'+String(from/N+1).padStart(2,'0'),{method:'POST',body:out.toDataURL('image/png')});
+ }
+ await fetch('/diag?name=diag-'+TAG+set,{method:'POST',body:JSON.stringify(diag)});
+}
+await fetch('/diag?name=alldone'+TAG,{method:'POST',body:'1'});
+</script>
+
+
+

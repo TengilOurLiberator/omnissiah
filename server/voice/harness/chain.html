@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<meta charset="utf-8"><title>voice chain harness</title>
+<pre id="out">runningâ€¦</pre>
+<script type="module">
+// Renders public/sys/voice.js through an OfflineAudioContext for every (voice kind x style) and reports peak / RMS / clipping.
+import * as THREE from '/vendor/three/build/three.module.js';
+import { createVoice } from '/sys/voice.js';
+const out = document.getElementById('out');
+const log = (s) => { out.textContent += '\n' + s; };
+const samples = {
+  cb: '/cache/voice/bench/omnissiah/08.wav',          // real voice, 7 s line
+  sapi: '/cache/voice/harness/sapi.wav',              // thin fallback voice (if present)
+};
+function wavBlob(buf) {
+  const ch = buf.numberOfChannels, n = buf.length, sr = buf.sampleRate, pcm = new Int16Array(n * ch);
+  for (let c = 0; c < ch; c++) { const d = buf.getChannelData(c); for (let i = 0; i < n; i++) { const v = Math.max(-1, Math.min(1, d[i])); pcm[i * ch + c] = v < 0 ? v * 32768 : v * 32767; } }
+  const h = new DataView(new ArrayBuffer(44)); const w = (o, s) => [...s].forEach((c, i) => h.setUint8(o + i, c.charCodeAt(0)));
+  w(0, 'RIFF'); h.setUint32(4, 36 + pcm.byteLength, true); w(8, 'WAVEfmt '); h.setUint32(16, 16, true); h.setUint16(20, 1, true); h.setUint16(22, ch, true);
+  h.setUint32(24, sr, true); h.setUint32(28, sr * 2 * ch, true); h.setUint16(32, 2 * ch, true); h.setUint16(34, 16, true); w(36, 'data'); h.setUint32(40, pcm.byteLength, true);
+  return new Blob([h, pcm]);
+}
+async function run(kindName, url, style, saveAs) {
+  const secs = 12, sr = 48000;
+  const octx = new OfflineAudioContext(2, sr * secs, sr);
+  Object.defineProperty(octx, 'state', { get: () => 'running' });
+  octx.resume = () => Promise.resolve();
+  const listeners = {};
+  const events = { on: (n, f) => { (listeners[n] ??= []).push(f); return () => {}; }, emit: (n, p) => (listeners[n] || []).forEach((f) => f(p)) };
+  const levels = [];
+  events.on('oracle:level', (l) => levels.push(l));
+  const net = { connected: true, send() {}, sendBinary() {} };
+  const hud = { show() {} };
+  const input = { left: { down: {} }, right: {} };
+  try { localStorage.setItem('omnissiah.voiceStyle', style); } catch (e) {}
+  const v = createVoice({ THREE, net, events, audio: { context: octx, listener: null }, input, hud, getContext: () => ({}) });
+  const audioUrl = kindName === 'cb' ? url.replace('.wav', '.wav') : url;
+  // name the url so the client classifies it: cb lines are om_<hex>.wav; fetch real file through a blob url with the right name
+  const buf = await (await fetch(audioUrl)).arrayBuffer();
+  const origFetch = window.fetch;
+  const fake = (kindName === 'cb' ? '/tts/om_0123456789ab.wav' : '/tts/sapi123.wav');
+  window.fetch = (u, ...a) => (String(u) === fake ? Promise.resolve(new Response(buf.slice(0))) : origFetch(u, ...a));
+  events.emit('net:speak', { text: 'harness', audio: fake });
+  await new Promise((r) => setTimeout(r, 400));   // let playItem build the graph + schedule
+  // advance the "update" so oracle:level is not needed; render
+  const rendered = await octx.startRendering();
+  window.fetch = origFetch;
+  if (saveAs) await fetch('/save/' + saveAs, { method: 'POST', body: wavBlob(rendered) });
+  const L = rendered.getChannelData(0), R = rendered.getChannelData(1);
+  let pk = 0, sum = 0, clip = 0, n = 0, lastNZ = 0;
+  for (let i = 0; i < L.length; i++) { const a = Math.max(Math.abs(L[i]), Math.abs(R[i])); if (a > pk) pk = a; if (a > 0.999) clip++; if (a > 0.003) lastNZ = i; sum += L[i] * L[i] + R[i] * R[i]; n += 2; }
+  return { kind: kindName, style, peak: +pk.toFixed(3), rmsDb: +(20 * Math.log10(Math.sqrt(sum / n) + 1e-9)).toFixed(1), clipped: clip, tailEnd: +(lastNZ / sr).toFixed(2), speaking: v.speaking, styleNow: v.getStyle() };
+}
+const results = [];
+try {
+  for (const kind of ['cb', 'sapi']) {
+    for (const style of ['godlike', 'subtle', 'clean']) {
+      try { const r = await run(kind, samples[kind], style, kind === 'cb' ? 'processed/omnissiah-' + style + '.wav' : 'processed/sapi-fallback-' + style + '.wav'); results.push(r); log(JSON.stringify(r)); }
+      catch (e) { log(kind + '/' + style + ' FAILED ' + e + (e.stack ? '\n' + e.stack.split('\n').slice(0, 3).join('\n') : '')); }
+    }
+  }
+} catch (e) { log('ERR ' + e); }
+for (const v of ['oracle', 'titan']) { try { const r = await run('cb', '/cache/voice/bench/' + v + '/08.wav', 'godlike', 'processed/' + v + '-godlike.wav'); results.push(r); log(v + ' ' + JSON.stringify(r)); } catch (e) { log(v + ' FAILED ' + e); } }
+window.__results = results; window.__done = true;
+log('done');
+</script>
+

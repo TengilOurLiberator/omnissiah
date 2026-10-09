@@ -1,0 +1,11 @@
+// core/oracle.js — THE OMNISSIAH'S OWN BODY: a colossal raymarched Mandelbulb star-mind (obsidian body, molten-gold veins, corona, three crystal rings, runes, arcs, god rays, a hex-iris eye
+// that follows the player). It reacts to spells, kills, damage, deaths and new creations by itself, and falls asleep after ~100 s of nothing. Everything lives under ctx.root.
+// ---- HOOKS for you / creations (safe at any time; bad arguments are ignored) ------------------------------------------------------------
+//   world.oracle.position (Vector3), .radius, setState(s), pulse(strength), getState()
+//   world.oracle.flare(color, strength = 1)        colour burst: tints the core + corona + eye, sparks arcs and a sound ring. color: 0xff4400 | '#ff4400' | THREE.Color | [r,g,b] (0..1)
+//   world.oracle.beamTo(point, { color, duration = 1.6 })   beam of light from the core to a world point (Vector3 or [x,y,z]) with an impact disc; up to 3 at once -> bool
+//   world.oracle.setMood('serene' | 'wrathful' | 'joyful' | 'ominous' | 'default')   cross-fades palette, tempo, heartbeat, lightning rate (null = default) -> bool;  getMood()
+//   world.oracle.lookAt(point | null)              the eye follows this world point instead of the player (null = watch the player)
+//   world.oracle.wake()    world.oracle.creation(point?)  the full "act of creation" set-piece at a point (default: where the player aims; it already plays for every new creation file)
+//   world.oracle.limitQuality(maxTier | null) / .quality   (core/perf.js owns these; do not call)
+// To change how you LOOK for good ("turn yourself blue", "more rings"), edit this file's palette/uniform constants; for a moment, use flare/setMood. In mixed reality you hover as a small apparition near the table.

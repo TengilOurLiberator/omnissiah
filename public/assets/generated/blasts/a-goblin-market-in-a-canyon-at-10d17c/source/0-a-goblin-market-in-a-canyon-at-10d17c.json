@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "source_images": [
+    "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+  ],
+  "scene_name": "Canyon Market Stalls",
+  "short_caption": "Four wooden market stalls with lanterns along a canyon dirt path",
+  "literal_description": "A dirt path runs from the foreground into a narrow canyon between tall red-brown rock walls. Two wooden market stalls with tiled roofs stand on each side of the path, each with a wooden counter and glowing yellow hanging lanterns. Wooden crates, barrels with metal hoops and brown clay jars stand on the counters and on the ground beside the stalls. A wooden signpost with a hanging iron ring stands at mid distance left of centre. Flat grey stones are set in the dirt and tufts of green grass grow at the path edges. The camera is at standing eye height looking level down the path toward blue-tinted distant cliffs and a dark blue sky.",
+  "environment": "Outdoor dirt path in a narrow canyon with steep red-brown rock walls, grass patches on ledges and a dark blue sky.",
+  "visual_style": "stylised low-poly game art, soft painterly shading, smooth simplified shapes",
+  "lighting": "Dusk; cool dim blue ambient light from the sky, warm orange-yellow point light from hanging lanterns pooling on the stalls and path, soft shadows, moderate contrast",
+  "atmosphere": "blue haze in the far canyon, warm glow around lanterns",
+  "ambient_sound": "soft wind through a rock canyon, faint creak of hanging lanterns and wooden beams, distant evening insects",
+  "setting": "outdoor",
+  "ground_type": "packed dirt path with flat stones and grass tufts",
+  "backdrop": "canyon rock walls and distant cliffs",
+  "time_of_day": "dusk",
+  "terrain_hint": "canyon",
+  "music_mood": "village",
+  "fantasy": true,
+  "view_problems": [],
+  "horizon_y": 0.58,
+  "objects": [
+    {
+      "id": "wooden-barrel-right",
+      "name": "dark brown wooden barrel with blue-grey metal hoops",
+      "description": "Bulging upright barrel of dark red-brown wooden staves bound with blue-grey metal hoops, open top rim.",
+      "count_estimate": 4,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right foreground on the ground at the path edge"
+        }
+      ],
+      "location_in_image": "right foreground on the ground at the path edge",
+      "box": [
+        0.872,
+        0.667,
+        0.966,
+        0.859
+      ],
+      "box_guessed": false,
+      "depth": "near",
+      "size_m": [
+        0.7,
+        0.95,
+        0.7
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden barrel thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "open-wooden-crate",
+      "name": "open brown wooden slat crate",
+      "description": "Rectangular open-topped crate built of horizontal brown wooden planks with corner posts.",
+      "count_estimate": 3,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left foreground on the ground near the bottom left corner"
+        }
+      ],
+      "location_in_image": "left foreground on the ground near the bottom left corner",
+      "box": [
+        0.022,
+        0.73,
+        0.152,
+        0.89
+      ],
+      "box_guessed": false,
+      "depth": "near",
+      "size_m": [
+        0.9,
+        0.6,
+        0.7
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "wood",
+      "impact_sound": "hollow wooden crate crack",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "light-wooden-barrel-left",
+      "name": "light brown wooden barrel with grey metal hoops",
+      "description": "Upright barrel of orange-brown staves with pale grey metal hoops and a flat lid.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left side on the ground in front of the nearest left counter"
+        }
+      ],
+      "location_in_image": "left side on the ground in front of the nearest left counter",
+      "box": [
+        0.248,
+        0.655,
+        0.308,
+        0.797
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.6,
+        0.9,
+        0.6
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden barrel thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "clay-jar-ground-left",
+      "name": "red-brown clay jar with narrow neck",
+      "description": "Round-bodied red-brown clay jar with a narrow neck and small flared lip.",
+      "count_estimate": 6,
+      "materials": [
+        "clay"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left side on the ground at the path edge, lower left quarter"
+        }
+      ],
+      "location_in_image": "left side on the ground at the path edge, lower left quarter",
+      "box": [
+        0.238,
+        0.728,
+        0.276,
+        0.811
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.35,
+        0.45,
+        0.35
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "earth",
+      "impact_sound": "clay pot shatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "large-clay-pot-counter-right",
+      "name": "large round terracotta pot with wide rim",
+      "description": "Wide round orange-brown terracotta pot with a short neck and a thick rim.",
+      "count_estimate": 1,
+      "materials": [
+        "clay"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right side on the nearest right counter top"
+        }
+      ],
+      "location_in_image": "right side on the nearest right counter top",
+      "box": [
+        0.761,
+        0.553,
+        0.803,
+        0.632
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.4,
+        0.45,
+        0.4
+      ],
+      "rests_on": "object",
+      "rests_on_id": "market-stall-right-near",
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "earth",
+      "impact_sound": "clay pot shatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "market-stall-right-near",
+      "name": "wooden market stall with tiled roof and plank counter",
+      "description": "Open-fronted stall of brown timber posts with a pitched roof of pale tiles, a cream cloth back panel and a plank counter with a drawer.",
+      "count_estimate": 4,
+      "materials": [
+        "wood",
+        "cloth",
+        "clay"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right side, middle to lower right"
+        }
+      ],
+      "location_in_image": "right side, middle to lower right",
+      "box": [
+        0.71,
+        0.325,
+        0.99,
+        0.83
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        3.2,
+        3,
+        2.2
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 1,
+      "break_material": "wood",
+      "impact_sound": "large timber frame crash",
+      "generate_as_3d_object": false
+    },
+    {
+      "id": "hanging-lantern",
+      "name": "hanging iron lantern with glowing yellow glass",
+      "description": "Small rounded lantern with a dark metal frame and cap, glowing yellow-orange glass panes, hung from a short hook.",
+      "count_estimate": 8,
+      "materials": [
+        "iron",
+        "glass"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right side under the nearest right roof, upper middle right"
+        }
+      ],
+      "location_in_image": "right side under the nearest right roof, upper middle right",
+      "box": [
+        0.82,
+        0.43,
+        0.846,
+        0.497
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.25,
+        0.4,
+        0.25
+      ],
+      "rests_on": "ceiling",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "glass",
+      "impact_sound": "metal lantern clank with glass shatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "stacked-crate-counter-left",
+      "name": "closed brown wooden plank crate",
+      "description": "Rectangular closed crate of horizontal brown planks with raised edge battens.",
+      "count_estimate": 2,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left side on the nearest left counter top"
+        }
+      ],
+      "location_in_image": "left side on the nearest left counter top",
+      "box": [
+        0.086,
+        0.583,
+        0.162,
+        0.669
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.8,
+        0.6,
+        0.6
+      ],
+      "rests_on": "table",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "wood",
+      "impact_sound": "hollow wooden crate crack",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "clay-vase-counter-left",
+      "name": "tan clay vase with narrow neck",
+      "description": "Round-bellied tan clay vase with a short narrow neck and flared lip.",
+      "count_estimate": 1,
+      "materials": [
+        "clay"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left side on the nearest left counter top"
+        }
+      ],
+      "location_in_image": "left side on the nearest left counter top",
+      "box": [
+        0.179,
+        0.585,
+        0.208,
+        0.662
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.3,
+        0.45,
+        0.3
+      ],
+      "rests_on": "table",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "earth",
+      "impact_sound": "clay pot shatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "shallow-clay-bowl",
+      "name": "shallow red-brown clay bowl",
+      "description": "Low wide red-brown clay bowl with a plain rim.",
+      "count_estimate": 2,
+      "materials": [
+        "clay"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left side on the nearest left counter top, toward the path"
+        }
+      ],
+      "location_in_image": "left side on the nearest left counter top, toward the path",
+      "box": [
+        0.219,
+        0.622,
+        0.249,
+        0.644
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.3,
+        0.1,
+        0.3
+      ],
+      "rests_on": "table",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 3,
+      "break_material": "earth",
+      "impact_sound": "small clay bowl crack",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "small-wooden-box-counter-right",
+      "name": "small brown wooden slat box",
+      "description": "Small square box of horizontal brown wooden slats with an open top.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right side on the nearest right counter top"
+        }
+      ],
+      "location_in_image": "right side on the nearest right counter top",
+      "box": [
+        0.812,
+        0.594,
+        0.857,
+        0.647
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.45,
+        0.35,
+        0.4
+      ],
+      "rests_on": "object",
+      "rests_on_id": "market-stall-right-near",
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "wood",
+      "impact_sound": "small wooden box clatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "barrel-mid-right",
+      "name": "orange-brown wooden barrel with dark metal hoops",
+      "description": "Short bulging barrel of orange-brown staves with dark metal hoops and a flat lid.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right of centre on the ground in front of the farther right counter"
+        }
+      ],
+      "location_in_image": "right of centre on the ground in front of the farther right counter",
+      "box": [
+        0.662,
+        0.622,
+        0.703,
+        0.707
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.6,
+        0.8,
+        0.6
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden barrel thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "clay-basin-green-contents",
+      "name": "wide red-brown clay basin with yellow-green contents",
+      "description": "Low wide red-brown clay basin filled to the rim with a yellow-green mound.",
+      "count_estimate": 1,
+      "materials": [
+        "clay"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right of centre on the ground at the path edge"
+        }
+      ],
+      "location_in_image": "right of centre on the ground at the path edge",
+      "box": [
+        0.703,
+        0.664,
+        0.739,
+        0.713
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.5,
+        0.4,
+        0.5
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "earth",
+      "impact_sound": "clay basin shatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "large-dark-barrel-far",
+      "name": "large dark red wooden barrel with dark hoops",
+      "description": "Tall bulging dark red-brown barrel with dark metal hoops and a small knob on the lid.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right of centre at the far end of the right row, middle height"
+        }
+      ],
+      "location_in_image": "right of centre at the far end of the right row, middle height",
+      "box": [
+        0.593,
+        0.53,
+        0.63,
+        0.632
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 4,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden barrel thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "wooden-signpost-iron-ring",
+      "name": "wooden signpost with crossbar and hanging iron ring",
+      "description": "Tall dark wooden post with a horizontal crossbar near the top and an iron ring hanging from one end.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left of centre at mid distance, upper middle"
+        }
+      ],
+      "location_in_image": "left of centre at mid distance, upper middle",
+      "box": [
+        0.347,
+        0.355,
+        0.396,
+        0.6
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.9,
+        3.2,
+        0.2
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 2,
+      "break_material": "wood",
+      "impact_sound": "wooden post crack and iron ring clang",
+      "generate_as_3d_object": false
+    },
+    {
+      "id": "small-wooden-table-far",
+      "name": "small dark wooden table",
+      "description": "Small low table with a flat rectangular top and four straight dark wooden legs.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "left of centre at the far end of the left row"
+        }
+      ],
+      "location_in_image": "left of centre at the far end of the left row",
+      "box": [
+        0.387,
+        0.562,
+        0.42,
+        0.622
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.9,
+        0.75,
+        0.6
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 2,
+      "break_material": "wood",
+      "impact_sound": "wooden table clatter",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "flat-path-stone",
+      "name": "flat grey paving stone",
+      "description": "Thin irregular flat slab of blue-grey stone with rounded edges.",
+      "count_estimate": 10,
+      "materials": [
+        "stone"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+          "location_in_image": "right of centre on the path in the lower third"
+        }
+      ],
+      "location_in_image": "right of centre on the path in the lower third",
+      "box": [
+        0.678,
+        0.836,
+        0.746,
+        0.859
+      ],
+      "box_guessed": false,
+      "depth": "near",
+      "size_m": [
+        0.7,
+        0.06,
+        0.4
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 2,
+      "break_material": "stone",
+      "impact_sound": "flat stone slab clack",
+      "generate_as_3d_object": false
+    }
+  ]
+}

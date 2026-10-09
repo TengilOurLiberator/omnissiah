@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "an-abandoned-greenhouse-overgr-accbd6",
+  "object": {
+    "id": "green-block-figure",
+    "name": "green cube block figure with two dark rectangular eyes on a short dark green block pedestal",
+    "description": "A light green cube with two dark rectangular eye slots resting on a darker green slab with two short block legs.",
+    "materials": [
+      "stone"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+        "location_in_image": "centre, mid distance on the grass in front of the back wall"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/green-block-figure",
+    "count": 1,
+    "box": [
+      0.472,
+      0.478,
+      0.536,
+      0.622
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.6,
+      0.9,
+      0.6
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "stone",
+    "impact_sound": "dense stone block thud",
+    "score": 11.70688
+  },
+  "updated_at": "2026-10-08T18:06:01.582Z"
+}

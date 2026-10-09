@@ -1,0 +1,128 @@
+{
+  "_note": "Source of the machine-god world places (world builder, 2026-10-08/09). The entries themselves live in places/index.json like the starter atlas; this file is the recipe (prompt, seed, spec) so a place can be regenerated: D:\\omnissiah\\tools\\node\\node.exe D:\\omnissiah\\.cache\\world\\gen_places.mjs [--only slug] [--force slug]",
+  "places": [
+    {
+      "slug": "gear-cathedral", "name": "Gear Cathedral", "seed": 301,
+      "prompt": "inside a colossal cathedral built from giant interlocking brass gears and cogwheels, soaring clockwork pillars and arches, shafts of golden light falling from high round windows, dusty amber haze, polished dark stone floor, empty and silent, no people",
+      "spec": {
+        "keywords": ["gear", "cathedral", "clockwork", "cog", "cogwheel", "machine temple", "brass", "mechanical", "sanctum", "nave"],
+        "terrain": "plain", "grass": 0, "motes": 0.6, "stones": false,
+        "water": { "mode": "none" },
+        "ground": { "rock": "#3a2e22", "sand": "#4a3a2a" },
+        "dressing": [ { "lib": "pillar", "count": 6, "near": 14, "far": 40, "scale": 1.6 }, { "lib": "fire-basket", "count": 4, "near": 8, "far": 22 }, { "lib": "statue", "count": 1, "near": 12, "far": 20 } ],
+        "ambience": "ominous", "music": "wonder", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "brass-desert-colossi", "name": "Brass Desert of Colossi", "seed": 312,
+      "prompt": "a vast desert of orange sand dunes where gigantic half-buried brass and bronze colossus statues of robots and machine gods rise from the sand, a giant cogwheel half sunk in the dunes, hazy golden sunset sky, long shadows, empty wilderness",
+      "spec": {
+        "keywords": ["colossi", "colossus", "buried", "brass desert", "bronze", "titan", "giant statues", "wasteland", "relic"],
+        "terrain": "dunes", "grass": 0, "motes": 0.2, "stones": false,
+        "water": { "mode": "none" },
+        "dressing": [ { "lib": "ruins", "count": 2, "near": 25, "far": 80, "scale": 1.6 }, { "lib": "boulder", "count": 5, "near": 12, "far": 80, "scale": 1.4 }, { "lib": "bone-pile", "count": 1, "near": 12, "far": 30 } ],
+        "ambience": "serene", "music": "tension", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "shrine-archipelago", "name": "Archipelago of Shrines", "seed": 323,
+      "prompt": "a floating archipelago of small rocky islands high in the sky, each island carrying a tiny golden-roofed stone shrine with glowing lanterns, rope bridges between them, a sea of clouds far below, soft pink and gold light, serene fantasy vista",
+      "spec": {
+        "keywords": ["archipelago", "shrines", "shrine", "floating shrines", "sky temple", "pilgrimage", "islands of shrines", "lantern islands"],
+        "terrain": { "baseAmp": 0.2, "hillAmp": -0.9, "islandR": 46, "islandW": 38, "seaDepth": 9, "lift": 1.9, "lakeScale": -1 }, "grass": 0.8, "motes": 1, "stones": false,
+        "water": { "mode": "ocean", "level": -1.2, "color": "#f0e6ee" },
+        "ground": { "a": "#3a5a30", "b": "#6e8c40", "sand": "#8c9a5c" },
+        "dressing": [ { "lib": "shrine", "count": 1, "near": 9, "far": 12 }, { "lib": "lantern", "count": 4, "near": 5, "far": 18 }, { "lib": "flower-patch", "count": 6, "near": 6, "far": 30 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "neon-rain-bazaar", "name": "Neon Rain Bazaar", "seed": 334,
+      "prompt": "an empty night bazaar in heavy rain, wet cobbled street between rows of market stalls with glowing neon signs in magenta cyan and amber, steam rising, puddles reflecting the lights, tall brass and iron machine buildings, cyberpunk fantasy, no people",
+      "spec": {
+        "keywords": ["neon", "bazaar", "rain", "market", "cyberpunk", "night market", "city", "street", "stalls"],
+        "terrain": "plain", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "none" },
+        "ground": { "a": "#14161e", "b": "#262a38", "rock": "#262a38", "sand": "#262a38" },
+        "dressing": [ { "lib": "lantern", "count": 8, "near": 4, "far": 22 }, { "lib": "fire-basket", "count": 2, "near": 6, "far": 16 } ],
+        "weather": [ { "lib": "rain", "intensity": 0.6 } ],
+        "ambience": "luminous", "music": "night", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "frozen-observatory", "name": "Frozen Observatory", "seed": 345,
+      "prompt": "an ancient brass observatory dome with a huge telescope and armillary rings on a snowy mountain summit, frost and ice crystals on everything, vivid aurora borealis and countless stars in the night sky, deep blue and teal light, empty and silent",
+      "spec": {
+        "keywords": ["observatory", "telescope", "frozen", "aurora", "stargazing", "star", "astronomy", "ice", "arctic", "observatory dome"],
+        "terrain": "snowfield", "grass": 0, "motes": 0.3, "stones": false,
+        "water": { "mode": "none" },
+        "ground": { "rock": "#7d86a0" },
+        "dressing": [ { "lib": "boulder", "count": 4, "near": 10, "far": 50 }, { "lib": "lantern", "count": 2, "near": 5, "far": 12 } ],
+        "weather": [ { "lib": "snow", "intensity": 0.25, "ground": false } ],
+        "ambience": "serene", "music": "night", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "glow-cavern", "name": "Bioluminescent Cavern", "seed": 356,
+      "prompt": "the inside of an enormous cavern lit by bioluminescent plants, glowing blue and green mushrooms and hanging vines, a still underground lake reflecting the light, stalactites, mist, magical and tranquil, no people",
+      "spec": {
+        "keywords": ["cavern", "cave", "bioluminescent", "glowing", "underground", "grotto", "luminous", "mushroom cave", "glow"],
+        "terrain": "plain", "grass": 0.2, "motes": 1, "stones": false,
+        "water": { "mode": "lake", "level": -0.8, "color": "#0e3a46" },
+        "ground": { "a": "#10201e", "b": "#1d3a36" },
+        "dressing": [ { "lib": "mushroom-patch", "count": 8, "near": 5, "far": 40, "scale": 1.5 }, { "lib": "crystal-cluster", "count": 4, "near": 12, "far": 50 }, { "lib": "rock-cluster", "count": 4, "near": 10, "far": 50 } ],
+        "weather": [ { "lib": "fireflies", "count": 90 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "volcanic-forge-city", "name": "Volcanic Forge-City", "seed": 367,
+      "prompt": "a vast industrial forge-city built into a volcano, black iron towers and chimneys, rivers of glowing orange lava flowing between smelters and giant anvils, smoke and embers in a red sky, gears and chains, ominous and empty",
+      "spec": {
+        "keywords": ["forge", "forge city", "foundry", "smelter", "volcanic city", "lava city", "industrial", "blacksmith city", "furnace"],
+        "terrain": "craggy", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "none" },
+        "ground": { "rock": "#2a2024", "sand": "#241c1e", "a": "#14100f", "b": "#241a18" },
+        "dressing": [ { "lib": "rock-spires", "count": 3, "near": 28, "far": 90, "scale": 1.5 }, { "lib": "fire-basket", "count": 4, "near": 6, "far": 20 }, { "lib": "boulder", "count": 5, "near": 8, "far": 50, "scale": 1.3 } ],
+        "weather": [ { "lib": "embers", "count": 160 } ],
+        "ambience": "ominous", "music": "tension", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "drowned-library", "name": "Drowned Library", "seed": 378,
+      "prompt": "an immense flooded library hall, towering bookshelves rising out of knee-deep still water, floating books and scrolls, broken stained glass windows letting in shafts of pale teal light, arches and columns, moss, dust motes, quiet and empty",
+      "spec": {
+        "keywords": ["library", "drowned", "flooded", "books", "archive", "bookshelves", "scrolls", "sunken", "athenaeum", "reading room"],
+        "terrain": "plain", "grass": 0, "motes": 1, "stones": false,
+        "water": { "mode": "lake", "level": -0.5, "color": "#1c4a50" },
+        "ground": { "a": "#1e2a2a", "b": "#34423e" },
+        "dressing": [ { "lib": "pillar", "count": 6, "near": 12, "far": 40, "scale": 1.5 }, { "lib": "lantern", "count": 3, "near": 5, "far": 14 }, { "lib": "ruins", "count": 1, "near": 25, "far": 40 } ],
+        "ambience": "ominous", "music": "calm", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "sky-harbour-dawn", "name": "Sky-Harbour at Dawn", "seed": 389,
+      "prompt": "a high mountain sky-harbour at dawn, wooden docks and brass mooring towers on a cliff edge, several steampunk airships with balloons and propellers moored and floating in the distance, a sea of clouds below, warm pink and gold sunrise, hopeful atmosphere, no people",
+      "spec": {
+        "keywords": ["harbour", "harbor", "airship", "airships", "sky harbour", "dawn", "zeppelin", "dock", "steampunk", "sky port", "sunrise"],
+        "terrain": { "baseAmp": 0.2, "hillAmp": -0.9, "islandR": 60, "islandW": 40, "seaDepth": 9, "lift": 1.9, "lakeScale": -1 }, "grass": 0.2, "motes": 0.6, "stones": false,
+        "water": { "mode": "ocean", "level": -1.2, "color": "#f4dcd6" },
+        "ground": { "a": "#4a4a44", "b": "#6c6a5c", "sand": "#8a8470" },
+        "dressing": [ { "lib": "lantern", "count": 5, "near": 4, "far": 20 }, { "lib": "boulder", "count": 3, "near": 10, "far": 40 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "joyful"
+      }
+    },
+    {
+      "slug": "inside-the-fractal", "name": "Inside the Fractal", "seed": 400,
+      "prompt": "the infinite interior of a fractal machine, endless recursive golden and teal geometric structures repeating at every scale, glowing lattices, mandelbulb-like architecture and spiral cogwheels stretching to infinity, radiant light, surreal sacred geometry, abstract cosmic",
+      "spec": {
+        "keywords": ["fractal", "inside the fractal", "infinity", "recursion", "mandelbulb", "sacred geometry", "inside the machine", "abstract", "cosmic machine", "omnissiah heart"],
+        "terrain": "plain", "grass": 0, "motes": 1, "stones": false,
+        "water": { "mode": "none" },
+        "ground": { "a": "#10202a", "b": "#2a3c44", "rock": "#2a3c44", "sand": "#2a3c44" },
+        "dressing": [ { "lib": "crystal-cluster", "count": 6, "near": 8, "far": 50, "scale": 1.6 }, { "lib": "obelisk", "count": 1, "near": 14, "far": 24 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "joyful"
+      }
+    }
+  ]
+}

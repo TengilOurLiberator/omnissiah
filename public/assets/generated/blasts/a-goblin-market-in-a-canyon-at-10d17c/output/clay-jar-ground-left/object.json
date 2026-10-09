@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "object": {
+    "id": "clay-jar-ground-left",
+    "name": "red-brown clay jar with narrow neck",
+    "description": "Round-bodied red-brown clay jar with a narrow neck and small flared lip.",
+    "materials": [
+      "clay"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+        "location_in_image": "left side on the ground at the path edge, lower left quarter"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/clay-jar-ground-left",
+    "count": 4,
+    "box": [
+      0.238,
+      0.728,
+      0.276,
+      0.811
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.35,
+      0.45,
+      0.35
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "earth",
+    "impact_sound": "clay pot shatter",
+    "score": 11.67347
+  },
+  "updated_at": "2026-10-08T18:05:18.471Z"
+}

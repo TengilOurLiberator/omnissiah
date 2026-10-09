@@ -1,0 +1,19 @@
+// core/travel.js — world.travel: the Omnissiah carries the player to whole PLACES (a generated 360 sky + the matching terrain, light, water, dressing, mood).
+//
+// For "take me to ...", "go to ...", "show me ...": call  ctx.world.travel.go('a volcanic island')  and `return {}`. Do NOT rebuild the sky or terrain by hand.
+//   const h = ctx.world.travel.go('a volcanic island');       // prompt (fuzzy-matched to the atlas, else dreamed up by the local model: placeholder at once, sharpens in ~1 min)
+//   ctx.world.travel.go({ prompt: 'a candy kingdom', terrain: 'rolling', grass: 1, water: { mode: 'lake' }, dressing: [{ lib: 'flower-patch', count: 8 }], ambience: 'luminous' });
+//   ctx.world.travel.home();                                   // back to the twilight field, exactly as it was
+//   h.state 'resolving'|'closing'|'switching'|'opening'|'arrived'|'failed'  h.ready = h.promise (resolves when the player has arrived; also h.then)  {instant:true} skips the iris.   Mixed reality: refused (the room is the place).
+//   travel.current -> { name, prompt, meta } | null    travel.list() -> [{ name, slug, prompt }]    travel.preload(nameOrPrompt)    travel.busy
+//   events: travel:start / travel:arrive / travel:home { name }.   world.contextProviders.place tells you where the player is.
+// STARTER ATLAS (instant, cached): Volcanic Island, Snowy Pine Valley, Desert Dunes at Dusk, Misty Swamp, Alpine Meadow, Alien Crystal World,
+//   Autumn Forest Clearing, Tropical Beach, Canyon Floor, Floating Sky Islands, Haunted Moor at Night, The Moon. Anything else is generated.
+// SPEC (all optional; an atlas place brings its own): {
+//   prompt, name, place: '<slug of a cached place>',            what to show; no place and a prompt -> dreamed up (image: '<path>' = from a picture)
+//   terrain: 'field'|'plain'|'rolling'|'hills'|'dunes'|'craggy'|'island'|'snowfield'|'canyon' | { baseAmp, hillAmp, dune, crag, islandR, canyon, lift, lakeScale }
+//   grass: 0..1, motes: 0..1, stones: bool,                      ground cover (sand, snow, rock and lava places have none)
+//   water: { mode: 'none'|'lake'|'ocean', level: -0.9, color },  ocean = water to the horizon (use with terrain 'island')
+//   ground: { a, b, far, rock, sand }, sky: { stars, aurora, haze, exposure, yaw },   overrides of what is read from the picture
+//   dressing: [{ lib: 'rock-spires', count: 3, near: 28, far: 90, scale: 1.6 }],  library entries spawned around you (gone when you leave)
+//   weather: [{ lib: 'embers', count: 140 }], ambience: 'ominous', music: 'tension', oracle: 'ominous' }

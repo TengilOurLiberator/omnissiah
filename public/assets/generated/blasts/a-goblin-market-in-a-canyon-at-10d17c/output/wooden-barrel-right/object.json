@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "object": {
+    "id": "wooden-barrel-right",
+    "name": "dark brown wooden barrel with blue-grey metal hoops",
+    "description": "Bulging upright barrel of dark red-brown wooden staves bound with blue-grey metal hoops, open top rim.",
+    "materials": [
+      "wood",
+      "iron"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+        "location_in_image": "right foreground on the ground at the path edge"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/wooden-barrel-right",
+    "count": 4,
+    "box": [
+      0.872,
+      0.667,
+      0.966,
+      0.859
+    ],
+    "depth": "near",
+    "size_m": [
+      0.7,
+      0.95,
+      0.7
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "heavy wooden barrel thud",
+    "score": 12.49264
+  },
+  "updated_at": "2026-10-08T18:05:18.470Z"
+}

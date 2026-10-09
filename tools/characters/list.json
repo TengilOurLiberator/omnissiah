@@ -1,0 +1,18 @@
+{
+  "style": "hand-painted low-poly fantasy, chunky shapes, warm dusk palette",
+  "template": "{subject}. Isolated product shot of a single stylised 3D game character, entire body from head to feet in frame, straight-on view, matte clay-like materials, bright saturated colours, flat even lighting, seamless pure white studio backdrop, no ground plane, no cast shadow, no text, no other objects",
+  "items": [
+    { "id": "pell-pilgrim", "group": "story", "kind": "biped", "prompt": "a hooded old pilgrim in a patched travelling cloak with a walking staff strapped on his back, in a T-pose, arms out, legs apart" },
+    { "id": "scrap-goblin", "group": "enemy", "kind": "biped", "prompt": "a scrap goblin in rusty armour scraps, standing in a T-pose, arms out, legs apart" },
+    { "id": "clockwork-familiar", "group": "companion", "kind": "biped", "prompt": "a small brass clockwork familiar robot with stubby legs, standing, arms held apart from the body" },
+    { "id": "wolf", "group": "animal", "kind": "quadruped", "prompt": "a grey wolf standing in side view, all four legs apart" },
+    { "id": "skeleton-warrior", "group": "enemy", "kind": "biped", "prompt": "a skeleton warrior in tattered cloth, standing in a T-pose, arms out, legs apart" },
+    { "id": "village-woman", "group": "npc", "kind": "biped", "prompt": "a village woman in a simple apron dress, standing in a T-pose, arms out, legs apart" },
+    { "id": "village-man", "group": "npc", "kind": "biped", "prompt": "a village man in a tunic and trousers, standing in a T-pose, arms out, legs apart" },
+    { "id": "knight-plain", "group": "npc", "kind": "biped", "prompt": "a knight in plain steel armour, standing in a T-pose, arms out, legs apart" },
+    { "id": "stag", "group": "animal", "kind": "quadruped", "prompt": "a stag with antlers standing in side view, all four legs apart" },
+    { "id": "merchant-fat", "group": "npc", "kind": "biped", "prompt": "a fat friendly merchant in a rich coat, standing in a T-pose, arms out, legs apart" },
+    { "id": "moss-beast", "group": "animal", "kind": "quadruped", "prompt": "a big moss-backed grazing beast standing in side view, four legs apart" },
+    { "id": "wisp-spirit", "group": "spirit", "kind": "floating", "prompt": "a wisp-like floating spirit with a clear glowing body and two small arms" }
+  ]
+}

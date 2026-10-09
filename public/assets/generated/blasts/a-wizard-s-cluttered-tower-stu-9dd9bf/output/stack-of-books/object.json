@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "stack-of-books",
+    "name": "stack of closed hardcover books",
+    "description": "Stack of four closed hardcover books with dark red, green and brown covers and pale page edges.",
+    "materials": [
+      "paper",
+      "leather"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "left side, just above the middle height"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/stack-of-books",
+    "count": 3,
+    "box": [
+      0.138,
+      0.507,
+      0.192,
+      0.548
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.35,
+      0.25,
+      0.25
+    ],
+    "rests_on": "object",
+    "rests_on_id": "dark-red-wooden-desk",
+    "break_material": "wood",
+    "impact_sound": "stack of books thumping down",
+    "score": 10.321769999999999
+  },
+  "updated_at": "2026-10-08T18:04:25.705Z"
+}

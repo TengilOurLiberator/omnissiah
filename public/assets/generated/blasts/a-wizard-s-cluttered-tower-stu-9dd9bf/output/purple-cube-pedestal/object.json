@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "purple-cube-pedestal",
+    "name": "purple cube-shaped wooden pedestal",
+    "description": "Purple cube-shaped box pedestal with recessed side panels and a wider base rim.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "right of centre, middle distance"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/purple-cube-pedestal",
+    "count": 1,
+    "box": [
+      0.609,
+      0.558,
+      0.688,
+      0.66
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.7,
+      0.6,
+      0.7
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "hollow wooden box thud",
+    "score": 14.143189999999999
+  },
+  "updated_at": "2026-10-08T18:04:25.703Z"
+}

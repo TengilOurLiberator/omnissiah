@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "orange-shade-table-lamp",
+    "name": "table lamp with orange conical shade and turned red wooden stem",
+    "description": "Small table lamp with an orange conical shade, a turned dark red stem and a round base.",
+    "materials": [
+      "wood",
+      "cloth"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "right of centre, just below the middle height"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-shade-table-lamp",
+    "count": 1,
+    "box": [
+      0.633,
+      0.475,
+      0.666,
+      0.563
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.3,
+      0.55,
+      0.3
+    ],
+    "rests_on": "object",
+    "rests_on_id": "purple-cube-pedestal",
+    "break_material": "wood",
+    "impact_sound": "small lamp clatter and crack",
+    "score": 11.65972
+  },
+  "updated_at": "2026-10-08T18:04:25.704Z"
+}

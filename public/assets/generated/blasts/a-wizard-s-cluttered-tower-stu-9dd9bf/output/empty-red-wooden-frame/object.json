@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "empty-red-wooden-frame",
+    "name": "empty dark red wooden rectangular frame",
+    "description": "Upright dark red wooden rectangular frame with thick borders and an open centre.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "left side, slightly above the middle height"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/empty-red-wooden-frame",
+    "count": 1,
+    "box": [
+      0.09,
+      0.43,
+      0.171,
+      0.548
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.8,
+      0.9,
+      0.2
+    ],
+    "rests_on": "object",
+    "rests_on_id": "dark-red-wooden-desk",
+    "break_material": "wood",
+    "impact_sound": "wooden frame clattering",
+    "score": 10.425690000000001
+  },
+  "updated_at": "2026-10-08T18:04:25.704Z"
+}

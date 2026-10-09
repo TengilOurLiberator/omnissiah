@@ -1,0 +1,33 @@
+{
+  "ambient": {
+    "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/sfx/ambient.ogg",
+    "prompt": "ambient environment, soft rustling leaves, gentle breeze through glass panes and metal frame, faint insect hum, distant birdsong",
+    "seconds": 20
+  },
+  "impacts": {
+    "impact one-shot, short decay, heavy clay block thud and crack hitting a hard floor": {
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/orange-block-figure/impact.ogg",
+      "prompt": "impact one-shot, short decay, heavy clay block thud and crack hitting a hard floor"
+    },
+    "impact one-shot, short decay, dense stone block thud hitting a hard floor": {
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/green-block-figure/impact.ogg",
+      "prompt": "impact one-shot, short decay, dense stone block thud hitting a hard floor"
+    },
+    "impact one-shot, short decay, soft leafy rustle hitting a hard floor": {
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/long-leaf-glowing-plant/impact.ogg",
+      "prompt": "impact one-shot, short decay, soft leafy rustle hitting a hard floor"
+    },
+    "impact one-shot, short decay, flat stone slab clack hitting a hard floor": {
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/flat-pink-stone-slab/impact.ogg",
+      "prompt": "impact one-shot, short decay, flat stone slab clack hitting a hard floor"
+    },
+    "impact one-shot, short decay, leafy bush rustle hitting a hard floor": {
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/round-leaf-shrub/impact.ogg",
+      "prompt": "impact one-shot, short decay, leafy bush rustle hitting a hard floor"
+    },
+    "impact one-shot, short decay, small rock clatter hitting a hard floor": {
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/red-brown-rock/impact.ogg",
+      "prompt": "impact one-shot, short decay, small rock clatter hitting a hard floor"
+    }
+  }
+}

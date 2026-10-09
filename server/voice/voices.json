@@ -1,0 +1,6 @@
+{
+  "omnissiah": { "variant": "orig", "ref": "omnissiah.wav", "exaggeration": 0.7, "cfg": 0.35, "temperature": 0.75, "post": { "eq": { "low_db": 2.0, "low_hz": 160, "pres_db": 1.0 } } },
+  "oracle": { "variant": "orig", "ref": "oracle.wav", "exaggeration": 0.6, "cfg": 0.4, "temperature": 0.75, "post": { "ensemble": 0.22, "eq": { "low_db": 2.0, "low_hz": 180, "high_db": 1.5, "high_hz": 6500 } } },
+  "titan": { "variant": "orig", "ref": "titan.wav", "exaggeration": 0.55, "cfg": 0.3, "temperature": 0.7, "post": { "eq": { "low_db": 2.5, "low_hz": 150, "pres_db": 1.5 } } },
+  "omnissiah-turbo": { "variant": "turbo", "ref": "omnissiah.wav", "temperature": 0.7, "post": { "eq": { "low_db": 2.0, "low_hz": 160, "pres_db": 1.0 } } }
+}

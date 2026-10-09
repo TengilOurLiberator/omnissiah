@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "an-abandoned-greenhouse-overgr-accbd6",
+  "object": {
+    "id": "flat-pink-stone-slab",
+    "name": "flat pinkish-brown stone slab",
+    "description": "A low, flat, irregular pinkish-brown stone lying on the grass.",
+    "materials": [
+      "stone"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+        "location_in_image": "right of centre, on the grass in front of the right-hand plants"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/flat-pink-stone-slab",
+    "count": 1,
+    "box": [
+      0.712,
+      0.664,
+      0.812,
+      0.706
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.9,
+      0.1,
+      0.5
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "stone",
+    "impact_sound": "flat stone slab clack",
+    "score": 8.831
+  },
+  "updated_at": "2026-10-08T18:06:01.584Z"
+}

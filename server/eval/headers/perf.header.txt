@@ -1,0 +1,10 @@
+// core/perf.js — world.perf: measures every frame, keeps 72 fps by itself (degrades grass, particles, crowds, sky, outlines ... then recovers), and tells you what you can afford.
+// BUDGET PER EYE (world.perf.budget holds the LIVE numbers and they shrink when the governor degrades):
+//   'quest' (standalone headset): scene <= ~150 draw calls, <= ~200k triangles, ONE light, <= 24 fighters, <= 80 kit bodies, <= 24 particle systems. Prefer InstancedMesh / models.instances / kit.particles.
+//   'pc' (desktop or Link): <= ~1500 draw calls, <= ~4M triangles, <= 80 fighters. Creation rule everywhere: <= 20 draw calls, no per-frame allocation, no new lights, no shadow maps, share geometries and materials.
+// ASK BEFORE YOU SPAWN (guard: ctx.world.perf?.…):
+//   perf.allow(kind, n) -> how many of n fit right now (spawn that many instead of refusing)   perf.canSpawn(kind, n = 1) -> bool   perf.headroom(kind) -> units left
+//   kind: 'fighters' | 'bodies' | 'particles' | 'actors' | 'drawCalls' | 'triangles'.   Library spawns, waves and combat.fighter() already do this for you.
+//   const n = ctx.world.perf ? ctx.world.perf.allow('fighters', 20) : 20;   // spawn n, not 20
+// READ: perf.stats() -> { tier, fps, frameMs, p95, level, calls, tris, ... } (shared object: copy)   perf.report() text   perf.overlay(true|false) debug panel   perf.mode = 'auto' | 'quality' | 'performance'
+// Every change fires 'quality:changed' and mutates ctx.quality (density, maxLights, ...). Far objects are hidden (userData.perfCulled); set userData.noCull = true on anything that must always render.

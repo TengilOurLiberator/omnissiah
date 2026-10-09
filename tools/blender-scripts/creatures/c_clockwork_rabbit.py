@@ -1,0 +1,43 @@
+﻿# clockwork-rabbit: hopping brass rabbit with a wind-up key, ~0.5 m tall.
+def make():
+    C = Creature('clockwork-rabbit', 0.5, die='side', die_lift=0.14)
+    B = C.B
+    BR = ('gold', 7); BRD = ('orange', 5); BEL = ('bone', 12); IN = ('rose', 8); DK = ('slate', 4); EYE = ('yellow', 12)
+    C.bone('Root', None, (0, 0, 0.02), (0, 0, 0.12), 'root', bob=0.05, bobw=0.12)
+    C.bone('Body', 'Root', (0, 0.12, 0.25), (0, -0.1, 0.3), 'spine', a=0.8)
+    C.bone('Head', 'Body', (0, -0.18, 0.33), (0, -0.3, 0.38), 'head')
+    C.bone('Key', 'Body', (0, 0.05, 0.38), (0, 0.05, 0.46), 'spin', axis='Z', turns=1)
+    C.bone('Tail', 'Body', (0, 0.2, 0.26), (0, 0.27, 0.28), 'sway', axis='X', amp=14, i=1)
+    for s, sx in (('L', 1), ('R', -1)):
+        C.bone(f'Ear_{s}', 'Head', (sx * 0.05, -0.2, 0.43), (sx * 0.08, -0.17, 0.7), 'sway', axis='X', amp=9, i=sx > 0, lag=0.3)
+        C.bone(f'Leg_{s}', 'Root', (sx * 0.11, 0.1, 0.2), (sx * 0.11, 0.0, 0.03), 'leg', phase=0, swing=40)
+        C.bone(f'Arm_{s}', 'Body', (sx * 0.07, -0.14, 0.2), (sx * 0.07, -0.17, 0.03), 'leg', phase=math.pi, swing=30)
+    B.b('Body')
+    B.sphere(1, loc=(0, 0.04, 0.24), scale=(0.12, 0.2, 0.14), seg=8, rings=6, color=BR)
+    B.sphere(1, loc=(0, -0.04, 0.2), scale=(0.1, 0.14, 0.1), seg=6, rings=4, color=BEL)
+    B.torus(0.125, 0.014, major=10, minor=4, loc=(0, 0.04, 0.24), rot=(math.pi / 2, 0, 0), scale=(1, 1.5, 1), color=BRD)
+    B.box((0.05, 0.012, 0.05), loc=(0, -0.145, 0.27), color=EYE, emissive=True)
+    B.b('Key')
+    B.seg((0, 0.05, 0.37), (0, 0.05, 0.43), 0.014, n=4, color=DK)
+    B.box((0.16, 0.025, 0.06), loc=(0, 0.05, 0.455), color=BRD)
+    B.box((0.04, 0.03, 0.09), loc=(0.08, 0.05, 0.455), color=BRD); B.box((0.04, 0.03, 0.09), loc=(-0.08, 0.05, 0.455), color=BRD)
+    B.b('Tail'); B.sphere(0.065, loc=(0, 0.25, 0.27), seg=6, rings=4, color=BEL)
+    B.b('Head')
+    B.sphere(1, loc=(0, -0.22, 0.35), scale=(0.09, 0.1, 0.085), seg=8, rings=5, color=BR)
+    B.box((0.06, 0.07, 0.05), loc=(0, -0.3, 0.335), color=BEL)
+    B.box((0.025, 0.012, 0.018), loc=(0, -0.337, 0.35), color=('pink', 8))
+    for sx in (1, -1):
+        B.sphere(0.022, loc=(sx * 0.06, -0.28, 0.375), seg=5, rings=3, color=EYE, emissive=True)
+        B.cyl(0.02, 0.02, 0.02, seg=6, loc=(sx * 0.085, -0.2, 0.355), rot=(0, math.pi / 2, 0), color=DK)
+    for s, sx in (('L', 1), ('R', -1)):
+        B.b(f'Ear_{s}')
+        B.seg((sx * 0.05, -0.2, 0.42), (sx * 0.08, -0.17, 0.7), 0.035, 0.02, n=4, color=BR, sx=0.45)
+        B.seg((sx * 0.05, -0.215, 0.45), (sx * 0.08, -0.19, 0.66), 0.02, 0.012, n=4, color=IN, sx=0.3)
+        B.b(f'Leg_{s}')
+        B.sphere(1, loc=(sx * 0.11, 0.1, 0.17), scale=(0.07, 0.11, 0.1), seg=6, rings=4, color=BR)
+        B.box((0.065, 0.2, 0.04), loc=(sx * 0.11, -0.01, 0.02), color=BRD)
+        B.seg((sx * 0.11, 0.1, 0.15), (sx * 0.11, 0.04, 0.04), 0.03, n=5, color=DK)
+        B.b(f'Arm_{s}')
+        B.seg((sx * 0.07, -0.14, 0.2), (sx * 0.07, -0.17, 0.04), 0.03, 0.022, n=5, color=BR)
+        B.box((0.05, 0.08, 0.03), loc=(sx * 0.07, -0.19, 0.015), color=BRD)
+    return C

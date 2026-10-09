@@ -1,0 +1,40 @@
+// core/physics.js — world.physics: ONE Rapier world (WASM) for rigid bodies, ragdolls, vehicles, characters, raycasts.
+// If it failed to load, world.physics is ABSENT: always guard (const P = ctx.world.physics; if (!P) ...). kit.body / kit.humanoid already use it.
+//   Fixed 60 Hz step (<= 2 per frame), gravity -9.8, render transforms interpolated. Terrain = a heightfield patch rebuilt around the
+//   player (flat plane in mixed reality). Everything made through YOUR ctx is removed with your creation. Prefer kit.body for props;
+//   use this directly for crates, ragdoll-ish contraptions, cars, ropes, doors, wrecking balls.
+// BODIES  const h = P.body(ctx, object3D, { shape, size, mass, friction, restitution, type, ccd, sensor, linearDamping, angularDamping,
+//                                             gravityScale, rotate, group, position, sleepy, recycle })      -> handle | null (over budget!)
+//   shape 'auto' (default: box of the object's bounds; Sphere/Cylinder/CapsuleGeometry pick their own) | 'box' size [w,h,d] full extents
+//   | 'sphere' size r | 'capsule' size [r, totalHeight] | 'cylinder' size [r, height] | 'hull' (convex hull of the geometry)
+//   | 'mesh' (triangle mesh; FIXED bodies only, <= 4000 tris). Omit size to fit the object's bounds. type 'dynamic' (default; the object
+//   follows physics) | 'fixed' (scenery) | 'kinematic' (the physics follows the OBJECT: move it yourself, it shoves dynamic bodies).
+//   mass kg (1), friction 0.6, restitution 0.15. group: 'default' | 'debris' | 'ragdoll' | 'world' (fixed default) | 'prop' (scenery that characters walk through). ccd:true only for fast small things.
+//   rotate:false locks rotation (the object's orientation stays yours). The object is put under ctx.root if it is not already there.
+//   h = { object, body (Rapier RigidBody), collider, position, quaternion, velocity (latest sim state, Vector3/Quaternion), mass, type,
+//     applyImpulse(x,y,z | v3), applyImpulseAt(imp, point), applyTorque(x,y,z), setVelocity(x,y,z | v3), setAngularVelocity(x,y,z),
+//     setTransform(pos, quat?) (teleport), setType('dynamic'|'fixed'|'kinematic'), follow(pos, quat?) (kinematic target you steer),
+//     onContact(fn) -> fn({ other (handle|null), kind: 'ground'|'static'|'body', speed, point, normal }) (impacts > 0.8 m/s),
+//     sleep(), wake(), remove(), removed, asleep, grounded }
+//   Bodies far from the player (outside the terrain patch) freeze and wake when it comes back. Dynamic bodies are capped by tier
+//   (P.caps.dynamic: 150 quest / 600 pc): P.body returns null beyond that — fall back to something cheap. Debris-group bodies are recycled.
+// JOINTS  P.joint(a, b, { type: 'fixed'|'spherical'|'revolute'|'prismatic'|'rope'|'spring', anchors: [localA, localB] | anchor: worldPoint,
+//           axis: [x,y,z] (revolute/prismatic, local), limits: [min, max], motor: { target, velocity, stiffness, damping },
+//           length (rope, spring rest), stiffness, damping, contacts: false (bodies of the joint do not collide) }) -> { joint, remove() }
+//   a or b may be null = pinned to the world. Joints vanish with their bodies.
+// QUERIES P.raycast(origin, dir, maxDist = 100, { exclude: handle, groups: 'world'|'all' }) -> { point, normal, distance, handle, kind }|null
+//           (the result object is REUSED by the next call: copy what you keep)   P.overlapSphere(point, r) -> handles (reused array)
+//           P.explode(point, radius, strength = 20): radial impulse on every body/ragdoll part in range (falloff; wakes them) -> count
+//           P.groundAt(x, z) is world.groundHeight; P.inside(x, z) true if the heightfield patch covers (x, z)
+// CHARACTER  const ch = P.character(ctx, { radius = 0.3, height = 1.7, stepHeight = 0.35, maxSlope = 55 })  kinematic capsule for walkers:
+//           ch.move(dx, dy, dz) -> slides/auto-steps through buildings and props (no gravity: you add dy), then ch.position (feet,
+//           Vector3), ch.grounded, ch.teleport(x,y,z), ch.remove(). Offer to player.js: move the rig by what ch.move allows.
+// VEHICLE   const car = P.vehicle(ctx, chassisObject, { size:[w,h,d], mass = 900, forward: '-z'|'+z', wheels: [{ position:[x,y,z] (chassis
+//           local, where the suspension is hung), radius, steer:true, drive:true, brake:true, object: Group (gets position+steer yaw),
+//           spin: Object3D (gets the roll) }], engineForce = mass*4 (total N, split over the driven wheels), maxSteer = 0.5, brakeForce = 60 })  car.setInput({ throttle -1..1,
+//           steer -1..1, brake 0..1 })   car.speed  car.body  car.handle  car.remove()    (Rapier raycast-vehicle controller)
+// RAGDOLL   P.ragdoll(ctx, { parts: [{ name, parent, pos, quat, shape, size, center, mass, joint: { anchor, type, axis, limits, cone },
+//           apply(handle) }], velocity }) — used by kit for dead actors; returns { parts, freeze(), remove(), settled }.
+// MISC      P.stats() { bodies, awake, dynamic, fixed, ragdolls, joints, stepMs, ... }   P.debug(true|false) draws colliders (lines)
+//           P.caps (mutable limits)  P.pressure (0..1: how close the step time is to its budget: spawn fewer things when high)
+//           P.step(dt) is what update() calls (for tests)   P.rapier (the module)   P.world (the Rapier World)

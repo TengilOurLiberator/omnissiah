@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "slug": "a-goblin-market-in-a-canyon-at-10d17c",
+  "created": "2026-10-08T17:49:43.245Z",
+  "prompt": "a goblin market in a canyon at dusk, wooden stalls with crates, barrels, clay jars and hanging lanterns",
+  "source_image": null,
+  "options": {
+    "maxObjects": 8,
+    "seed": 4048381
+  },
+  "timings": {
+    "image": 53.478,
+    "uncover": 43.434,
+    "edit": 69.877,
+    "place": 85.584,
+    "objects": 273.506,
+    "sounds": 80.894
+  },
+  "warnings": [],
+  "image": {
+    "file": "public\\assets\\generated\\blasts\\a-goblin-market-in-a-canyon-at-10d17c\\source\\0-a-goblin-market-in-a-canyon-at-10d17c.png",
+    "width": 1344,
+    "height": 768,
+    "aspect": 1.75,
+    "fov": 80
+  },
+  "finished": "2026-10-08T18:06:00.852Z",
+  "status": "done"
+}

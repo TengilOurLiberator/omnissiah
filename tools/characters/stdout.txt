@@ -1,0 +1,5 @@
+2026-10-09 16:56:23  start: 12 items from list.json, quality=standard, worker port 9561, pid=20856, limit=2
+2026-10-09 16:56:23  2 to do: pell-pilgrim, scrap-goblin
+2026-10-09 16:56:38  >> A pell-pilgrim (story, seed 2000) "a hooded old pilgrim in a patched travelling cloak with a walking staff strapped on his back, in a T-pose, arms out, legs apart, hand-painted low-poly fantasy, chunky shapes, warm dusk palette"
+2026-10-09 16:56:38  starting WSL worker on 127.0.0.1:9561
+2026-10-09 16:57:07     [A pell-pilgrim] imagining: Dreaming up a picture

@@ -1,0 +1,32 @@
+{
+  "w-sword": {
+    "id": "w-sword",
+    "type": "sword",
+    "len_m": 0.9,
+    "prompt": "a pilgrim's short sword with a leather-wrapped grip and brass crossguard, single object, lying diagonally, whole object in frame, hand-painted low-poly fantasy, chunky shapes, warm dusk palette",
+    "quality": "standard",
+    "seed": 5000,
+    "ok": false,
+    "glb": null,
+    "image": null,
+    "seconds": 417.7,
+    "triangles": null,
+    "error": "Local 3D generation is unavailable: the WSL worker did not start (is the Ubuntu distro installed and healthy?)",
+    "finished": "2026-10-09T14:44:40.939Z"
+  },
+  "w-axe": {
+    "id": "w-axe",
+    "type": "axe",
+    "len_m": 0.75,
+    "prompt": "a hand axe with a wooden handle, a steel head and a leather grip wrap, single object, lying diagonally, whole object in frame, hand-painted low-poly fantasy, chunky shapes, warm dusk palette",
+    "quality": "standard",
+    "seed": 5001,
+    "ok": false,
+    "glb": null,
+    "image": null,
+    "seconds": 294.5,
+    "triangles": null,
+    "error": "Local 3D generation is unavailable: the WSL worker did not start (is the Ubuntu distro installed and healthy?)",
+    "finished": "2026-10-09T14:51:20.207Z"
+  }
+}

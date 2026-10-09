@@ -1,0 +1,60 @@
+﻿// core/combat.js — world.combat: give kit actors (humanoid/creature) a FIGHTING BRAIN. READ kit.js FIRST (actors, damage, factions).
+//
+// USE      const combat = ctx.world.combat; if (!combat) return {};        // always guard (it may be reloading)
+//   const npc = kit.humanoid(ctx, { x, z, shirt: 0x802020 });
+//   const f = combat.fighter(ctx, npc, { faction: 'enemy', hp: 30, attack: 'melee' });
+//   Factions: 'enemy' fights the player and friendlies; 'friendly' (the player's side) fights enemies; 'neutral' fights
+//   nobody unless attacked (then it fights back against whoever hit it for ~25 s). The player is 'friendly'.
+//   The brain does everything: notices targets, chases, telegraphs (wind-up) and attacks, returns home, dies. Do NOT also
+//   drive the actor with walkTo/follow/lookAt yourself (say()/wave()/equip() are fine). Pass your creation's ctx; the fighter
+//   is despawned with it. Everything is cheap (staggered AI, pooled projectiles); 30 fighters at once is fine.
+//
+// FIGHTER   const f = combat.fighter(ctx, actor, opts)  -> fighter | null
+//   opts (all optional):
+//     faction   'enemy' (default) | 'friendly' | 'neutral'
+//     hp        starting/max hit points (default: the actor's, 20 humanoid / 12 creature)
+//     attack    'melee' (default) | 'ranged' | 'none' (never attacks: a pet / civilian that just follows or wanders)
+//     damage    per hit (default 6 melee, 5 ranged). The player has 100 hp: keep enemy damage 3–10 so fights stay fun.
+//     range     melee reach in m (default 1.5, creatures 1.2)  /  ranged shooting distance (default 14)
+//     cooldown  seconds between attacks (default 1.8 melee, 2.4 ranged)
+//     windup    seconds of visible wind-up before the blow lands (default 0.55 melee, 0.6 ranged). The player can dodge it.
+//     aggroRange  notice distance (default 16; ranged: range + 4)       speed  chase speed m/s (default 2.4 enemy, 3.0 friendly)
+//     leash     max distance from home (the player, for followers) before it gives up and returns (default 40, followers 28)
+//     follow    'player' | null. Friendlies default to 'player': they trail the player and defend them. Set null to hold ground.
+//     wander    idle patrol radius around home (default 3; 0 = stand still)
+//     projectile  { color, speed = 10, radius = 0.16, gravity = 0, splash = 0.3, damage, kind = 'pierce' }  for attack:'ranged'
+//     damageKind  what its melee blows count as: 'slash' (creatures, armed people; default) | 'blunt' (bare fists) | 'pierce' | 'fire' ...
+//                 (kit damage kinds; decides whether the victim loses a limb or how it dies, see "gore" in core/kit.js)
+//     name      label for you; onDeath(f) callback; drops: see below
+//     drops     on death: 'sword' (a weapon type) | { type, chance = 1 } | [ ... ] | function(f, position). Needs world.weapons.
+//   Returns f = { actor, faction, hp, maxHp, alive, target, name, state, reserve, setFaction(f), setTarget(t), heal(n), activate(), release(), remove() }
+//     (or null: the actor is dead / removed, or too many reserves are waiting)
+//     faction (get/set), hp/maxHp/alive (live), target = what it is fighting now (a fighter, the player or a damageable) | null
+//     setTarget(t): fighter | damageable | 'player' | null; a forced target is kept until it dies (null clears)
+//     remove() despawns brain AND actor (no death event); release() only detaches the brain and leaves the actor standing.
+//   A small health bar floats above anything hurt. Hits that kill a fighter emit 'combat:kill' { victim: f, by, style } where
+//   by = the killing fighter, 'player' or a faction name (or null); style = how kit made it die ('burst', 'decapitate', 'char' ...).
+//   LOST LIMBS  kit actors can be dismembered (kit.js). Combat reads actor.armsLeft / armsTotal / hasHead and reacts to the event
+//   'limb:severed' { actor, limb, kind, by }: a one-armed fighter hits for 55%, an armless melee fighter headbutts (35% damage, 65% reach)
+//   or flees (coin flip), an armless ranged fighter flees; a lost swing/shot is cancelled. Lost legs just slow it (actor.legMul).
+//   f.fleeing (bool) tells you which. Custom actors without armsTotal are unaffected.
+//   MODEL ACTORS  kit actors built from world.models (kit.humanoid({ model })) work exactly like primitive ones. Ranged fighters shoot from actor.muzzleAt(outVec3) when it exists
+//   (return true after writing the world position: model bodies use the hand bone, dragons the Mouth bone); attack clips are timed so the blow lands when the wind-up ends.
+//
+// QUERIES   combat.fighters                the live list of ACTIVE fighters (alive only; do not mutate); combat.reserves = the dormant ones (below)
+//   combat.nearest(point, { faction, hostileTo, maxDist = 30 }) -> fighter | null     (hostileTo:'enemy' = fighters enemies fight)
+//   combat.count(faction?) -> number of living fighters (reserves included)       combat.clear(faction?) despawn all (or one faction's) fighters
+//   combat.maxAttackers (2) how many melee fighters may swing at the same target at once (others circle and wait). Follows ctx.quality.density
+//     (2 at full detail, 1 at half or less) until a creation assigns its own number (assign null to go back to following density).
+//
+// PROJECTILES (the same pool fighters use; handy for turrets/traps)
+//   combat.fire({ origin: vec3, direction: vec3, speed = 10, damage = 5, from = 'enemy', by, color, radius = 0.16, splash = 0.3,
+//                 gravity = 0, life = 3.5 })      flies, leaves a glowing trail, hurts hostile things via kit.hit(..., { from })
+//   combat.projectiles                       pool array; entries with .on === true are in flight { x,y,z, vx,vy,vz, from, kill() }
+//   Event 'combat:attack' { attacker, target, point, damage, kind:'melee'|'projectile', blocked } fires just BEFORE damage is
+//   applied; a handler may set e.blocked = true (shield) or lower e.damage.
+//
+// PLAYER   (core/player.js) world.player.health / maxHealth / alive / damage(n, { from, point }) / heal(n) / invulnerable / respawn().
+//   Events: 'player:hurt' { amount, health }, 'player:died', 'player:respawn', 'combat:kill'. Enemies hurt the player through
+//   kit.hit(..., { from:'enemy' }); player spells must pass { from:'player' } so they hurt enemies but never you or allies.
+//

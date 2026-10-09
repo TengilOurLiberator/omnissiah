@@ -1,0 +1,18 @@
+﻿{
+  "style": "hand-painted low-poly fantasy, chunky shapes, warm dusk palette",
+  "note": "Same style string as tools/startzone-batch/list.json so the weapons match the prop set. Prompt cap is 200 chars (prompt + ', ' + style). 'type' = the weapons.js type each one is meant for.",
+  "items": [
+    { "id": "w-sword", "type": "sword", "prompt": "a pilgrim's short sword with a leather-wrapped grip and brass crossguard, single object, lying diagonally, whole object in frame", "len_m": 0.9 },
+    { "id": "w-axe", "type": "axe", "prompt": "a hand axe with a wooden handle, a steel head and a leather grip wrap, single object, lying diagonally, whole object in frame", "len_m": 0.75 },
+    { "id": "w-staff", "type": "magic-staff", "prompt": "a gnarled wizard staff of twisted wood with a glowing blue crystal on top, single object, lying diagonally, whole object in frame", "len_m": 1.6 },
+    { "id": "w-hammer", "type": "warhammer", "prompt": "a war hammer with a heavy steel head and a long wooden shaft with brass bands, single object, lying diagonally, whole object in frame", "len_m": 1.0 },
+    { "id": "w-bow", "type": "bow", "prompt": "a recurve wooden bow with a leather grip and brass tips, no string, single object, lying diagonally, whole object in frame", "len_m": 1.2 },
+    { "id": "w-shield", "type": "shield", "prompt": "a round wooden shield with a brass boss and an iron rim, front view, single object, whole object in frame", "len_m": 0.7 },
+    { "id": "w-dagger", "type": "dagger", "prompt": "a short dagger with a brass crossguard and a leather-wrapped grip, single object, lying diagonally, whole object in frame", "len_m": 0.4 },
+    { "id": "w-spear", "type": "spear", "prompt": "a long wooden spear with a leaf-shaped steel head and a brass collar, single object, lying diagonally, whole object in frame", "len_m": 1.9 },
+    { "id": "w-mace", "type": "mace", "prompt": "a flanged steel mace with a wooden handle and a leather grip, single object, lying diagonally, whole object in frame", "len_m": 0.75 },
+    { "id": "w-greatsword", "type": "greatsword", "prompt": "a large two-handed greatsword with a brass cog crossguard and a wrapped hilt, single object, lying diagonally, whole object in frame", "len_m": 1.3 },
+    { "id": "w-crossbow", "type": "crossbow", "prompt": "a wooden crossbow with a steel prod and a brass trigger, single object, lying diagonally, whole object in frame", "len_m": 0.6 },
+    { "id": "w-wand", "type": "wand", "prompt": "a short carved wooden wand with a glowing golden crystal tip, single object, lying diagonally, whole object in frame", "len_m": 0.3 }
+  ]
+}

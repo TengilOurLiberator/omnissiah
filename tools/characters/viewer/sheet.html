@@ -1,0 +1,89 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>character sheet</title>
+<style>html,body{margin:0;background:#dfe6ee}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// Contact sheet of one (rigged) GLB: one row per clip, columns = sample times x views. Driven by the query string; headless Chrome screenshot.
+//   glb=<url>  anim=<url of a clip-only GLB, optional (KayKit shared rig)>  clips=idle,walk,attack  t=0,0.25,0.5,0.75  views=0,90  size=220  mode=mesh|bones
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import * as SkeletonUtils from 'three/addons/utils/SkeletonUtils.js';
+
+const q = new URLSearchParams(location.search);
+const S = +(q.get('size') || 220);
+const ts = (q.get('t') || '0,0.25,0.5,0.75').split(',').map(Number);
+const views = (q.get('views') || '0,90').split(',').map(Number);
+const mode = q.get('mode') || 'mesh';
+const label = q.get('label') || '';
+const out = { done: false, error: null, clips: [], info: {} };
+window.__sheet = out;
+try {
+  const loader = new GLTFLoader();
+  const gltf = await loader.loadAsync(q.get('glb'));
+  let anims = gltf.animations;
+  if (q.get('anim')) anims = (await loader.loadAsync(q.get('anim'))).animations;
+  out.clips = anims.map((a) => a.name);
+  const find = (n) => anims.find((a) => a.name === n) || anims.find((a) => a.name.toLowerCase() === n.toLowerCase());
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xdfe6ee);
+  scene.add(new THREE.HemisphereLight(0xfff4e0, 0x8899aa, 1.6));
+  const sun = new THREE.DirectionalLight(0xfff0d8, 2.4); sun.position.set(-2, 4, 3); scene.add(sun);
+  const root = SkeletonUtils.clone(gltf.scene);
+  scene.add(root);
+  let tris = 0, skinned = 0, bonesN = 0;
+  root.traverse((o) => { if (o.isMesh) { tris += (o.geometry.index ? o.geometry.index.count : o.geometry.attributes.position.count) / 3; } if (o.isSkinnedMesh) { skinned++; bonesN = o.skeleton.bones.length; o.frustumCulled = false; if (mode === 'bones') o.material = new THREE.MeshBasicMaterial({ color: 0xaab2c0, transparent: true, opacity: 0.35, depthWrite: false }); } });
+  out.info = { tris, skinned, bones: bonesN };
+  const tex = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'); g.fillStyle = '#b9c3cf'; g.fillRect(0, 0, 64, 64); g.fillStyle = '#9aa6b4'; g.fillRect(0, 0, 32, 32); g.fillRect(32, 32, 32, 32); const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(60, 60); t.colorSpace = THREE.SRGBColorSpace; return t; })();
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.MeshBasicMaterial({ map: tex }));
+  floor.rotation.x = -Math.PI / 2; floor.position.y = -0.002; scene.add(floor);
+  const helpers = [];
+  if (mode === 'bones') root.traverse((o) => { if (o.isSkinnedMesh) { const h = new THREE.SkeletonHelper(o.skeleton.bones[0]); h.material.depthTest = false; h.renderOrder = 10; scene.add(h); helpers.push(h); } });
+  const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  renderer.setPixelRatio(1); renderer.setSize(S, S); renderer.outputColorSpace = THREE.SRGBColorSpace;
+  const cam = new THREE.PerspectiveCamera(32, 1, 0.01, 100);
+  const mixer = new THREE.AnimationMixer(root);
+  const clipNames = (q.get('clips') || 'idle,walk,attack').split(',').filter(Boolean);
+  // bounding size from the bind pose (idle t=0) so the camera is identical for every clip
+  const first = find(clipNames[0]) || anims[0];
+  if (first) { mixer.clipAction(first).play(); mixer.setTime(0); }
+  root.updateMatrixWorld(true);
+  const bb = new THREE.Box3().setFromObject(root, true); const size = bb.getSize(new THREE.Vector3());
+  const R = Math.max(size.y * 1.05, size.x, size.z);
+  const centre = new THREE.Vector3(0, size.y * 0.5, 0);
+  const dist = R / Math.tan(THREE.MathUtils.degToRad(32) / 2) * 0.62;
+  out.info.size = [size.x, size.y, size.z];
+  const cols = ts.length * views.length;
+  const sheet = document.createElement('canvas'); sheet.width = cols * S; sheet.height = clipNames.length * S;
+  const g = sheet.getContext('2d'); g.fillStyle = '#dfe6ee'; g.fillRect(0, 0, sheet.width, sheet.height);
+  let row = 0;
+  for (const name of clipNames) {
+    const clip = find(name) || find({ idle: 'Idle', walk: 'Walking_A', run: 'Running_A', attack: '1H_Melee_Attack_Slice_Diagonal', hit: 'Hit_A', die: 'Death_A' }[name] || name);
+    if (!clip) { g.fillStyle = '#c00'; g.font = '14px sans-serif'; g.fillText(`missing clip ${name}`, 8, row * S + 20); row++; continue; }
+    out.info[name] = { clip: clip.name, duration: clip.duration };
+    mixer.stopAllAction(); mixer.uncacheRoot(root);
+    const act = mixer.clipAction(clip); act.play();
+    let col = 0;
+    for (const t of ts) {
+      mixer.setTime(clip.duration * t);
+      root.updateMatrixWorld(true);
+      root.traverse((o) => { if (o.isSkinnedMesh) o.skeleton.update(); });
+      for (const az of views) {
+        const a = az * Math.PI / 180, el = 10 * Math.PI / 180;
+        cam.position.copy(centre).add(new THREE.Vector3(Math.cos(el) * Math.sin(a), Math.sin(el), Math.cos(el) * Math.cos(a)).multiplyScalar(dist));
+        cam.lookAt(centre); cam.updateMatrixWorld(true);
+        for (const h of helpers) h.updateMatrixWorld(true);
+        renderer.render(scene, cam);
+        g.drawImage(renderer.domElement, col * S, row * S);
+        g.fillStyle = '#000'; g.font = '12px sans-serif'; g.fillText(`${clip.name} t=${t} az=${az}`, col * S + 5, row * S + 14);
+        col++;
+      }
+    }
+    row++;
+  }
+  if (label) { g.fillStyle = '#000'; g.font = 'bold 13px sans-serif'; g.fillText(label, 6, sheet.height - 8); }
+  document.body.innerHTML = ''; document.body.appendChild(sheet);
+  out.size = [sheet.width, sheet.height]; out.done = true;
+  document.title = 'SHEET_READY ' + JSON.stringify(out.info);
+} catch (e) { out.error = String(e && e.stack || e); document.title = 'SHEET_ERROR'; document.body.textContent = out.error; }
+</script></body></html>

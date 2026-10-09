@@ -1,0 +1,19 @@
+{
+  "name": "omnissiah",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "WebXR open field with a speaking fractal oracle (Claude Opus 5.5) that rewrites the game live.",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.292",
+    "@dimforge/rapier3d-compat": "^0.21.0",
+    "@huggingface/transformers": "^3.0.0",
+    "kokoro-js": "^1.2.1",
+    "selfsigned": "^2.4.1",
+    "three": "^0.170.0",
+    "ws": "^8.18.0"
+  }
+}

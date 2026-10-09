@@ -1,0 +1,35 @@
+{
+  "a-wizard-s-cluttered-tower-stu-9dd9bf": {
+    "name": "Round Tower Study",
+    "caption": "Round stone room with wooden furniture, upper shelf ledge, tiled floor",
+    "prompt": "a wizard's cluttered tower study at night",
+    "thumb": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/thumb.jpg",
+    "image": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+    "created": "2026-10-08T12:52:47.828Z",
+    "objects": 8,
+    "place": true,
+    "seconds": 1074
+  },
+  "an-abandoned-greenhouse-overgr-accbd6": {
+    "name": "Overgrown Glass Greenhouse",
+    "caption": "Glass greenhouse interior with grass floor, leafy plants and three block figures",
+    "prompt": "an abandoned greenhouse overgrown with glowing plants",
+    "thumb": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/thumb.jpg",
+    "image": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+    "created": "2026-10-08T17:29:20.657Z",
+    "objects": 7,
+    "place": true,
+    "seconds": 755
+  },
+  "a-goblin-market-in-a-canyon-at-10d17c": {
+    "name": "Canyon Market Stalls",
+    "caption": "Four wooden market stalls with lanterns along a canyon dirt path",
+    "prompt": "a goblin market in a canyon at dusk, wooden stalls with crates, barrels, clay jars and hanging lanterns",
+    "thumb": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/thumb.jpg",
+    "image": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+    "created": "2026-10-08T17:49:43.245Z",
+    "objects": 8,
+    "place": true,
+    "seconds": 607
+  }
+}

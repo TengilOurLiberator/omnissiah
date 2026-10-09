@@ -1,0 +1,29 @@
+// core/menu.js - world.menu: the in-VR menu. A wrist launcher (raise your LEFT palm toward your face, or press left B / key M),
+// seven panels (Summon, Spells, Quests, Chat, World, Settings + How to play) drawn on canvases mapped to planes, and a tiny
+// retained-mode widget set so ANY creation can add its own panel. No DOM, nothing drawn while closed.
+//
+// AI-FACING API   const menu = ctx.world.menu; if (!menu) return {};            // always guard
+//   ctx.onDispose(menu.register({ id: 'mine', title: 'My thing', icon: 'bolt', build(ui) { ... } }));   // adds a launcher button + panel
+//   menu.open('summon'|'spells'|'quests'|'chat'|'world'|'settings'|'help'|<your id>)  menu.close()  menu.toggle()  menu.capturing (a hand ray is over the menu)
+//   menu.isOpen / menu.panelTop (elevation of the open window's top edge): other overlays keep clear of an open panel (see hud.present in sys/hud.js).
+//   The first-run welcome card asks hud.present for its turn; on a flat screen the window is sized to the viewport.
+//   build(ui) is called again on every ui.refresh() (and about 4x/s while the panel is open if you give register() a sig() that returns a
+//   changing value), so read live values inside get()/set() callbacks and just describe the page again. Content is 470 px wide, scrolls by itself.
+//   ui.heading(text, { right? })  ui.text(str, { size = 13, color, bold, italic, align })  ui.gap(px)  ui.divider()
+//   ui.row(() => { ...widgets side by side... }, { gap = 6 })   inside a row, widgets share the width (opts.flex = weight, opts.w = fixed px)
+//   ui.button(label, onClick, { icon, kind: 'primary'|'danger'|'ghost', disabled, h = 38, id })   ui.chip(label, onClick, { active, icon, color })
+//   ui.choice(['a','b'] | [{id,label}], () => current, (id) => set, { label })   ui.toggle(label, () => bool, (v) => set, { sub })
+//   ui.slider(label, { min, max, step, get, set, fmt: (v) => 'text' })   ui.progress(label, value01, { text, color })
+//   ui.tile({ title, sub, icon, color, active, badge, onClick, h = 48 })   ui.grid(items, { id, cols = 2, rows = 4, tile: (item) => tileOpts })  (paged)
+//   ui.confirm(label, onConfirm, { text: 'Sure?' }) two-step danger button   ui.toast(text)   ui.refresh()   ui.state (persists per panel)   ui.close()
+//   icon = a built-in name (summon bolt scroll chat globe gear help star clock skull shield paw sword house tree crate spark map plus minus
+//   check back undo trash flag eye heart) or a single emoji / 1-2 letters. Colours are CSS strings or 0xRRGGBB numbers.
+//   EXAMPLE
+//     export default function (ctx) {
+//       const menu = ctx.world.menu; let n = 0;
+//       if (menu) ctx.onDispose(menu.register({ id: 'counter', title: 'Counter', icon: 'star', build(ui) {
+//         ui.heading('Clicks'); ui.text(`You clicked ${n} times.`);
+//         ui.row(() => { ui.button('Click me', () => { n++; ui.refresh(); }, { kind: 'primary' }); ui.button('Reset', () => { n = 0; ui.refresh(); }); });
+//       } }));
+//       return {};
+//     }

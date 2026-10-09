@@ -1,0 +1,277 @@
+{
+    "gear-cathedral-gate":  {
+                                "cat":  "structure",
+                                "scale":  0.8,
+                                "budget":  8000,
+                                "tags":  [
+                                             "gate",
+                                             "cathedral",
+                                             "gears",
+                                             "arch",
+                                             "ruin",
+                                             "machine-god",
+                                             "omnissiah",
+                                             "glow",
+                                             "landmark"
+                                         ],
+                                "desc":  "15 m gothic gate with a gear rose window; walk through the 4 m opening (faces +Z)"
+                            },
+    "colossus-head":  {
+                          "cat":  "structure",
+                          "scale":  1,
+                          "budget":  8000,
+                          "tags":  [
+                                       "colossus",
+                                       "head",
+                                       "statue",
+                                       "ruin",
+                                       "giant",
+                                       "buried",
+                                       "gear",
+                                       "landmark",
+                                       "glow",
+                                       "omnissiah"
+                                   ],
+                          "desc":  "9 m broken colossus head half-buried, one glowing eye, gear halo; looks up and toward +Z"
+                      },
+    "floating-shrine":  {
+                            "cat":  "structure",
+                            "scale":  1,
+                            "budget":  8000,
+                            "tags":  [
+                                         "shrine",
+                                         "floating",
+                                         "island",
+                                         "rings",
+                                         "temple",
+                                         "crystal",
+                                         "omnissiah",
+                                         "glow",
+                                         "landmark"
+                                     ],
+                            "desc":  "floating rock island with a gold-roofed shrine and three static gimbal rings; hovers 1 m above y=0"
+                        },
+    "floating-shrine-core":  {
+                                 "cat":  "structure",
+                                 "scale":  1,
+                                 "budget":  8000,
+                                 "tags":  [
+                                              "shrine",
+                                              "floating",
+                                              "island",
+                                              "temple",
+                                              "crystal",
+                                              "omnissiah",
+                                              "glow"
+                                          ],
+                                 "desc":  "the floating shrine without rings; pair with shrine-rings at height 6.9 m (rotate the rings object)"
+                             },
+    "shrine-rings":  {
+                         "cat":  "prop",
+                         "scale":  1,
+                         "budget":  2000,
+                         "tags":  [
+                                      "rings",
+                                      "gimbal",
+                                      "orbit",
+                                      "omnissiah",
+                                      "glow",
+                                      "instance"
+                                  ],
+                         "desc":  "three gimbal rings centred on the origin (r 3.7 / 4.4 / 5.1); place at the shrine core and spin rotation.y"
+                     },
+    "rune-obelisk-a":  {
+                           "cat":  "structure",
+                           "scale":  1,
+                           "budget":  8000,
+                           "tags":  [
+                                        "obelisk",
+                                        "rune",
+                                        "circuit",
+                                        "pillar",
+                                        "standing-stone",
+                                        "omnissiah",
+                                        "glow",
+                                        "landmark"
+                                    ],
+                           "desc":  "6.8 m four-sided rune obelisk with glowing circuit runes on every face and a floating crystal capstone"
+                       },
+    "rune-obelisk-b":  {
+                           "cat":  "structure",
+                           "scale":  1,
+                           "budget":  8000,
+                           "tags":  [
+                                        "obelisk",
+                                        "rune",
+                                        "circuit",
+                                        "pillar",
+                                        "hexagonal",
+                                        "tiered",
+                                        "gear",
+                                        "omnissiah",
+                                        "glow",
+                                        "landmark"
+                                    ],
+                           "desc":  "6.9 m hexagonal tiered rune obelisk with gold bands and floating gear rings around a crystal"
+                       },
+    "rune-obelisk-c":  {
+                           "cat":  "structure",
+                           "scale":  1,
+                           "budget":  8000,
+                           "tags":  [
+                                        "obelisk",
+                                        "rune",
+                                        "circuit",
+                                        "broken",
+                                        "ruin",
+                                        "crystal",
+                                        "omnissiah",
+                                        "glow"
+                                    ],
+                           "desc":  "3 m snapped rune obelisk, upper half fallen against the stump, crystals sprouting from the break"
+                       },
+    "pilgrim-altar":  {
+                          "cat":  "structure",
+                          "scale":  1,
+                          "budget":  8000,
+                          "tags":  [
+                                       "altar",
+                                       "shrine",
+                                       "pilgrim",
+                                       "dais",
+                                       "ring",
+                                       "gear",
+                                       "omnissiah",
+                                       "glow",
+                                       "spawn"
+                                   ],
+                          "desc":  "6 m octagonal pilgrims dais: altar with offering orb and a standing gold ring framing the sky; faces +Z (kneel on the -Z side cushions and look out through the ring)"
+                      },
+    "waystone":  {
+                     "cat":  "prop",
+                     "scale":  1,
+                     "budget":  2000,
+                     "tags":  [
+                                  "waystone",
+                                  "signpost",
+                                  "sign",
+                                  "standing-stone",
+                                  "tutorial",
+                                  "blank-panel",
+                                  "crystal",
+                                  "glow"
+                              ],
+                     "desc":  "standing stone with a blank dark plaque 1.0x1.3 m for a text plane (centre [0,1.55,0.32], faces +Z) and a two-arm signpost beside it",
+                     "note":  "textPlane center [0,1.55,0.318] size [1.0,1.3] facing +z"
+                 },
+    "weapon-rack":  {
+                        "cat":  "prop",
+                        "scale":  1,
+                        "budget":  2000,
+                        "tags":  [
+                                     "weapon-rack",
+                                     "rack",
+                                     "weapons",
+                                     "swords",
+                                     "spear",
+                                     "axe",
+                                     "shield",
+                                     "armory",
+                                     "glow"
+                                 ],
+                        "desc":  "2.6 m wooden weapon rack with 3 swords, spear, axe and a round shield (decor, front faces +Z)"
+                    },
+    "spell-lectern":  {
+                          "cat":  "prop",
+                          "scale":  1,
+                          "budget":  2000,
+                          "tags":  [
+                                       "lectern",
+                                       "spellbook",
+                                       "book",
+                                       "magic",
+                                       "stand",
+                                       "orb",
+                                       "glow",
+                                       "gear"
+                                   ],
+                          "desc":  "1.8 m stone lectern with an open glowing spellbook tilted toward +Z and a floating crystal orb with rings"
+                      },
+    "ruined-arch":  {
+                        "cat":  "structure",
+                        "scale":  1,
+                        "budget":  8000,
+                        "tags":  [
+                                     "arch",
+                                     "ruin",
+                                     "ruined",
+                                     "pillar",
+                                     "broken",
+                                     "framing",
+                                     "landmark",
+                                     "crystal",
+                                     "glow"
+                                 ],
+                        "desc":  "4.6 m ruined stone arch: one full pillar with a half arch, one broken pillar, rubble and crystals; frame the view through the 3.4 m gap (axis along X, faces +Z)"
+                    },
+    "jetty":  {
+                  "cat":  "structure",
+                  "scale":  1,
+                  "budget":  2000,
+                  "tags":  [
+                               "jetty",
+                               "pier",
+                               "dock",
+                               "lake",
+                               "wood",
+                               "lantern",
+                               "boat"
+                           ],
+                  "desc":  "8 m wooden jetty on piles for the lake; origin at the shore end, extends toward +Z; deck is 0.55 m above y=0 and piles go 1.5 m below, so set y at the water surface",
+                  "note":  "extends toward +Z (glTF), deck top y=0.6"
+              },
+    "camp-tent":  {
+                      "cat":  "prop",
+                      "scale":  1,
+                      "budget":  2000,
+                      "tags":  [
+                                   "tent",
+                                   "camp",
+                                   "camping",
+                                   "campsite",
+                                   "cloth",
+                                   "bedroll"
+                               ],
+                      "desc":  "2.4x2.8 m ridge tent with a bedroll beside it; door faces +Z"
+                  },
+    "camp-log-seat":  {
+                          "cat":  "prop",
+                          "scale":  1,
+                          "budget":  2000,
+                          "tags":  [
+                                       "logs",
+                                       "seat",
+                                       "camp",
+                                       "campsite",
+                                       "bench",
+                                       "wood",
+                                       "log"
+                                   ],
+                          "desc":  "three log seats arranged around a campfire (radius ~1.7 m around the point (0,1.0)); stump block and cushion"
+                      },
+    "camp-tripod":  {
+                        "cat":  "prop",
+                        "scale":  1,
+                        "budget":  2000,
+                        "tags":  [
+                                     "tripod",
+                                     "cooking",
+                                     "pot",
+                                     "camp",
+                                     "campsite",
+                                     "cauldron",
+                                     "fire"
+                                 ],
+                        "desc":  "1.6 m iron cooking tripod with a hanging pot; place over the existing campfire"
+                    }
+}

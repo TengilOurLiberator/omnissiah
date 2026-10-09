@@ -1,0 +1,54 @@
+// core/models.js — world.models: real glTF models (CC0 packs in /assets) and AI-generated ones. READ THIS FIRST.
+//
+// USE      const M = ctx.world.models; if (!M) return {};            // always guard (it may be reloading)
+//   const h = M.spawn(ctx, 'knight', { position: p, height: 1.8, yaw: 0 });   // YOUR ctx first; cleaned up with your creation
+//   h.object (THREE.Group, placed NOW; a tiny placeholder shows until loaded)   h.ready (Promise -> h, never rejects; check h.error)
+//   h.loaded  h.name  h.entry (catalogue info)  h.height (metres)  h.position (= h.object.position, move it freely)
+//   h.play('walk' | 'Walking_A', { loop = true, fade = 0.2, speed = 1, once, then: 'idle' }) -> clip name or null
+//        canonical aliases: idle walk run attack attack-2h shoot cast hit die jump wave cheer sit block (+ taunt dodge spawn pickup
+//        throw interact crouch fall dance eat strafe-left strafe-right walk-back idle-combat). h.clipFor(alias) h.has(clip) h.clips h.stop()
+//        Rigged characters start in 'idle'. Skeletons/heroes (KayKit rig) share ~95 clips: any clip name works on any of them.
+//   h.equip({ right: '2H_Sword', left: 'Round_Shield' }) | h.equip('1H_Axe') | h.equip({right:null})  h.equipment -> [{name, side, visible}]
+//        (KayKit heroes carry hidden weapons/shields as part of the model; defaults are visible)
+//   h.hold(item, 'right'|'left')   put a weapon in a hand (default: the item's natural hand): item = model name | handle | Object3D
+//   h.attach(object3D | handle, 'handslot.r' | 'head' | 'right-hand'…, { position, rotation, scale })   h.bones (name -> Bone)
+//   h.setTint(0xff4040 | null)   h.remove()   h.mixer   Everything is released with your creation; never dispose models yourself.
+//   Options: position (Vector3|{x,y,z}|[x,y,z]; y omitted = on the ground), yaw, scale (multiplies the recommended scale), height (metres, wins),
+//            parent, castShadow, play (clip/alias or false), unlit (keep unlit materials)
+//   Recommended scales are built in, so spawn('barrel') or spawn('windmill') come out at human scale; pass height for exact size.
+//
+// SCATTER    const f = M.instances(ctx, 'tree-oak', transforms | count, { height })   static models only; ≤ a few draws for thousands
+//   transforms: array of Matrix4 | { position, yaw, scale } | Vector3 | [x,y,z]      f.setMatrixAt(i, matrix4)  f.setTransform(i, {position,yaw,scale})  f.count  f.remove()
+// GENERATE   const g = M.generate(ctx, 'a crooked wizard tower', { position, size = 1, name, yaw, animate = false, alive = false })   -> { object, ready, state, message, remove() }
+//   woven by the server (cached forever once made); shows a swirling wireframe while it works, then swaps in the model (largest side = size).
+//   animate: true | false (default false = plain static model; EXPERIMENTAL opt-in: true rigs creatures/characters, and on a cached static prompt rigs the
+//     existing mesh). Rigging adds ~1-3 min the first time ('Finding its bones' / 'Teaching it to walk' in g.message while g.state is 'sculpting').
+//   RIGGED results (g.rigged, g.modelName = catalogue name = cache slug, g.info = M.info()) behave exactly like KayKit characters: g.clips g.play(alias) g.clipFor g.bones g.mixer g.attach,
+//     and M.spawn(ctx, g.modelName, { height }) / kit.actor(ctx, { model: g.modelName }) / M.find('wolf') work too (every rigged cached model is registered at load).
+//   alive: true -> once ready it is a kit actor that wanders (kit.actor); with faction | fighter: { hp, damage, attack, ... } it also gets world.combat.fighter. g.actor / g.fighter hold them,
+//     g.remove() removes everything. Things that cannot be rigged just stay static (g.alive === false).
+//   Baked clips: idle walk run attack attack-2 hit die; winged also fly hover; walk/run = slither (serpent), hop (blob), glide (floating); plants only idle/wind/hit/die; legged ones add jump taunt; people (biped with arms) add wave cheer dance bow.
+//   M.info(name): bodyPlan humanoid speeds{walk,run,fly} (model units/s) headBone mouthBone (bone 'Mouth': attach breath / bites there) mouth counts limbs events{attack:{hit}} bones.
+//   BODY PLANS: biped quadruped multileg (6, 8 legs) winged serpent floating blob vehicle plant. Rig well: ONE creature, clearly standing, limbs apart from the body ("a wolf standing",
+//     "a knight in a T-pose", "a six-legged beetle", "a snake in an S"). Poorly: limbs fused to the torso, sitting / curled / flying poses, groups, held weapons (skinned to the nearest limb).
+// QUERY      M.list({ category, tag, rigged, pack, search }) -> names   M.has(n)  M.info(n)  M.find('wizard') -> best name | null   M.find(q,{all:true})
+//   M.preload(['knight','sword']) -> Promise   M.clipFor(name, alias)   M.categories()   M.tags()   M.stats()
+//   categories: character enemy animal weapon prop furniture building structure nature vehicle. Names are kebab-case (barrel, oak… use M.find).
+//   Team colours: buildings come in -red -blue -green -yellow. Weapons' origin is the grip, pointing +Y (use h.hold).
+//
+// CATALOGUE (most used; M.find('wizard tower') -> the best catalogue name or null at run time, M.list({ category, search }) -> names; names are kebab-case)
+// CATALOG-BEGIN
+//   heroes (KayKit rig, ~95 clips, hidden weapons: h.equip): barbarian knight mage rogue rogue-hooded.   villagers (tiny, 1 draw): villager-{male,female}-{a..f} gravekeeper mini-adventurer
+//   enemies: bone-walker ghost orc skeleton-mage skeleton-minion skeleton-rogue skeleton-warrior vampire zombie (+ goblin troll demon dark-knight goblin-shaman orc-warrior via the KayKit rig)
+//   animals (cute cubes: idle/walk/run/eat/dance): beaver bee bunny cat caterpillar chick cow crab deer dog elephant fox giraffe hog koala lion monkey panda parrot penguin pets-fish pig polar tiger
+//   weapons (origin = grip; use h.hold): sword greatsword dagger axe great-axe staff wand crossbow spellbook shield-{round,square,spikes,badge} blaster-{a..r} grenade-{a,b} tool-{axe,hammer,hoe,pickaxe,shovel}
+//   buildings, each in -red -blue -green -yellow: archeryrange barracks blacksmith castle church home-a home-b lumbermill market mine tavern tower-a tower-b tower-catapult watermill well windmill
+//   structures: castle-* (wall-*, tower-*, gate, bridge-*), dungeon wall-*/floor-*/pillar/stairs, village/graveyard fence-*, crypt-*, hedge-*, road*, bridge-{wood,stone,straight}, arch, fountain-*, pillar-*, tower-complete-*
+//   vehicles & siege: boat-row-{large,small} ship-{small,medium,large,ghost,wreck,pirate-*} cannon cannon-mobile siege-{ballista,catapult,ram,tower,trebuchet} (+ -demolished)
+//   props: barrel box crate chest chest-gold coin key lantern torch campfire-{pit,stand,logs,stones} candle-* cart wheelbarrow workbench-* anvil bucket altar-stone banner-* flag-* grave* gravestone-* skull ribcage
+//     pumpkin-* hay-bale sack shelves signpost stall-* tent-* tool-paddle weaponrack urn-* target
+//   furniture: armchair bed-* bench bookcases/shelf-* cabinet-* chair-* couch lamp-* rug-* stool table-*    trees: tree tree-{oak,pine-*,palm-*,dead-*,autumn,fat,tall,thin,detailed,...} trees-{a,b}-*
+//   nature: bush/plant-bush-*, flower-{red,yellow,purple}-*, grass, mushroom-*, rock-* rocks-* stone-*, stump-*, log*, hill-*, hills-*, mountain-*, cactus-*, cloud-*, crop-*, waterlily-*, waterplant-*, lily-*
+//   campsite: bed campfire-{bricks,logs,planks,stones} canoe pot-{large,small} sign statue-{block,column,head,obelisk,ring} tent-{detailed-*,small-*}
+// CATALOG-END
+// CATALOG-END

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "orange-wooden-chair",
+    "name": "orange wooden chair with a red panel in its tall back",
+    "description": "Blocky orange wooden chair with a box-shaped seat base and a tall rectangular back holding a red square panel.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "left of centre, middle distance"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-wooden-chair",
+    "count": 1,
+    "box": [
+      0.342,
+      0.505,
+      0.409,
+      0.662
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.6,
+      1.1,
+      0.6
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "wooden chair clattering over",
+    "score": 10.478545
+  },
+  "updated_at": "2026-10-08T18:04:25.704Z"
+}

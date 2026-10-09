@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "object": {
+    "id": "large-clay-pot-counter-right",
+    "name": "large round terracotta pot with wide rim",
+    "description": "Wide round orange-brown terracotta pot with a short neck and a thick rim.",
+    "materials": [
+      "clay"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+        "location_in_image": "right side on the nearest right counter top"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/large-clay-pot-counter-right",
+    "count": 1,
+    "box": [
+      0.761,
+      0.553,
+      0.803,
+      0.632
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.4,
+      0.45,
+      0.4
+    ],
+    "rests_on": "object",
+    "rests_on_id": "market-stall-right-near",
+    "break_material": "earth",
+    "impact_sound": "clay pot shatter",
+    "score": 11.68249
+  },
+  "updated_at": "2026-10-08T18:05:18.470Z"
+}

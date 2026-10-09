@@ -1,0 +1,2 @@
+// core/ambience.js — procedural wind + sacred drone + bell chimes; world.audio (core/audio.js) crossfades recorded ambience beds in by what stands around the player (forest, village, tavern, dungeon, ...).
+//   world.ambience = { setVolume(v) 0..2 (1 default), setMood('serene' | 'luminous' | 'ominous'), getMood(), getVolume(), getZone() }.  Ducks while the Omnissiah speaks. Wind follows world.env.wind.

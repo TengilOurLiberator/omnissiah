@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "an-abandoned-greenhouse-overgr-accbd6",
+  "object": {
+    "id": "long-leaf-glowing-plant",
+    "name": "green long-leaf plant with glowing yellow-green orbs",
+    "description": "A plant with long arching pointed green leaves spreading from a central base, with small glowing yellow-green orbs among the leaves.",
+    "materials": [
+      "plant"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+        "location_in_image": "left side, mid distance beside the left glass wall"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/long-leaf-glowing-plant",
+    "count": 2,
+    "box": [
+      0.135,
+      0.43,
+      0.285,
+      0.612
+    ],
+    "depth": "mid",
+    "size_m": [
+      1.3,
+      1.1,
+      1.3
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "cloth",
+    "impact_sound": "soft leafy rustle",
+    "score": 11.4015
+  },
+  "updated_at": "2026-10-08T18:06:01.582Z"
+}

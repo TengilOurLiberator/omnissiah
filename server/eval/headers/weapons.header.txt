@@ -1,0 +1,45 @@
+// core/weapons.js — world.weapons: holdable weapons (melee, ranged, shields, tools) built on kit.body. READ THIS to make or edit weapons.
+//
+// USE      const W = ctx.world.weapons; if (!W) return {};                  // always guard (it may be reloading)
+//   const sword = W.create(ctx, 'sword', { position: ctx.player.head });    // ctx owns it (removed with your module)
+//   W.create(ctx, type, { position = near the right hand, hand: 'left'|'right' (start in that hand), scale = 1, ...any spec field })
+//        -> { type, kind, body, mesh, held ('left'|'right'|null), ammo, remove(), fire(power = 1) }   null for an unknown type
+//   Types (49), W.types() -> every name, custom ones included. Types marked * show a real glTF model (world.models) once it has loaded
+//     (the procedural mesh is the placeholder AND the fallback), the rest are procedural:
+//     melee    sword* greatsword* dagger* axe* great-axe* warhammer* mace club spear katana scythe pickaxe* war-pick* shovel* hoe* boomerang
+//              bone-blade* bone-axe*   tools: torch* grenade* smoke-bomb* (fuse, then a smoke cloud, no damage)
+//     ranged   bow crossbow* heavy-crossbow* blaster* revolver* smg* rifle* sniper* shotgun* rocket-launcher* (explosive) plasma-rifle*
+//              magic-staff* wand* bone-staff* spellbook* (slow arcane bolts)          shields: shield* spiked-shield* tower-shield*
+//     hero     omni-blade sun-spear void-scythe storm-hammer ember-staff aegis-shield star-bow rune-dagger arc-blaster prism-rifle:
+//              +25% damage and a coloured effect; they use the world.models model of the same name when it exists AT CREATE TIME
+//              (Blender hero pack: grip at the origin, blade along -Z, material 'Emissive' pulses) else a recoloured built-in mesh.
+//   W.held.left / W.held.right = the weapon in that hand or null      W.list() = every live weapon (do not mutate)
+//   W.blocks(point, towardAttacker, feedback = true) -> bool          (shields, see below)
+//   const undo = W.define('name', spec)                               add/replace a type; undo() removes it again
+//   Events: 'weapon:grab' { type, hand }  'weapon:fire' { type, hand }  'weapon:hit' { type, amount, point, hand }
+//
+// PLAYING: squeeze near a weapon (or point at it within 5 m and squeeze) to hold it; release to throw; a held weapon takes that hand's trigger. Melee damage scales with swing speed (2 -> 5.5 m/s = 30% -> 100%);
+//   bows draw while the trigger is held; shields block from the front. Two-handed guns aim along the line between both hands.
+// CUSTOM   W.define('frost-axe', { kind: 'melee', damage: 22, reach: 0.9, material: 'steel', trailColor: 0x88ccff,
+//            build(THREE) { const g = new THREE.Group(); /* grip at the origin, blade along -Z */ return g; } })
+//   Then W.create(ctx, 'frost-axe', { position }). spec fields (all optional except build):
+//   kind 'melee'|'ranged'|'shield'|'tool'  damage  reach (m, blade tip along -Z; default hit points = mid + tip)  points [[x,y,z]..]
+//   hitRadius 0.14  vMin 2  vFull 5.5 (swing speed range, m/s)  hitCooldown 0.4  material 'steel'|'blunt'|'wood'|'fire'  trailColor
+//   slam { radius, damage } (ground-impact shockwave)  throw 'spin'|'align'|'none'|'boomerang'  throwDamage  rest 'flat'|'up'|'none'
+//   grip { position: [x,y,z], rotation: [rx,ry,rz] } (model offset in the hand)  radius 0.13 (grab sphere)  mass  twoHanded
+//   ranged: muzzle [x,y,z]  rate 0.3 (s between shots)  auto  ammo (default Infinity)  draw (s to full draw: bow style)
+//     projectile { speed, gravity, color, damage, radius, size, len, life, explosive (blast radius m), pellets, spread (rad),
+//                  kind 'bolt'|'arrow' }   recoil { z, rx }  haptic [strength, ms]  flash { size, color }
+//     sound 'laser'|'rifle'|'shotgun'|'bow'|'crossbow'|'magic'|'zap'|'pistol'|'rocket'|'plasma'   projectile.trail: true = glowing particle trail
+//     or fire({ origin, direction, weapon, ctx, power }) with fresh Vector3s for anything else (hitscan, beams, spells ...)
+//   tick(weapon, dt, t) per-frame hook. weapon.hand, weapon.mesh, weapon.model (animate children of model), weapon.toWorld(local, out),
+//   weapon.fit (the measured model fit, null while procedural), weapon.mdl (its world.models handle), weapon.flame (flame / spark point).
+//   All damage goes through kit.hit(..., { from: 'player' }) so it never hurts you or allies.
+//
+// DAMAGE KINDS  every hit tells kit.hit what it was, so kit can dismember / pick a death style / break scenery accordingly:
+//   swords, greatsword, katana, axes, scythe, bone-blade = 'slash'   dagger, spear, pickaxes, hoe, arrows, bullets = 'pierce'   warhammer, mace, shovel,
+//   club, boomerang, shields, ground slams, thrown clubs/hammers = 'blunt'   grenade, rocket, staff bolts = 'explosion'   torch = 'fire'   blaster, plasma = 'shock'
+//   wand = 'magic'.  Custom specs: damageKind: 'slash'|'pierce'|'blunt'|'explosion'|'fire'|'frost'|'shock'|'magic' (default: from
+//   `material` for melee — steel slash, blunt/wood blunt, fire fire — and from projectile/sound for guns). The swing / shot direction
+//   and the hand that dealt the blow are passed too, so a severing blow buzzes that controller.
+//

@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "slug": "an-abandoned-greenhouse-overgr-accbd6",
+  "name": "Overgrown Glass Greenhouse",
+  "caption": "Glass greenhouse interior with grass floor, leafy plants and three block figures",
+  "prompt": "an abandoned greenhouse overgrown with glowing plants",
+  "created": "2026-10-08T17:29:20.657Z",
+  "image": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+  "plate": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/1-an-abandoned-greenhouse-overgr-accbd6-plate.png",
+  "thumb": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/thumb.jpg",
+  "aspect": 1.75,
+  "fov": 80,
+  "horizon_y": 0.47,
+  "place": {
+    "slug": "blast-an-abandoned-greenhouse-overgr-a1436396",
+    "url": "/assets/generated/places/blast-an-abandoned-greenhouse-overgr-a1436396/pano_2048.jpg",
+    "preview": "/assets/generated/places/blast-an-abandoned-greenhouse-overgr-a1436396/tiny.webp",
+    "from": "plate"
+  },
+  "setting": {
+    "kind": "indoor",
+    "ground": "grass with bare dirt patches",
+    "backdrop": "glass greenhouse wall with metal frame, trees and hills beyo",
+    "time_of_day": "day",
+    "terrain": "plain",
+    "lighting": "Bright soft daylight entering through the glass roof and back wall, casting a grid of soft frame shadows on the floor; cool blue-green ambient tone with small yellow-green point glows from the plants; moderate contrast.",
+    "fantasy": true
+  },
+  "ambient": {
+    "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/sfx/ambient.ogg",
+    "prompt": "ambient environment, soft rustling leaves, gentle breeze through glass panes and metal frame, faint insect hum, distant birdsong",
+    "seconds": 20
+  },
+  "music": "wonder",
+  "objects": [
+    {
+      "id": "orange-block-figure",
+      "name": "orange cube block figure with two dark eyes and a small mouth on a short red-orange block pedestal",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/orange-block-figure/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/orange-block-figure/reference.png",
+      "position": [
+        2.29,
+        0,
+        -6.69
+      ],
+      "yaw": 0.02,
+      "scale": 1,
+      "size_m": [
+        0.7,
+        1,
+        0.6
+      ],
+      "dims": [
+        0.68,
+        1,
+        0.67
+      ],
+      "material": "stone",
+      "breakable": true,
+      "mass": 143.5,
+      "hp": 37,
+      "grabbable": false,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/orange-block-figure/impact.ogg",
+        "phrase": "impact one-shot, short decay, heavy clay block thud and crack hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.66,
+          0.478,
+          0.747,
+          0.642
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.07,
+      "bearing_deg": 18.86
+    },
+    {
+      "id": "terracotta-block-figure",
+      "name": "terracotta brown cube block figure with two dark rectangular eyes on a short brown block pedestal",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/terracotta-block-figure/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/terracotta-block-figure/reference.png",
+      "position": [
+        -2.06,
+        0,
+        -6.7
+      ],
+      "yaw": 0.02,
+      "scale": 1,
+      "size_m": [
+        0.7,
+        1,
+        0.6
+      ],
+      "dims": [
+        0.7,
+        1,
+        0.7
+      ],
+      "material": "stone",
+      "breakable": true,
+      "mass": 150,
+      "hp": 38,
+      "grabbable": false,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/orange-block-figure/impact.ogg",
+        "phrase": "impact one-shot, short decay, heavy clay block thud and crack hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.274,
+          0.48,
+          0.36,
+          0.642
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.01,
+      "bearing_deg": -17.07
+    },
+    {
+      "id": "green-block-figure",
+      "name": "green cube block figure with two dark rectangular eyes on a short dark green block pedestal",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/green-block-figure/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/green-block-figure/reference.png",
+      "position": [
+        0.05,
+        0,
+        -7.51
+      ],
+      "yaw": -0.12,
+      "scale": 0.9,
+      "size_m": [
+        0.6,
+        0.9,
+        0.6
+      ],
+      "dims": [
+        0.62,
+        0.9,
+        0.62
+      ],
+      "material": "stone",
+      "breakable": true,
+      "mass": 109,
+      "hp": 30,
+      "grabbable": false,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/green-block-figure/impact.ogg",
+        "phrase": "impact one-shot, short decay, dense stone block thud hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.472,
+          0.478,
+          0.536,
+          0.622
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.51,
+      "bearing_deg": 0.38
+    },
+    {
+      "id": "long-leaf-glowing-plant",
+      "name": "green long-leaf plant with glowing yellow-green orbs",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/long-leaf-glowing-plant/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/long-leaf-glowing-plant/reference.png",
+      "position": [
+        -3.29,
+        0,
+        -6.76
+      ],
+      "yaw": 0.78,
+      "scale": 1.361,
+      "size_m": [
+        1.3,
+        1.1,
+        1.3
+      ],
+      "dims": [
+        1.36,
+        1.05,
+        1.26
+      ],
+      "material": "cloth",
+      "breakable": true,
+      "mass": 37.8,
+      "hp": 24,
+      "grabbable": true,
+      "bounce": 0.05,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 2,
+      "copies": [
+        {
+          "position": [
+            -2.01,
+            0,
+            -7.95
+          ],
+          "yaw": 0.33
+        }
+      ],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/long-leaf-glowing-plant/impact.ogg",
+        "phrase": "impact one-shot, short decay, soft leafy rustle hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.135,
+          0.43,
+          0.285,
+          0.612
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": -25.95
+    },
+    {
+      "id": "flat-pink-stone-slab",
+      "name": "flat pinkish-brown stone slab",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/flat-pink-stone-slab/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/flat-pink-stone-slab/reference.png",
+      "position": [
+        2.24,
+        0,
+        -5.08
+      ],
+      "yaw": -0.59,
+      "scale": 0.769,
+      "size_m": [
+        0.9,
+        0.1,
+        0.5
+      ],
+      "dims": [
+        0.77,
+        0.12,
+        0.75
+      ],
+      "material": "stone",
+      "breakable": true,
+      "mass": 21.8,
+      "hp": 16,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/flat-pink-stone-slab/impact.ogg",
+        "phrase": "impact one-shot, short decay, flat stone slab clack hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.712,
+          0.664,
+          0.812,
+          0.706
+        ],
+        "depth": "mid"
+      },
+      "distance": 5.55,
+      "bearing_deg": 23.73
+    },
+    {
+      "id": "round-leaf-shrub",
+      "name": "round green shrub with light green oval leaves",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/round-leaf-shrub/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/round-leaf-shrub/reference.png",
+      "position": [
+        -0.97,
+        0,
+        -7.22
+      ],
+      "yaw": -0.14,
+      "scale": 1.242,
+      "size_m": [
+        1.2,
+        1,
+        1
+      ],
+      "dims": [
+        1.24,
+        0.97,
+        1.24
+      ],
+      "material": "cloth",
+      "breakable": true,
+      "mass": 31.3,
+      "hp": 22,
+      "grabbable": true,
+      "bounce": 0.05,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/round-leaf-shrub/impact.ogg",
+        "phrase": "impact one-shot, short decay, leafy bush rustle hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.345,
+          0.44,
+          0.455,
+          0.572
+        ],
+        "depth": "far"
+      },
+      "distance": 7.29,
+      "bearing_deg": -7.62
+    },
+    {
+      "id": "red-brown-rock",
+      "name": "small red-brown angular rock",
+      "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/red-brown-rock/model.glb",
+      "reference": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/red-brown-rock/reference.png",
+      "position": [
+        -3.02,
+        0,
+        -4.9
+      ],
+      "yaw": 0.64,
+      "scale": 0.281,
+      "size_m": [
+        0.3,
+        0.2,
+        0.25
+      ],
+      "dims": [
+        0.28,
+        0.21,
+        0.26
+      ],
+      "material": "stone",
+      "breakable": true,
+      "mass": 4.8,
+      "hp": 9,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 3,
+      "copies": [
+        {
+          "position": [
+            -2.71,
+            0,
+            -5.37
+          ],
+          "yaw": 1
+        },
+        {
+          "position": [
+            -3.47,
+            0,
+            -5.04
+          ],
+          "yaw": 0.2
+        }
+      ],
+      "sound": {
+        "url": "/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/red-brown-rock/impact.ogg",
+        "phrase": "impact one-shot, short decay, small rock clatter hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.114,
+          0.676,
+          0.153,
+          0.713
+        ],
+        "depth": "mid"
+      },
+      "distance": 5.76,
+      "bearing_deg": -31.59
+    }
+  ],
+  "sounds_pending": false,
+  "stats": {
+    "seconds": 755,
+    "timings": {
+      "image": 52.879,
+      "uncover": 34.571,
+      "edit": 67.875,
+      "place": 96.778,
+      "objects": 405.58,
+      "sounds": 97.516
+    },
+    "selected": 7,
+    "made": 7,
+    "degraded": false
+  },
+  "warnings": []
+}

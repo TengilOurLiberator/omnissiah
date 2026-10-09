@@ -1,0 +1,811 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "source_images": [
+    "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+  ],
+  "scene_name": "Round Tower Study",
+  "short_caption": "Round stone room with wooden furniture, upper shelf ledge, tiled floor",
+  "literal_description": "A circular room with dark blue stone walls and a curved wooden ledge running around the walls at mid height, carrying crates, boxes and small ornaments. On the floor, furniture stands in a loose arc: a teal cabinet and dark red wooden desk with books on the left, a small orange chair, a central wooden table with a small green framed object and a jar, a purple cube pedestal with a table lamp, and wooden desks and chests on the right. The floor is square stone tiles in warm brown and ochre with patches of green grass and moss at the edges. A pool of warm light falls on the centre of the floor while the walls and ceiling stay in dark blue shadow. Bell-shaped lamps and round ornaments hang from the ceiling. The camera is at standing height, looking level towards a tall arched alcove in the back wall.",
+  "environment": "Interior of a round stone tower room with a tiled floor, grass patches at the floor edges, a wooden gallery ledge and dark arched wall recesses.",
+  "visual_style": "stylised painterly game art, flat-shaded cartoon shapes, soft gradients, chunky simplified forms",
+  "lighting": "warm soft overhead pool of light on the centre floor, cool dark blue ambient on walls and ceiling, moderate contrast, soft shadows under furniture, night interior",
+  "atmosphere": "faint blue haze in the upper room and background, no particles visible",
+  "ambient_sound": "quiet stone room tone, faint wind through a tall tower, soft creaking of wooden beams",
+  "setting": "indoor",
+  "ground_type": "square stone tile floor with grass and moss patches",
+  "backdrop": "curved dark blue stone wall with arched alcove and wooden le",
+  "time_of_day": "night",
+  "terrain_hint": "plain",
+  "music_mood": "night",
+  "fantasy": true,
+  "view_problems": [],
+  "horizon_y": 0.52,
+  "objects": [
+    {
+      "id": "central-wooden-table",
+      "name": "small light brown wooden table with four square legs",
+      "description": "Rectangular light brown wooden table with a thick top, a plain apron and four square legs.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "centre of the picture, middle distance"
+        }
+      ],
+      "location_in_image": "centre of the picture, middle distance",
+      "box": [
+        0.451,
+        0.535,
+        0.559,
+        0.662
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        1.2,
+        0.8,
+        0.7
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 2,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden table thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "green-framed-panel",
+      "name": "small green panel in a pale yellow arched frame",
+      "description": "Small upright green rectangular panel set in a pale yellow frame with an arched top.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "glass"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "centre, just above the middle of the picture"
+        }
+      ],
+      "location_in_image": "centre, just above the middle of the picture",
+      "box": [
+        0.487,
+        0.481,
+        0.516,
+        0.542
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.3,
+        0.4,
+        0.08
+      ],
+      "rests_on": "object",
+      "rests_on_id": "central-wooden-table",
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "wood",
+      "impact_sound": "small framed glass panel cracking",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "green-glass-jar",
+      "name": "small green glass jar with a lid",
+      "description": "Short cylindrical pale green jar with a small knobbed lid.",
+      "count_estimate": 1,
+      "materials": [
+        "glass"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "centre, slightly right of the middle"
+        }
+      ],
+      "location_in_image": "centre, slightly right of the middle",
+      "box": [
+        0.533,
+        0.508,
+        0.549,
+        0.543
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.12,
+        0.2,
+        0.12
+      ],
+      "rests_on": "object",
+      "rests_on_id": "central-wooden-table",
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "glass",
+      "impact_sound": "small glass jar shattering",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "orange-wooden-chair",
+      "name": "orange wooden chair with a red panel in its tall back",
+      "description": "Blocky orange wooden chair with a box-shaped seat base and a tall rectangular back holding a red square panel.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "left of centre, middle distance"
+        }
+      ],
+      "location_in_image": "left of centre, middle distance",
+      "box": [
+        0.342,
+        0.505,
+        0.409,
+        0.662
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.6,
+        1.1,
+        0.6
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "wooden chair clattering over",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "purple-cube-pedestal",
+      "name": "purple cube-shaped wooden pedestal",
+      "description": "Purple cube-shaped box pedestal with recessed side panels and a wider base rim.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "right of centre, middle distance"
+        }
+      ],
+      "location_in_image": "right of centre, middle distance",
+      "box": [
+        0.609,
+        0.558,
+        0.688,
+        0.66
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.7,
+        0.6,
+        0.7
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "wood",
+      "impact_sound": "hollow wooden box thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "orange-shade-table-lamp",
+      "name": "table lamp with orange conical shade and turned red wooden stem",
+      "description": "Small table lamp with an orange conical shade, a turned dark red stem and a round base.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "cloth"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "right of centre, just below the middle height"
+        }
+      ],
+      "location_in_image": "right of centre, just below the middle height",
+      "box": [
+        0.633,
+        0.475,
+        0.666,
+        0.563
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.3,
+        0.55,
+        0.3
+      ],
+      "rests_on": "object",
+      "rests_on_id": "purple-cube-pedestal",
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "wood",
+      "impact_sound": "small lamp clatter and crack",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "dark-red-wooden-desk",
+      "name": "dark red wooden desk with a round-knobbed drawer",
+      "description": "Low wide dark red wooden desk with a thick top, plank sides and a front drawer with a round knob.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "left side, middle height"
+        }
+      ],
+      "location_in_image": "left side, middle height",
+      "box": [
+        0.07,
+        0.543,
+        0.229,
+        0.675
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        1.6,
+        0.8,
+        0.8
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 2,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden desk thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "empty-red-wooden-frame",
+      "name": "empty dark red wooden rectangular frame",
+      "description": "Upright dark red wooden rectangular frame with thick borders and an open centre.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "left side, slightly above the middle height"
+        }
+      ],
+      "location_in_image": "left side, slightly above the middle height",
+      "box": [
+        0.09,
+        0.43,
+        0.171,
+        0.548
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.8,
+        0.9,
+        0.2
+      ],
+      "rests_on": "object",
+      "rests_on_id": "dark-red-wooden-desk",
+      "fully_visible": true,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "wooden frame clattering",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "stack-of-books",
+      "name": "stack of closed hardcover books",
+      "description": "Stack of four closed hardcover books with dark red, green and brown covers and pale page edges.",
+      "count_estimate": 3,
+      "materials": [
+        "paper",
+        "leather"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "left side, just above the middle height"
+        }
+      ],
+      "location_in_image": "left side, just above the middle height",
+      "box": [
+        0.138,
+        0.507,
+        0.192,
+        0.548
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.35,
+        0.25,
+        0.25
+      ],
+      "rests_on": "object",
+      "rests_on_id": "dark-red-wooden-desk",
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "wood",
+      "impact_sound": "stack of books thumping down",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "teal-cabinet",
+      "name": "teal blue cabinet with slanted top panel",
+      "description": "Blocky teal and blue cabinet with a slanted top holding a grey square panel and a stepped base.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "far left edge, middle height"
+        }
+      ],
+      "location_in_image": "far left edge, middle height",
+      "box": [
+        0,
+        0.488,
+        0.103,
+        0.713
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        1,
+        1.3,
+        0.8
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 2,
+      "break_material": "wood",
+      "impact_sound": "heavy hollow cabinet thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "round-pedestal-side-table",
+      "name": "dark wooden round side table on a barrel-shaped base",
+      "description": "Small dark round table top on a turned stem standing on a short barrel-shaped wooden base.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "left of centre, middle height"
+        }
+      ],
+      "location_in_image": "left of centre, middle height",
+      "box": [
+        0.226,
+        0.477,
+        0.289,
+        0.622
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.7,
+        1.1,
+        0.7
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "wooden stand toppling thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "right-dark-wooden-desk",
+      "name": "dark brown wooden desk with a round-handled drawer",
+      "description": "Low dark brown wooden desk with a thick top and a front drawer with a round handle.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "right side, middle height"
+        }
+      ],
+      "location_in_image": "right side, middle height",
+      "box": [
+        0.824,
+        0.543,
+        0.976,
+        0.68
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        1.6,
+        0.8,
+        0.8
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 2,
+      "break_material": "wood",
+      "impact_sound": "heavy wooden desk thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "leaning-wooden-board",
+      "name": "tan wooden board with rows of pale markings",
+      "description": "Flat rectangular tan board propped at an angle, with rows of pale horizontal marks on its face.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "right side, just above the middle height"
+        }
+      ],
+      "location_in_image": "right side, just above the middle height",
+      "box": [
+        0.875,
+        0.456,
+        0.942,
+        0.547
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.6,
+        0.7,
+        0.05
+      ],
+      "rests_on": "object",
+      "rests_on_id": "right-dark-wooden-desk",
+      "fully_visible": true,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "flat wooden board slap",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "dark-red-ball",
+      "name": "dark red sphere",
+      "description": "Smooth dark red ball about the size of a melon.",
+      "count_estimate": 1,
+      "materials": [
+        "stone"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "right side, just above the middle height"
+        }
+      ],
+      "location_in_image": "right side, just above the middle height",
+      "box": [
+        0.85,
+        0.508,
+        0.874,
+        0.544
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "rests_on": "object",
+      "rests_on_id": "right-dark-wooden-desk",
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "stone",
+      "impact_sound": "heavy ball thud and roll",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "red-brown-chest-of-drawers",
+      "name": "red-brown wooden chest with round knobs",
+      "description": "Boxy red-brown wooden chest with a flat top and front panels with round knobs.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "right side, middle height"
+        }
+      ],
+      "location_in_image": "right side, middle height",
+      "box": [
+        0.771,
+        0.538,
+        0.83,
+        0.635
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "wooden chest thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "orange-cabinet",
+      "name": "orange wooden cabinet with a round grey-green knob",
+      "description": "Orange and yellow wooden cabinet with a framed front panel, a round grey-green knob and a stepped base.",
+      "count_estimate": 1,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "far right edge, below the middle height"
+        }
+      ],
+      "location_in_image": "far right edge, below the middle height",
+      "box": [
+        0.929,
+        0.563,
+        1,
+        0.713
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        0.9,
+        0.9,
+        0.7
+      ],
+      "rests_on": "floor",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "hollow wooden cabinet thud",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "wooden-storage-crate",
+      "name": "brown wooden crate with a round emblem on its front",
+      "description": "Cube-shaped brown wooden crate with a framed front panel bearing a round emblem.",
+      "count_estimate": 4,
+      "materials": [
+        "wood"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "upper left, on the raised ledge"
+        }
+      ],
+      "location_in_image": "upper left, on the raised ledge",
+      "box": [
+        0.167,
+        0.235,
+        0.228,
+        0.335
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "rests_on": "shelf",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 5,
+      "break_material": "wood",
+      "impact_sound": "wooden crate smashing",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "purple-cone-device",
+      "name": "purple inverted cone on a blue box base",
+      "description": "Purple inverted cone funnel mounted above a small blue box base with a glowing purple slot.",
+      "count_estimate": 1,
+      "materials": [
+        "metal",
+        "glass"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "upper left of centre, on the raised ledge"
+        }
+      ],
+      "location_in_image": "upper left of centre, on the raised ledge",
+      "box": [
+        0.299,
+        0.203,
+        0.343,
+        0.345
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.5,
+        1,
+        0.5
+      ],
+      "rests_on": "shelf",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "glass",
+      "impact_sound": "metal device clanging down",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "mantel-clock-cabinet",
+      "name": "dark red wooden clock cabinet with peaked roof and yellow dial",
+      "description": "Dark red wooden cabinet on four turned legs with a peaked roof-shaped top holding a round yellow-rimmed dial.",
+      "count_estimate": 1,
+      "materials": [
+        "wood",
+        "metal"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "top left corner, on the raised ledge"
+        }
+      ],
+      "location_in_image": "top left corner, on the raised ledge",
+      "box": [
+        0.008,
+        0,
+        0.166,
+        0.235
+      ],
+      "box_guessed": false,
+      "depth": "mid",
+      "size_m": [
+        1.2,
+        1.6,
+        0.7
+      ],
+      "rests_on": "shelf",
+      "rests_on_id": null,
+      "fully_visible": false,
+      "interest": 3,
+      "break_material": "wood",
+      "impact_sound": "large wooden cabinet crash",
+      "generate_as_3d_object": true
+    },
+    {
+      "id": "hanging-bell-lamp",
+      "name": "dark red bell-shaped hanging lamp",
+      "description": "Dark red bell-shaped lamp shade hanging from a cord with a hook at the top.",
+      "count_estimate": 2,
+      "materials": [
+        "metal"
+      ],
+      "source_images": [
+        "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+      ],
+      "evidence": [
+        {
+          "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+          "location_in_image": "upper right of centre, hanging near the top"
+        }
+      ],
+      "location_in_image": "upper right of centre, hanging near the top",
+      "box": [
+        0.667,
+        0.085,
+        0.719,
+        0.205
+      ],
+      "box_guessed": false,
+      "depth": "far",
+      "size_m": [
+        0.5,
+        0.6,
+        0.5
+      ],
+      "rests_on": "ceiling",
+      "rests_on_id": null,
+      "fully_visible": true,
+      "interest": 4,
+      "break_material": "metal",
+      "impact_sound": "metal bell shade clang",
+      "generate_as_3d_object": true
+    }
+  ]
+}

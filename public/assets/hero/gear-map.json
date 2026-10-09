@@ -1,0 +1,10 @@
+﻿{
+  "_comment": "Gear map for core/weapons.js (shape documented in its header). Blender gear models (docs/GEAR_MODELS.md). Only types whose model was checked in the hand by screenshot are mapped; force:true because those types already name a (KayKit) model. Generated GLB weapons were NOT produced (see docs/review/startzone2.md F46 reply).",
+  "weapons": {
+    "sword":       { "force": true, "model": "pilgrim-sword", "len": 0.88 },
+    "bow":         { "force": true, "model": "pilgrim-bow", "fit": "span", "span": 1.25 },
+    "shield":      { "force": true, "model": "pilgrim-shield", "fit": "width", "width": 0.73 },
+    "magic-staff": { "force": true, "model": "novice-staff", "len": 1.324 },
+    "warhammer":   { "force": true, "model": "rune-hammer", "len": 1.07, "shape": "head" }
+  }
+}

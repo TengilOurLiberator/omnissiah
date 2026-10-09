@@ -1,0 +1,45 @@
+<!doctype html>
+<meta charset="utf-8"><title>npc voice harness</title>
+<pre id="out">running…</pre>
+<script type="module">
+// Pushes each raw Kokoro archetype sample through the REAL core/voices.js playback code (rate + fx + panner) in an OfflineAudioContext
+// and saves the result under .cache/voice/samples/npc/ (what the player would hear 3 m in front of them).
+import * as THREE from '/vendor/three/build/three.module.js';
+const out = document.getElementById('out');
+const log = (s) => { out.textContent += '\n' + s; };
+const meta = await (await fetch('/cache/voice/samples/npc-meta.json')).json();
+const mod = await import('/game/core/voices.js');
+function wavBlob(buf) {
+  const ch = buf.numberOfChannels, n = buf.length, sr = buf.sampleRate, pcm = new Int16Array(n * ch);
+  for (let c = 0; c < ch; c++) { const d = buf.getChannelData(c); for (let i = 0; i < n; i++) { const v = Math.max(-1, Math.min(1, d[i])); pcm[i * ch + c] = v < 0 ? v * 32768 : v * 32767; } }
+  const h = new DataView(new ArrayBuffer(44)); const w = (o, s) => [...s].forEach((c, i) => h.setUint8(o + i, c.charCodeAt(0)));
+  w(0, 'RIFF'); h.setUint32(4, 36 + pcm.byteLength, true); w(8, 'WAVEfmt '); h.setUint32(16, 16, true); h.setUint16(20, 1, true); h.setUint16(22, ch, true);
+  h.setUint32(24, sr, true); h.setUint32(28, sr * 2 * ch, true); h.setUint16(32, 2 * ch, true); h.setUint16(34, 16, true); w(36, 'data'); h.setUint32(40, pcm.byteLength, true);
+  return new Blob([h, pcm]);
+}
+const rows = [];
+for (const [arch, m] of Object.entries(meta)) {
+  const secs = Math.ceil(m.seconds / m.rate + 1.5), sr = 48000;
+  const oc = new OfflineAudioContext(2, sr * secs, sr);
+  const sink = oc.createGain(); sink.connect(oc.destination);
+  const listeners = {};
+  const events = { on: (n, f) => { (listeners[n] ??= []).push(f); return () => {}; }, emit() {} };
+  const head = new THREE.Vector3(0, 1.7, 0);
+  const ctx = { THREE, root: new THREE.Group(), state: {}, events, path: 'core/voices.js', world: { contextProviders: {} }, input: { left: { down: {} }, right: {} },
+    player: { head, forward: new THREE.Vector3(0, 0, -1), feet: new THREE.Vector3() }, audio: { context: oc, listener: { getInput: () => sink } },
+    net: { connected: true, send() {} }, hud: {}, on: () => {}, onDispose: () => {}, provide: (n, a) => { ctx.world[n] = a; } };
+  try {
+    await mod.default(ctx);
+    const raw = await (await fetch(`/cache/voice/samples/npc-raw/${arch}.wav`)).arrayBuffer();
+    const buf = await oc.decodeAudioData(raw);
+    const rec = ctx.world.voices._t.playBuffer(buf, { position: new THREE.Vector3(0, 1.7, -3), rate: m.rate, fx: m.fx, priority: 0 });
+    if (!rec) throw new Error('playBuffer returned null');
+    const rendered = await oc.startRendering();
+    const L = rendered.getChannelData(0); let pk = 0, sum = 0; for (let i = 0; i < L.length; i++) { const a = Math.abs(L[i]); if (a > pk) pk = a; sum += L[i] * L[i]; }
+    const r = { arch, peak: +pk.toFixed(3), rmsDb: +(20 * Math.log10(Math.sqrt(sum / L.length) + 1e-9)).toFixed(1), seconds: +(buf.duration / m.rate).toFixed(2) };
+    rows.push(r); log(JSON.stringify(r));
+    await fetch(`/save/npc/${arch}.wav`, { method: 'POST', body: wavBlob(rendered) });
+  } catch (e) { log(arch + ' FAILED ' + e + '\n' + (e.stack || '').split('\n').slice(0, 3).join('\n')); }
+}
+window.__rows = rows; window.__done = true; log('done');
+</script>

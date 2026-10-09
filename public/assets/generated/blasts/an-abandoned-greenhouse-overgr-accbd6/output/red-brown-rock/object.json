@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "an-abandoned-greenhouse-overgr-accbd6",
+  "object": {
+    "id": "red-brown-rock",
+    "name": "small red-brown angular rock",
+    "description": "A small angular red-brown rock with flat faces.",
+    "materials": [
+      "stone"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+        "location_in_image": "left side, on the grass at the edge of the plants"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/red-brown-rock",
+    "count": 3,
+    "box": [
+      0.114,
+      0.676,
+      0.153,
+      0.713
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.3,
+      0.2,
+      0.25
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "stone",
+    "impact_sound": "small rock clatter",
+    "score": 5.979365
+  },
+  "updated_at": "2026-10-08T18:06:01.585Z"
+}

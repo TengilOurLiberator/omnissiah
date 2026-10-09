@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "round-pedestal-side-table",
+    "name": "dark wooden round side table on a barrel-shaped base",
+    "description": "Small dark round table top on a turned stem standing on a short barrel-shaped wooden base.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "left of centre, middle height"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/round-pedestal-side-table",
+    "count": 1,
+    "box": [
+      0.226,
+      0.477,
+      0.289,
+      0.622
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.7,
+      1.1,
+      0.7
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "wooden stand toppling thud",
+    "score": 10.402425000000001
+  },
+  "updated_at": "2026-10-08T18:04:25.705Z"
+}

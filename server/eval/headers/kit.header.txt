@@ -1,0 +1,133 @@
+// core/kit.js — world.kit: the building blocks every creation is made from. READ THIS FIRST.
+//
+// USE      const kit = ctx.world.kit; if (!kit) return {};        // always guard (it may be reloading)
+//   * Every factory takes YOUR ctx first. Objects are parented under ctx.root and removed with the
+//     creation automatically (kit registers ctx.onDispose) — never write cleanup for kit things.
+//   * Positions are WORLD coordinates (ctx.root stays at the origin). Anything taking a position accepts a
+//     THREE.Vector3 or any {x,y,z}. Colours: hex number 0xff8800, CSS string, or THREE.Color.
+//   * SIMULATION MODEL: kit steps everything itself in its own update(): particles, physics, grabbing,
+//     people/creatures, lights, damage, gore, debris. The `update()` method on kit objects is a harmless NO-OP kept for
+//     compatibility — do not call it, and do not move things that kit simulates by hand (use their API).
+//
+// PARTICLES  const fx = kit.particles(ctx, { count, color, size, life, speed, gravity, drag, spread, alpha, additive })
+//   One pooled draw call; oldest particle is recycled when the pool is full. count default 100 (max 2000).
+//   color c | [start,end]; size = diameter in m, s | [start,end]; life = seconds, s | [min,max];
+//   speed = random outward m/s, s | [min,max]; gravity = m/s² down (NEGATIVE rises, e.g. -2 for flames);
+//   drag = 1/s velocity decay; spread = random start radius (m); alpha = peak opacity 0..1 (default 1);
+//   additive: true (default) = glowing fire/magic, false = normal blending (smoke, dust). (Additive switches itself to an
+//   alpha-safe blend in mixed reality; nothing to do.)
+//   fx.emit(position, n = 1, velocity?, scale = 1)   velocity (Vector3) is an added push; scale multiplies size+speed
+//   fx.clear()   fx.alive   fx.object (THREE.Points)   fx.dispose()
+//   Steady stream:  acc += dt * rate; const n = acc | 0; acc -= n; if (n) fx.emit(p, n, up);
+//   const tr = kit.trail(ctx, particleOpts + { spacing = 0.1 });  tr.move(pos) every frame; tr.reset() on respawn.
+//
+// PEOPLE     const npc = kit.humanoid(ctx, { height = 1.7, skin, shirt, pants, hair, hat, x, z, yaw, speed = 1.3,
+//                                            hp = 20, onDeath(npc), onHit(e), damageable = true, gore = 'blood' })
+//            const pet = kit.creature(ctx, { legs = 4 (2|4|6), size = 0.8 (body length m), bodyColor, accent, speed, hp, x, z, ... })
+//   Both return the same actor: .group (THREE.Group at the feet; .group.position moves it), .position, .dead, .damage
+//   walkTo(x, z) | walkTo(vec3)   stop()   follow(liveVec3, distance = 2) (pass null to stop)   lookAt(liveVec3|null)
+//   wave(seconds = 2)   say(text, seconds = 4) speech bubble   setSpeed(v)   onArrive(fn)   remove()
+//   wander(radius = 5, centerVec3?)  idle-amble around a point; suspended while lookAt() has a target; wander(0) stops.
+//   They glue themselves to the terrain, turn smoothly, animate limbs, flinch, and die by how they were killed (see GORE).
+//   Identity: actor.id (stable, 'a12'), actor.name (settable: opts name/role, else the model name, else 'villager'/'creature'), actor.role (settable,
+//   ''); actor.group.userData.actor = actor. kit.actors = the LIVE array of every actor (do not mutate). say() also emits 'actor:say' { actor, text, seconds }.
+//   Combat helpers (core/combat.js uses them; handy for scripted fights too), options: faction = 'friendly'|'enemy'|'neutral':
+//     actor.faction (get/set)  actor.height (m)  actor.speedNow (current m/s)  actor.moving (bool)
+//     actor.attackAnim(windup = 0.4, kind = 'melee' | 'ranged' | 'lunge') -> total seconds   arm raises for `windup` s, then strikes
+//       (humanoid swings/points, creature crouches and lunges); actor.attacking (bool), actor.strikeT = 0..1 progress of the strike
+//     actor.faceTo(vec3 | {x,z}, seconds = 0.35)   turn the body toward a point right now (beats walkTo/lookAt facing)
+//     actor.equip(object3D | null, weaponType?) -> previous   put a simple mesh in the humanoid's right hand (grip at the origin, blade
+//       along -Z, like weapons) / a creature's mouth; null empties it.   actor.held = the equipped object or null. Pass a world.weapons
+//       type name (or set object.userData.weaponType) and a severed arm drops a real pickup of that weapon.
+//
+// MODEL BODIES  kit.humanoid / kit.creature / kit.actor(ctx, { model, ... }) use a real animated glTF from world.models instead of boxes and spheres (same actor interface):
+//   model: 'knight' | ['goblin', 'rogue-hooded'] | { model, rig?, height, size, tint, bulk, tall, hold, equip, weaponType, ... }. A LIST = the first model that exists wins; if none
+//   exists, loading fails or world.models is absent, the primitive body is built from the other options (skin, shirt, color ...): nothing breaks. Fully usable at once; the model snaps in.
+//   height = metres to the top of the bare head (people), size = body length (animals); tint = 0xrrggbb multiplied onto the texture (darkens / shifts: green cannot become red);
+//   hover + bob float it (ghosts); gore / death: 'fade' / limbs: false; hold: { right: 'sword', left: 'shield-square' } puts catalogue items in the hands (actor.hold(item, hand,
+//   weaponType) later); equip: { right: '1H_Sword', left: null } switches the KayKit heroes' own hidden weapons (null = put away); actor.equip(object3D) still works (hand bone);
+//   actor.gear('head' | 'pivot', obj3D, x, y, z, scale) adds a crown / hat built for a 1.7 m person. actor.mdl = { name, ready, fell (fell back to primitives), state, h }.
+//   Motion picks clips: idle / walk / run by real speed (playback rate matched to ground speed), attackAnim -> attack | attack-2h | shoot | cast | breathe by kind and held item,
+//   hit reaction, wave, die; no legs left -> sits. Cube animals have no attack / die clips: they lunge and tip over instead.
+//   kit.modelBody(ctx, hostActor, pivotGroup, spec, onFail) drives a model for a custom mob (library dragons: idle walk fly attack breathe hit die).
+//
+// BODIES     const b = kit.body(ctx, mesh, { radius = 0.2, mass = 1, bounce = 0.5, friction = 0.6, drag = 0.05,
+//                                            gravity = 9.8, grabbable = false, grabRange = 0, damage = 0, damageKind = 'blunt', position,
+//                                            shape = 'sphere'|'box'|'capsule'|'cylinder'|'hull', size, rotate, ccd, group })
+//   With world.physics (Rapier) a body is a REAL rigid body: it tumbles, stacks, rests, sleeps, collides with the terrain, scenery (every
+//   destructible / tree has a fixed collider), debris and ragdolls (mass 0/Infinity = fixed collider). shape 'sphere' (default, from radius) keeps
+//   YOUR mesh orientation unless roll !== false; any other shape rotates freely: size = [w,h,d] box extents (a number = cube), [r, height] for
+//   capsule/cylinder, omitted = fitted to the mesh. Crates/barrels: { shape: 'box', size: [..], mass: 8, friction: 0.7, bounce: 0.05 }.
+//   Without physics, or over its budget (150 bodies quest / 600 pc), the old hand-rolled sim runs: gravity, terrain bounce, sphere–sphere only.
+//   mesh is added to ctx.root if it has no parent. MOVE IT VIA b.position / b.velocity (Vector3s), not mesh.position (writes between frames
+//   are picked up and pushed into the physics body; so are b.held = truthy (it follows b.position), b.invMass = 0 (pinned), b.gravity, b.drag).
+//   grabbable: squeeze either hand within ~18 cm of it to hold, release to THROW with hand velocity.
+//   grabRange > 0 also lets the player grab it by pointing at it from that many metres (it flies to the hand).
+//   damage > 0: fast impacts hurt damageables (damage * speed / 6, of kind damageKind, along the body's velocity).
+//   b.onHit(fn) fn({ kind:'ground'|'body'|'damageable', speed, point, normal?, other?, target?, static? })   static: the 'ground' was scenery
+//   b.onGrab(fn(hand, info))  b.onRelease(fn(hand, { hand, velocity }))   hand = 'left' | 'right'   (grabbing pulses that controller)
+//   b.applyImpulse(x,y,z)   b.held ('left'|'right'|null)   b.grounded   b.remove()   body opt from:'player' attributes impact damage
+//   kit.haptic(hand 'left'|'right', strength 0..1 = 0.4, ms = 40)   controller buzz (no-op for bare hands / desktop)
+//
+// DAMAGE     const d = kit.damageable(ctx, object3D, { hp = 10, radius = 0.5, offsetY = 0, faction, gore, onHit(e), onDeath(d) })
+//   e = { target, amount, point, hp, from, by, kind, direction }. With no onDeath the object shrinks away and is removed.
+//   d.hp  d.alive  d.faction  d.hit(amount, point?, from?, by?, kind?, direction?)  d.heal(n)  d.center(outVec3)  d.remove()
+//   d.lastHit = { kind, amount, point, direction, from, by, hand } (the blow being handled; do not keep the vectors)
+//   KINDS: 'slash'|'pierce'|'blunt'|'explosion'|'fire'|'frost'|'shock'|'magic' (unspecified = 'blunt'). The kind decides whether limbs
+//   come off, how the victim dies and how scenery breaks (see GORE / DESTRUCTION). `direction` = the way the blow travelled (optional).
+//   kit.hit(point, radius, amount, { from, by, kind, direction, hand }) -> count   damages every damageable in range (linear falloff to
+//        50% at the edge), also shoves bodies. THE way for any spell/projectile/trap to hurt things. Emits event 'kit:hit'.
+//        from = who is attacking: 'player' (counts as 'friendly') | 'friendly' | 'enemy' | 'neutral'. A hit NEVER hurts
+//        damageables of the attacker's own faction; with no `from` it hurts everything except the player (back-compatible,
+//        and the player never hurts themself). Player spells/weapons should pass from:'player'; enemy attacks from:'enemy'.
+//        by = optional attacker (a fighter) so kills can be credited / neutrals can retaliate. hand = 'left'|'right' buzzes that
+//        controller when the blow severs something. Fire/frost/shock/magic spells: pass their kind, e.g. { from:'player', kind:'fire' }.
+//        force = shove strength (N·s, default amount * 0.5): flings bodies, debris and ragdolls radially (Δv = force / mass) and a force >= 6
+//        also throws a standing actor back and stuns it (actor.staggerT, about a second; combat.js fighters do not act meanwhile).
+//   kit.nearestTarget(point, maxDist = 20, { hostileTo, faction }) -> live damageable | null (ignores dead; homing / direct-hit
+//        tests). hostileTo:'friendly' (or 'player') returns only enemies, hostileTo:'enemy' only friendlies (+ the player);
+//        faction:'neutral' only that faction. With neither option the player is never returned (spells never home on you).
+//   kit.factionOf(from) -> 'enemy'|'friendly'|'neutral' ('player' -> 'friendly', unknown -> 'neutral')
+//   kit.hostile(a, b) -> true when factions a and b fight (enemy <-> friendly only; neutral fights nobody unless attacked)
+//
+// GORE (stylised chunky-toy dismemberment; the weapons / spells you give already trigger it)   actor gore: 'blood' (default) | 'bones' | 'sparks' | 'slime' | 'none'; kit.damageable({ gore }) default none.
+//   Slashes sever limbs, explosions burst, blunt blows launch ragdolls, fire chars, frost shatters, shock/magic dissolve. actor.limbs { head, armL, armR, legL, legR }, actor.sever('armL', dir?) -> bool,
+//   actor.armsLeft / legsLeft / hasHead, actor.onSever = (limb, actor) => {}; event 'limb:severed' { actor, limb, kind, by }; losing the head kills. Ragdolls need world.physics.
+//   kit.gore.level = 'full' | 'mild' | 'off'  — honour "less blood" / "turn the gore off" (stored in ctx.state; off = nothing comes off). kit.gore.clear() wipes parts/blood/debris now.
+//   kit.dismemberable(ctx, damageable, [{ name, object3D, vital }], { gore }) -> { limbs, sever(name, dir) }  makes child meshes of a custom monster severable.
+//
+// DESTRUCTION (all pooled: ONE debris system, max 300 live chunks in 2 draw calls, fading after ~15 s)
+//   const h = kit.destructible(ctx, object3D, { hp, material: 'wood'|'stone'|'glass'|'metal'|'crystal'|'ice'|'earth'|'cloth', pieces, radius,
+//             mass = 1, faction = 'neutral', block = false, onDamage(e), onBreak(e), stages })  -> { hp, broken, hit(...), break(dir?), repair(), remove() }
+//     Registers a damageable, so every weapon/spell/explosion already works on it; fighters never target it. Materials resist or fear
+//     kinds (stone shrugs off slashes, ice hates fire and hammers). On break the object hides and becomes chunks of ITS volume and colours
+//     (planks, blocks, shards, plates, clods, strips) + dust/sparks + a break sound. block: true also makes actors steer around it and
+//     stops the player's rig (or a number = one circle of that radius).
+//     stages: [{ at: 0.6 (hp fraction), tint: 0.2, hide: ['childName'], show: [...], drop: 3 (chunks), lean: 0.03, onStage(h) }] or 'auto'
+//   kit.structure(ctx, [{ object3D, hp, material, supports: [indices] }], { onCollapse(i) }) -> { parts, broken(), repair(), remove() }
+//     parts break individually; a part whose supports are ALL gone collapses after a beat (no supports = stands on the ground).
+//   kit.fellable(ctx, treeGroup, { trunk, crown, hp = 45, block = true, onFell(h) }) -> { hp, fallen, fell(dir?), stump, remove() }
+//     trunk/crown = child objects or their names. Cut or blasted, the tree topples away from the blow (creak, crash, leaves, stump).
+//   kit.scorch(point, radius, { color })  burn mark; kit.crater(point, radius)  dark ring + rim of earth clods (visual only, terrain
+//     untouched). kit.explosion draws both automatically near the ground.   kit.debris(point, { material, count, power, direction, colors })
+//   kit.obstacle(ctx, { position, radius }) -> { position, radius, enabled, remove() }  a circle actors steer around and the player's rig
+//     cannot enter (destructibles remove theirs when broken). Max 96.
+//
+// LABEL      const l = kit.label(ctx, text, { color = white, size = 0.12 (m per text line), position, parent,
+//                                              background = true, maxWidth = 560 });  l.set(text)  l.position  l.show(bool)  l.remove()
+//
+// SOUND      const snd = kit.sound(ctx, { volume = 1 });   all calls take  at: position (omit = non-positional)  vol  delay
+//   snd.tone({ freq = 440, freqEnd, dur = 0.3, type = 'sine', vol = 0.3, attack = 0.004, at, delay })   // freqEnd = glide
+//   snd.noise({ dur = 0.2, filter: { type = 'lowpass', freq = 1000, freqEnd, q = 1 }, vol = 0.3, at })    // whoosh, crackle, boom
+//   snd.chord([freqs], { dur, type, vol, stagger = 0.06, at })
+//
+// LIGHT      const L = kit.light(ctx, { color, intensity = 12, distance = 12, decay = 2, flicker = 0..1, position })
+//   Real point light; kit keeps at most 6 alive in the scene (highest intensity near the player wins; fewer when ctx.quality.maxLights < 6).
+//   Typical: intensity 10–40, distance 10–20. Move with L.position.set(..) or L.target = object3D; also L.intensity,
+//   L.color, L.enabled, L.remove(). kit.flash(ctx, point, { color, intensity = 40, distance = 12, duration = 0.3 }) = brief burst.
+//
+// EXTRAS     kit.explosion(ctx, point, { color = 0xff7a1a, size = 1.5, damage = 0, radius, from, by, kind = 'explosion' })  fire+sparks+smoke+
+//              flash+boom (+ scorch/crater near the ground; damage goes through kit.hit, so pass from:'player' for player spells)
+//            kit.clamp(v,a,b) kit.lerp(a,b,t) kit.damp(a,b,rate,dt) kit.rand(a=0,b=1)
+//            kit.ease.in/out/inOut/back(t 0..1)   kit.stats()
+//

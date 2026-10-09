@@ -1,0 +1,1909 @@
+{
+ "note": "phase 2 (later game parts); style is inherited from list.json",
+ "items": [
+  {
+   "id": "lg-graveyard-cairn",
+   "group": "crypt",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "an old stone cairn with a glowing candle in a niche, mossy"
+  },
+  {
+   "id": "lg-gravestone-a",
+   "group": "crypt",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a leaning weathered gravestone with a rounded top and moss"
+  },
+  {
+   "id": "lg-gravestone-b",
+   "group": "crypt",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a tall cross-shaped stone grave marker, cracked, with ivy"
+  },
+  {
+   "id": "lg-crypt-door",
+   "group": "crypt",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a sealed stone crypt entrance with heavy carved double doors and a pointed arch"
+  },
+  {
+   "id": "lg-sarcophagus",
+   "group": "crypt",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a closed carved stone sarcophagus with a heavy lid and brass bands"
+  },
+  {
+   "id": "lg-mausoleum",
+   "group": "crypt",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a small stone mausoleum with columns, a peaked roof and iron door"
+  },
+  {
+   "id": "lg-graveyard-gate",
+   "group": "crypt",
+   "size_m": 3.2,
+   "ground": true,
+   "prompt": "a stone graveyard gate arch with iron bars and two skull-topped posts"
+  },
+  {
+   "id": "lg-iron-fence",
+   "group": "crypt",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a short segment of black iron graveyard fence with stone posts"
+  },
+  {
+   "id": "lg-dead-tree-gnarled",
+   "group": "crypt",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a huge gnarled dead tree with twisted bare branches and hanging roots"
+  },
+  {
+   "id": "lg-bone-pile",
+   "group": "crypt",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a pile of old bones and a skull on a stone slab"
+  },
+  {
+   "id": "lg-merchant-wagon",
+   "group": "village",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a covered merchant wagon with canvas hood, two big wheels and stacked goods"
+  },
+  {
+   "id": "lg-market-stall-cloth",
+   "group": "village",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a market stall with a striped cloth awning and a wooden counter with fruit crates"
+  },
+  {
+   "id": "lg-market-stall-pots",
+   "group": "village",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a market stall with a wooden counter, shelves of clay pots and jars, thatched roof"
+  },
+  {
+   "id": "lg-market-stall-meat",
+   "group": "village",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a market stall with hanging sausages, a wooden counter and a red awning"
+  },
+  {
+   "id": "lg-feast-table",
+   "group": "village",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a long wooden feast table loaded with bread, roast and cups, with two benches"
+  },
+  {
+   "id": "lg-village-cottage-a",
+   "group": "village",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a small thatched cottage with whitewashed walls, wooden shutters and a stone chimney"
+  },
+  {
+   "id": "lg-village-cottage-b",
+   "group": "village",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a timber-frame cottage with a tiled roof, small window boxes and a wooden door"
+  },
+  {
+   "id": "lg-village-longhouse",
+   "group": "village",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a long thatched village hall with wooden beams and a big double door"
+  },
+  {
+   "id": "lg-village-inn",
+   "group": "village",
+   "size_m": 8,
+   "ground": true,
+   "prompt": "a two-storey timber inn with a hanging brass lantern and a steep tiled roof"
+  },
+  {
+   "id": "lg-windmill",
+   "group": "village",
+   "size_m": 10,
+   "ground": true,
+   "prompt": "a stone windmill with four wooden sails and a small door"
+  },
+  {
+   "id": "lg-watermill",
+   "group": "village",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a wooden watermill building with a large waterwheel"
+  },
+  {
+   "id": "lg-farm-barn",
+   "group": "village",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a big red wooden barn with a hayloft door and a curved roof"
+  },
+  {
+   "id": "lg-haystack",
+   "group": "village",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a round golden haystack with a pitchfork-free neat conical top"
+  },
+  {
+   "id": "lg-hay-bale",
+   "group": "village",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a round hay bale tied with rope"
+  },
+  {
+   "id": "lg-chicken-coop",
+   "group": "village",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a small wooden chicken coop with a ramp and a slanted roof"
+  },
+  {
+   "id": "lg-dog-house",
+   "group": "village",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a small wooden dog house with a slanted roof"
+  },
+  {
+   "id": "lg-village-well",
+   "group": "village",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a stone village well with a wooden crank, bucket and a tiled little roof"
+  },
+  {
+   "id": "lg-village-fountain",
+   "group": "village",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a round stone fountain with a central pillar and flowing water bowl"
+  },
+  {
+   "id": "lg-village-gate",
+   "group": "village",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a wooden village gate between two log watchtowers with a pointed top"
+  },
+  {
+   "id": "lg-wooden-fence",
+   "group": "village",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a short segment of rustic wooden fence with posts and rails"
+  },
+  {
+   "id": "lg-garden-bed",
+   "group": "village",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a raised wooden garden bed full of cabbages and carrots"
+  },
+  {
+   "id": "lg-bakery-oven",
+   "group": "village",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a rounded clay bread oven with a chimney and a stack of firewood"
+  },
+  {
+   "id": "lg-mill-sacks",
+   "group": "village",
+   "size_m": 1.3,
+   "ground": true,
+   "prompt": "a heap of grain sacks, three tied cloth sacks stacked"
+  },
+  {
+   "id": "lg-toll-bridge",
+   "group": "landmark",
+   "size_m": 8,
+   "ground": false,
+   "prompt": "a sturdy stone toll bridge with an arched span and a small gate house at one end"
+  },
+  {
+   "id": "lg-toll-booth",
+   "group": "landmark",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a small wooden toll booth with a slanted roof and a barrier pole"
+  },
+  {
+   "id": "lg-troll-club",
+   "group": "loot",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a giant crude wooden club studded with iron nails lying on the ground"
+  },
+  {
+   "id": "lg-troll-cave-mouth",
+   "group": "lair",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a rocky cave entrance with a crude bone-decorated archway and a pile of rocks"
+  },
+  {
+   "id": "lg-troll-pot",
+   "group": "lair",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a huge iron cauldron over a pile of burnt logs with bones around it"
+  },
+  {
+   "id": "lg-ogre-chair",
+   "group": "lair",
+   "size_m": 2.8,
+   "ground": true,
+   "prompt": "a giant crude throne chair made of stacked logs and rocks with a fur"
+  },
+  {
+   "id": "lg-knight-throne",
+   "group": "boss",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "an empty ancient stone throne with high back, brass inlays and cracked steps"
+  },
+  {
+   "id": "lg-throne-dais",
+   "group": "boss",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a round stepped stone dais with a hollow carved ring and brass cog inlays"
+  },
+  {
+   "id": "lg-knight-statue-empty",
+   "group": "boss",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a tall empty suit of plate armour standing on a stone plinth, rusty, dented"
+  },
+  {
+   "id": "lg-hollow-banner",
+   "group": "boss",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a long ragged black banner on a wooden pole with a tarnished brass spear tip"
+  },
+  {
+   "id": "lg-ruined-hall-wall",
+   "group": "ruin",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a ruined castle hall wall with a pointed window gap and fallen stones"
+  },
+  {
+   "id": "lg-ruined-tower",
+   "group": "ruin",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a broken stone watchtower with a collapsed top and ivy"
+  },
+  {
+   "id": "lg-castle-gatehouse",
+   "group": "fortress",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a stone castle gatehouse with two round towers, a portcullis arch and battlements"
+  },
+  {
+   "id": "lg-castle-wall",
+   "group": "fortress",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a straight castle wall segment with battlements and a walkway"
+  },
+  {
+   "id": "lg-castle-corner-tower",
+   "group": "fortress",
+   "size_m": 8,
+   "ground": true,
+   "prompt": "a round stone castle corner tower with a conical roof and arrow slits"
+  },
+  {
+   "id": "lg-keep",
+   "group": "fortress",
+   "size_m": 14,
+   "ground": true,
+   "prompt": "a stone castle keep with square towers, a flag and a heavy gate"
+  },
+  {
+   "id": "lg-drawbridge",
+   "group": "fortress",
+   "size_m": 5,
+   "ground": false,
+   "prompt": "a wooden drawbridge with iron chains and heavy planks, lowered"
+  },
+  {
+   "id": "lg-portcullis",
+   "group": "fortress",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a heavy iron portcullis gate set in a stone arch"
+  },
+  {
+   "id": "lg-wooden-palisade",
+   "group": "fortress",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a segment of sharpened log palisade wall with a lashed crossbar"
+  },
+  {
+   "id": "lg-watchtower-wood",
+   "group": "fortress",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a tall wooden watchtower with a platform, ladder and pointed roof"
+  },
+  {
+   "id": "lg-siege-tower",
+   "group": "fortress",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a wooden siege tower on wheels with a ladder and armoured front"
+  },
+  {
+   "id": "lg-catapult",
+   "group": "fortress",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a wooden siege catapult with a throwing arm, rope and a stone basket"
+  },
+  {
+   "id": "lg-ballista",
+   "group": "fortress",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a large wooden ballista on a wheeled frame with a thick bowstring and one bolt loaded"
+  },
+  {
+   "id": "lg-cannon",
+   "group": "fortress",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a brass and iron cannon on a wooden carriage with two wheels"
+  },
+  {
+   "id": "lg-cannonballs",
+   "group": "fortress",
+   "size_m": 0.9,
+   "ground": true,
+   "prompt": "a neat pyramid of iron cannonballs on a wooden pallet"
+  },
+  {
+   "id": "lg-spike-barricade",
+   "group": "fortress",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a wooden barricade of crossed sharpened stakes lashed together"
+  },
+  {
+   "id": "lg-enemy-tent-large",
+   "group": "camp",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a large dark war tent with spiked poles and a tattered red banner"
+  },
+  {
+   "id": "lg-enemy-tent-small",
+   "group": "camp",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a small ragged goblin tent made of patched hides and bones"
+  },
+  {
+   "id": "lg-goblin-hut",
+   "group": "camp",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a crooked goblin hut made of scrap wood, bones and rusty metal with a pointed roof"
+  },
+  {
+   "id": "lg-goblin-totem",
+   "group": "camp",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a crude totem pole of skulls and carved wood, painted red, with feathers"
+  },
+  {
+   "id": "lg-war-drum",
+   "group": "camp",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a big war drum made of a barrel and stretched hide on a wooden stand"
+  },
+  {
+   "id": "lg-campfire-ring",
+   "group": "camp",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a ring of stones with a pile of burning logs and embers"
+  },
+  {
+   "id": "lg-bone-fence",
+   "group": "camp",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a short fence made of bones and skulls lashed with rope"
+  },
+  {
+   "id": "lg-weapon-pile",
+   "group": "camp",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a loose pile of rusty swords, shields and axes"
+  },
+  {
+   "id": "lg-wooden-cage",
+   "group": "camp",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a wooden prison cage with thick bars and an open door"
+  },
+  {
+   "id": "lg-gallows",
+   "group": "camp",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a wooden gallows frame with a crossbeam and a short rope loop"
+  },
+  {
+   "id": "lg-torture-rack",
+   "group": "camp",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a wooden rack with leather straps and a big wheel"
+  },
+  {
+   "id": "lg-imp-shrine",
+   "group": "camp",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a small dark shrine with a red horned idol on a stone altar and black candles"
+  },
+  {
+   "id": "lg-dungeon-door",
+   "group": "dungeon",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a heavy iron-studded wooden dungeon door in a stone arch frame"
+  },
+  {
+   "id": "lg-dungeon-cell",
+   "group": "dungeon",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a stone cell wall block with iron bars and a rusty door"
+  },
+  {
+   "id": "lg-dungeon-stairs",
+   "group": "dungeon",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a spiral stone staircase going down, stone steps with a central pillar"
+  },
+  {
+   "id": "lg-stone-pillar-hall",
+   "group": "dungeon",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a thick round stone pillar with a carved capital and base, dungeon column"
+  },
+  {
+   "id": "lg-torch-wall",
+   "group": "dungeon",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "an iron wall torch bracket with a burning torch on a stone block"
+  },
+  {
+   "id": "lg-dungeon-chest",
+   "group": "loot",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "an iron-bound wooden treasure chest, closed, with a heavy lock"
+  },
+  {
+   "id": "lg-dungeon-spikes",
+   "group": "dungeon",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a floor plate of rusty iron spikes in a stone frame"
+  },
+  {
+   "id": "lg-skull-pile",
+   "group": "dungeon",
+   "size_m": 1.3,
+   "ground": true,
+   "prompt": "a heap of human skulls and bones in a stone alcove"
+  },
+  {
+   "id": "lg-coffin",
+   "group": "dungeon",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a wooden coffin with a lid slightly open, a bronze cross band"
+  },
+  {
+   "id": "lg-dungeon-table",
+   "group": "dungeon",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a heavy wooden table with candles, a skull and scattered books"
+  },
+  {
+   "id": "lg-chains-wall",
+   "group": "dungeon",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a stone wall block with heavy iron chains and shackles"
+  },
+  {
+   "id": "lg-trapdoor",
+   "group": "dungeon",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a square wooden trapdoor with an iron ring in a stone floor block"
+  },
+  {
+   "id": "lg-necromancer-circle",
+   "group": "boss",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a round stone slab carved with a glowing purple summoning circle and five skulls"
+  },
+  {
+   "id": "lg-necromancer-altar",
+   "group": "boss",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a black stone altar with purple candles, a skull and an open book"
+  },
+  {
+   "id": "lg-necromancer-tower",
+   "group": "boss",
+   "size_m": 11,
+   "ground": true,
+   "prompt": "a thin dark stone wizard tower with purple glowing windows and a crooked roof"
+  },
+  {
+   "id": "lg-phylactery",
+   "group": "boss",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a glowing purple crystal heart in a black iron cage on a stone stand"
+  },
+  {
+   "id": "lg-bookshelf",
+   "group": "dungeon",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a tall wooden bookshelf full of old books and scrolls"
+  },
+  {
+   "id": "lg-alchemy-table",
+   "group": "dungeon",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "an alchemy workbench with glass flasks, bubbling tubes and a brass burner"
+  },
+  {
+   "id": "lg-swamp-tree",
+   "group": "swamp",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a big swamp mangrove tree with thick arching roots and hanging moss"
+  },
+  {
+   "id": "lg-swamp-dead-stump",
+   "group": "swamp",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a rotten hollow tree stump covered with fungus and moss"
+  },
+  {
+   "id": "lg-swamp-hut",
+   "group": "swamp",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a rickety stilt hut on wooden poles with a thatched roof and a ladder"
+  },
+  {
+   "id": "lg-swamp-boardwalk",
+   "group": "swamp",
+   "size_m": 4,
+   "ground": false,
+   "prompt": "a short wooden swamp boardwalk section with posts and a single rope handrail"
+  },
+  {
+   "id": "lg-swamp-lantern",
+   "group": "swamp",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a glowing green lantern on a bent wooden post"
+  },
+  {
+   "id": "lg-swamp-reeds",
+   "group": "swamp",
+   "size_m": 1.4,
+   "ground": false,
+   "prompt": "a dense clump of tall swamp reeds and cattails"
+  },
+  {
+   "id": "lg-giant-lilypad",
+   "group": "swamp",
+   "size_m": 1.4,
+   "ground": false,
+   "prompt": "a large green lilypad with a pink lotus flower"
+  },
+  {
+   "id": "lg-swamp-mushroom",
+   "group": "swamp",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a cluster of big glowing blue toadstools"
+  },
+  {
+   "id": "lg-swamp-rock",
+   "group": "swamp",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a dark wet mossy rock with slimy green algae"
+  },
+  {
+   "id": "lg-swamp-skull-stake",
+   "group": "swamp",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a wooden stake with a horned skull and green slime"
+  },
+  {
+   "id": "lg-swamp-cauldron",
+   "group": "swamp",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a bubbling green cauldron on three iron legs with a ladle"
+  },
+  {
+   "id": "lg-swamp-gate",
+   "group": "swamp",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "an old rotten wooden gate arch overgrown with vines and glowing moss"
+  },
+  {
+   "id": "lg-mire-boat",
+   "group": "swamp",
+   "size_m": 3,
+   "ground": false,
+   "prompt": "a small flat swamp punt boat with a long pole"
+  },
+  {
+   "id": "lg-ancient-ruin-arch",
+   "group": "ruin",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a giant crumbling stone arch with carved runes, partly covered in vines"
+  },
+  {
+   "id": "lg-standing-circle-stone",
+   "group": "stones",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a huge rune-carved standing stone of a ritual circle, glowing blue runes"
+  },
+  {
+   "id": "lg-circle-altar",
+   "group": "stones",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a flat round stone altar slab with a glowing carved brass cog in the center"
+  },
+  {
+   "id": "lg-trilithon",
+   "group": "stones",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a trilithon of two big standing stones with a stone lintel across the top"
+  },
+  {
+   "id": "lg-dolmen",
+   "group": "stones",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a stone dolmen, a flat slab on several upright stones, carved with runes"
+  },
+  {
+   "id": "lg-fallen-obelisk",
+   "group": "stones",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a fallen cracked stone obelisk with carved runes lying in two pieces"
+  },
+  {
+   "id": "lg-three-braziers",
+   "group": "ritual",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a tall bronze ritual brazier on a stone base with a burning flame"
+  },
+  {
+   "id": "lg-brazier-stand",
+   "group": "ritual",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a tall stone pillar topped with a bronze fire bowl, unlit"
+  },
+  {
+   "id": "lg-eclipse-monolith",
+   "group": "ritual",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a black stone monolith with a glowing white ring symbol in its center"
+  },
+  {
+   "id": "lg-moon-altar",
+   "group": "boss",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a pale stone altar with a glowing white crescent carved on its front"
+  },
+  {
+   "id": "lg-moon-ruin-column",
+   "group": "boss",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a tall cracked marble column with a glowing blue crack and floating stones"
+  },
+  {
+   "id": "lg-moon-crater-rock",
+   "group": "boss",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a pale grey crater-rimmed moon rock with glowing blue crystal veins"
+  },
+  {
+   "id": "lg-regent-throne",
+   "group": "boss",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a towering black bone throne with crown spikes and glowing blue eyes in the back"
+  },
+  {
+   "id": "lg-regent-crown",
+   "group": "loot",
+   "size_m": 0.8,
+   "ground": true,
+   "prompt": "a spiked dark iron crown with blue gems on a velvet cushion"
+  },
+  {
+   "id": "lg-bone-arch",
+   "group": "boss",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a large arch made of giant ribs and bones with blue flames"
+  },
+  {
+   "id": "lg-ghost-lantern",
+   "group": "boss",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a tall iron post with a hanging cold blue-white flame lantern"
+  },
+  {
+   "id": "lg-draft-sun-altar",
+   "group": "boss",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a round golden altar with a glowing sun disc held by brass arms"
+  },
+  {
+   "id": "lg-quiet-sun-altar",
+   "group": "boss",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a round soft white stone altar with a small warm glowing orb in a brass cup"
+  },
+  {
+   "id": "lg-ending-altar-pair",
+   "group": "boss",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "two stone pedestals joined by a stone bridge, one with a golden flame, one with a sword"
+  },
+  {
+   "id": "lg-clockwork-cathedral-arch",
+   "group": "clockwork",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a tall gothic brass and stone arch with clock gears set into the stonework"
+  },
+  {
+   "id": "lg-clockwork-pillar",
+   "group": "clockwork",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a tall stone pillar wrapped with brass gears and pipes"
+  },
+  {
+   "id": "lg-clockwork-pew",
+   "group": "clockwork",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a long wooden church pew with brass gear ornaments on its ends"
+  },
+  {
+   "id": "lg-clockwork-altar",
+   "group": "clockwork",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a large brass and stone altar with a big gear and a central glowing sphere"
+  },
+  {
+   "id": "lg-pendulum",
+   "group": "clockwork",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a giant brass pendulum on a stone frame, the pendulum arm hanging down"
+  },
+  {
+   "id": "lg-giant-clock-face",
+   "group": "clockwork",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a giant round brass clock face with roman numerals, set into a stone frame"
+  },
+  {
+   "id": "lg-gear-stack",
+   "group": "clockwork",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a stack of three interlocking brass gears of different sizes on a stone base"
+  },
+  {
+   "id": "lg-gear-tower",
+   "group": "clockwork",
+   "size_m": 8,
+   "ground": true,
+   "prompt": "a tall tower made of stacked brass gears and stone with a glowing top"
+  },
+  {
+   "id": "lg-clockwork-door",
+   "group": "clockwork",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a big round brass vault door with gear locks in a stone wall block"
+  },
+  {
+   "id": "lg-clockwork-chandelier",
+   "group": "clockwork",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a big brass chandelier made of rings and gears with glowing candles, hanging from a chain"
+  },
+  {
+   "id": "lg-clockwork-stairs",
+   "group": "clockwork",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a wide curved stone staircase with brass rails and gear details"
+  },
+  {
+   "id": "lg-pipe-organ",
+   "group": "clockwork",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a brass pipe organ with big pipes, gears and a small keyboard"
+  },
+  {
+   "id": "lg-clockwork-guard",
+   "group": "clockwork",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "an inactive brass clockwork soldier statue, bulky, with gears showing, on a plinth"
+  },
+  {
+   "id": "lg-steam-boiler",
+   "group": "clockwork",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a big round brass steam boiler with pipes, valves and a pressure gauge"
+  },
+  {
+   "id": "lg-steam-pipe-elbow",
+   "group": "clockwork",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a thick brass steam pipe elbow with flanges and a valve"
+  },
+  {
+   "id": "lg-brass-lamp-post",
+   "group": "clockwork",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a brass street lamp post with a glowing glass lantern and gears"
+  },
+  {
+   "id": "lg-gear-bridge",
+   "group": "clockwork",
+   "size_m": 7,
+   "ground": false,
+   "prompt": "a short stone bridge with brass gear railings and glowing lanterns"
+  },
+  {
+   "id": "lg-tesla-coil",
+   "group": "clockwork",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a brass tesla coil tower with copper rings and a glowing blue top ball"
+  },
+  {
+   "id": "lg-machine-heart",
+   "group": "clockwork",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a large glowing brass machine core, a sphere of gears and light on a stone pedestal"
+  },
+  {
+   "id": "lg-forge-anvil",
+   "group": "forge",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "an iron anvil on a thick log stump"
+  },
+  {
+   "id": "lg-forge-furnace",
+   "group": "forge",
+   "size_m": 2.6,
+   "ground": true,
+   "prompt": "a stone blacksmith furnace with a glowing opening and a brick chimney"
+  },
+  {
+   "id": "lg-bellows",
+   "group": "forge",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a big leather forge bellows with a wooden frame and handle"
+  },
+  {
+   "id": "lg-grindstone",
+   "group": "forge",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a round grindstone wheel on a wooden frame with a foot pedal"
+  },
+  {
+   "id": "lg-quench-barrel",
+   "group": "forge",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a wooden water barrel with iron hoops and a tongs hanging on the side"
+  },
+  {
+   "id": "lg-workshop-bench",
+   "group": "forge",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a heavy wooden workbench with a vise, tools and brass parts"
+  },
+  {
+   "id": "lg-tool-rack",
+   "group": "forge",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a wooden rack of hammers, tongs and saws hanging on a wall block"
+  },
+  {
+   "id": "lg-sawmill",
+   "group": "forge",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a wooden sawmill with a large circular saw blade and a log on a rail"
+  },
+  {
+   "id": "lg-crane",
+   "group": "forge",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a wooden construction crane with a rope pulley and a hanging crate"
+  },
+  {
+   "id": "lg-ore-cart",
+   "group": "forge",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a rusty mining cart on two short rail pieces filled with rocks and gold ore"
+  },
+  {
+   "id": "lg-mine-entrance",
+   "group": "forge",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a timber-framed mine entrance in a rock wall with an old lantern"
+  },
+  {
+   "id": "lg-gear-press",
+   "group": "forge",
+   "size_m": 2.8,
+   "ground": true,
+   "prompt": "a big iron and brass press machine with a large gear and lever"
+  },
+  {
+   "id": "lg-harbour-dock",
+   "group": "harbour",
+   "size_m": 6,
+   "ground": false,
+   "prompt": "a wooden harbour dock section with thick posts, planks and mooring ropes"
+  },
+  {
+   "id": "lg-harbour-crane",
+   "group": "harbour",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a harbour wooden crane with a long arm, rope and hook"
+  },
+  {
+   "id": "lg-lighthouse",
+   "group": "harbour",
+   "size_m": 14,
+   "ground": true,
+   "prompt": "a tall white and red stone lighthouse with a glowing lantern room"
+  },
+  {
+   "id": "lg-sailing-ship",
+   "group": "harbour",
+   "size_m": 12,
+   "ground": false,
+   "prompt": "a wooden sailing ship with two masts, furled cream sails and a carved bow"
+  },
+  {
+   "id": "lg-small-sailboat",
+   "group": "harbour",
+   "size_m": 5,
+   "ground": false,
+   "prompt": "a small wooden sailboat with one white sail and a rudder"
+  },
+  {
+   "id": "lg-fishing-boat",
+   "group": "harbour",
+   "size_m": 5,
+   "ground": false,
+   "prompt": "a stout wooden fishing boat with a small cabin and nets"
+  },
+  {
+   "id": "lg-ship-wreck",
+   "group": "harbour",
+   "size_m": 8,
+   "ground": false,
+   "prompt": "a half-sunk wrecked wooden ship hull with broken masts"
+  },
+  {
+   "id": "lg-anchor",
+   "group": "harbour",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a big iron ship anchor with a rope coil"
+  },
+  {
+   "id": "lg-mooring-post",
+   "group": "harbour",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a short thick wooden mooring post with a coil of rope"
+  },
+  {
+   "id": "lg-fish-crate",
+   "group": "harbour",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a wooden crate with silver fish and ice"
+  },
+  {
+   "id": "lg-net-pile",
+   "group": "harbour",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a heap of tangled fishing net with wooden floats"
+  },
+  {
+   "id": "lg-harbour-warehouse",
+   "group": "harbour",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a wooden harbour warehouse with a large door and a hoist beam"
+  },
+  {
+   "id": "lg-sea-cave-rock",
+   "group": "harbour",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a big sea rock stack with an arch hole and barnacles"
+  },
+  {
+   "id": "lg-harbour-tavern-sign",
+   "group": "harbour",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a stone harbour tavern building with a round window and a tiled roof"
+  },
+  {
+   "id": "lg-desert-rock-arch",
+   "group": "desert",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a sandstone rock arch in warm orange colours"
+  },
+  {
+   "id": "lg-desert-mesa",
+   "group": "desert",
+   "size_m": 8,
+   "ground": true,
+   "prompt": "a flat-topped orange sandstone butte with layered stripes"
+  },
+  {
+   "id": "lg-desert-boulder",
+   "group": "desert",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a sand-coloured rounded boulder with layers and cracks"
+  },
+  {
+   "id": "lg-cactus-tall",
+   "group": "desert",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a tall green saguaro cactus with two arms"
+  },
+  {
+   "id": "lg-cactus-barrel",
+   "group": "desert",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a round barrel cactus with pink flowers on top"
+  },
+  {
+   "id": "lg-dead-desert-tree",
+   "group": "desert",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a dry bare desert tree with twisted branches and sand-bleached bark"
+  },
+  {
+   "id": "lg-desert-skull",
+   "group": "desert",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a giant bleached horned animal skull half buried in the sand"
+  },
+  {
+   "id": "lg-desert-tent",
+   "group": "desert",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a nomad tent with a patterned red and cream cloth and wooden poles"
+  },
+  {
+   "id": "lg-desert-obelisk",
+   "group": "desert",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a sandstone obelisk with carved patterns and a golden cap"
+  },
+  {
+   "id": "lg-sand-dune-rock",
+   "group": "desert",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a mound of sand with a few rocks poking out"
+  },
+  {
+   "id": "lg-oasis-palm",
+   "group": "desert",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a tall palm tree with a curved trunk and big green fronds"
+  },
+  {
+   "id": "lg-ancient-sphinx",
+   "group": "desert",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a crumbling ancient stone sphinx statue half covered with sand"
+  },
+  {
+   "id": "lg-desert-pillar",
+   "group": "desert",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a broken sandstone pillar with hieroglyph-like carvings"
+  },
+  {
+   "id": "lg-snow-pine",
+   "group": "snow",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a tall dark green pine tree covered with snow"
+  },
+  {
+   "id": "lg-snow-dead-tree",
+   "group": "snow",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a leafless tree covered with snow and icicles"
+  },
+  {
+   "id": "lg-snow-boulder",
+   "group": "snow",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a rounded grey boulder with snow on top"
+  },
+  {
+   "id": "lg-ice-crystal-cluster",
+   "group": "snow",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a cluster of large pale blue ice crystals growing out of rock"
+  },
+  {
+   "id": "lg-ice-pillar",
+   "group": "snow",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a tall blue ice pillar with a frosty base and icicles"
+  },
+  {
+   "id": "lg-snow-drift",
+   "group": "snow",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a rounded snow drift mound with a few stones"
+  },
+  {
+   "id": "lg-snowman",
+   "group": "snow",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a chunky snowman made of three snow balls with a stick-free carrot nose, coal eyes and a scarf"
+  },
+  {
+   "id": "lg-snow-cabin",
+   "group": "snow",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a small log cabin with a snow-covered roof and a chimney"
+  },
+  {
+   "id": "lg-frozen-waterfall",
+   "group": "snow",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a frozen waterfall of blue ice on a rock wall"
+  },
+  {
+   "id": "lg-frost-obelisk",
+   "group": "snow",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a frosted dark stone obelisk with glowing icy blue runes"
+  },
+  {
+   "id": "lg-ice-throne",
+   "group": "snow",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a throne made of translucent-free solid pale blue ice with sharp crystal spikes"
+  },
+  {
+   "id": "lg-snow-sled",
+   "group": "snow",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a wooden sled with iron runners and a fur blanket"
+  },
+  {
+   "id": "lg-volcanic-rock",
+   "group": "volcanic",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a jagged black volcanic rock with glowing orange lava cracks"
+  },
+  {
+   "id": "lg-lava-pool-rim",
+   "group": "volcanic",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a rocky black rim around a glowing orange lava pool"
+  },
+  {
+   "id": "lg-lava-crystal",
+   "group": "volcanic",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a cluster of red and orange glowing crystals in black rock"
+  },
+  {
+   "id": "lg-obsidian-spire",
+   "group": "volcanic",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a tall black obsidian spire with glowing red cracks"
+  },
+  {
+   "id": "lg-ash-tree",
+   "group": "volcanic",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a charred black tree with glowing ember spots and no leaves"
+  },
+  {
+   "id": "lg-volcano-cone",
+   "group": "volcanic",
+   "size_m": 12,
+   "ground": true,
+   "prompt": "a small volcano cone with a glowing orange crater and black rock sides"
+  },
+  {
+   "id": "lg-fire-brazier-big",
+   "group": "volcanic",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a big black iron fire bowl on a tall stand with roaring flames"
+  },
+  {
+   "id": "lg-demon-statue",
+   "group": "volcanic",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a black stone statue of a horned demon idol with glowing red eyes on a plinth"
+  },
+  {
+   "id": "lg-lava-bridge",
+   "group": "volcanic",
+   "size_m": 6,
+   "ground": false,
+   "prompt": "a black stone bridge with spikes over a gap, with glowing cracks"
+  },
+  {
+   "id": "lg-ember-plant",
+   "group": "volcanic",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a thorny black plant with glowing red-orange flowers"
+  },
+  {
+   "id": "lg-boss-arena-pillar",
+   "group": "arena",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a big round stone arena pillar with a brass ring and glowing runes"
+  },
+  {
+   "id": "lg-boss-arena-gate",
+   "group": "arena",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a huge stone arena gate with two statues of guardians and a heavy iron door"
+  },
+  {
+   "id": "lg-boss-arena-floor",
+   "group": "arena",
+   "size_m": 8,
+   "ground": true,
+   "prompt": "a big round stone arena floor tile with carved circular patterns and brass inlay"
+  },
+  {
+   "id": "lg-boss-arena-brazier",
+   "group": "arena",
+   "size_m": 2.8,
+   "ground": true,
+   "prompt": "a tall stone arena brazier with a big flame, carved with a cog symbol"
+  },
+  {
+   "id": "lg-boss-arena-rubble",
+   "group": "arena",
+   "size_m": 2.5,
+   "ground": true,
+   "prompt": "a heap of broken stone blocks and columns pieces"
+  },
+  {
+   "id": "lg-boss-arena-spikes",
+   "group": "arena",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a ring of tall curved bone spikes in a rocky base"
+  },
+  {
+   "id": "lg-boss-arena-rune-stone",
+   "group": "arena",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a short wide stone with a big glowing red rune, set in a rocky base"
+  },
+  {
+   "id": "lg-boss-arena-bleachers",
+   "group": "arena",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a curved section of stone arena seating steps"
+  },
+  {
+   "id": "lg-treasure-chest-gold",
+   "group": "loot",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "an open wooden treasure chest overflowing with gold coins, gems and jewellery"
+  },
+  {
+   "id": "lg-treasure-chest-ornate",
+   "group": "loot",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "an ornate brass-bound closed treasure chest with blue gems"
+  },
+  {
+   "id": "lg-gold-pile",
+   "group": "loot",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a big pile of gold coins with a golden goblet and a few gems"
+  },
+  {
+   "id": "lg-gem-cluster",
+   "group": "loot",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a cluster of large colourful gems on a small rock"
+  },
+  {
+   "id": "lg-loot-sack",
+   "group": "loot",
+   "size_m": 0.8,
+   "ground": true,
+   "prompt": "a fat cloth sack tied at the top spilling a few gold coins"
+  },
+  {
+   "id": "lg-potion-red",
+   "group": "loot",
+   "size_m": 0.5,
+   "ground": true,
+   "prompt": "a round glass flask potion with red glowing liquid and a cork"
+  },
+  {
+   "id": "lg-potion-blue",
+   "group": "loot",
+   "size_m": 0.5,
+   "ground": true,
+   "prompt": "a tall glass flask potion with blue glowing liquid and a cork"
+  },
+  {
+   "id": "lg-spellbook",
+   "group": "loot",
+   "size_m": 0.6,
+   "ground": true,
+   "prompt": "a thick leather spell book with brass corners and a glowing gem on the cover, closed"
+  },
+  {
+   "id": "lg-scroll-stack",
+   "group": "loot",
+   "size_m": 0.8,
+   "ground": true,
+   "prompt": "a stack of rolled parchment scrolls tied with ribbons"
+  },
+  {
+   "id": "lg-crystal-orb",
+   "group": "loot",
+   "size_m": 0.7,
+   "ground": true,
+   "prompt": "a glowing crystal ball on a small brass stand with three claw feet"
+  },
+  {
+   "id": "lg-golden-goblet",
+   "group": "loot",
+   "size_m": 0.5,
+   "ground": true,
+   "prompt": "a golden goblet with red gems on its stem"
+  },
+  {
+   "id": "lg-silver-sword-display",
+   "group": "loot",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a silver sword stuck point-down in a small stone block"
+  },
+  {
+   "id": "lg-ember-staff",
+   "group": "loot",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a wooden wizard staff with a glowing orange ember crystal in a brass claw top"
+  },
+  {
+   "id": "lg-magic-shield",
+   "group": "loot",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a round steel shield with a brass cog boss and a glowing rim"
+  },
+  {
+   "id": "lg-war-helmet",
+   "group": "loot",
+   "size_m": 0.6,
+   "ground": true,
+   "prompt": "a steel knight helmet with a plume and a brass rim"
+  },
+  {
+   "id": "lg-relic-casket",
+   "group": "loot",
+   "size_m": 0.7,
+   "ground": true,
+   "prompt": "a small stone box with an ornate brass lid and a glowing keyhole"
+  },
+  {
+   "id": "lg-golden-key",
+   "group": "loot",
+   "size_m": 0.4,
+   "ground": true,
+   "prompt": "a big golden key with an ornate cog-shaped head"
+  },
+  {
+   "id": "lg-first-candle",
+   "group": "loot",
+   "size_m": 0.6,
+   "ground": true,
+   "prompt": "a single tall old candle in a brass holder with a bright flame, melted wax"
+  },
+  {
+   "id": "lg-ember-bundle",
+   "group": "loot",
+   "size_m": 0.6,
+   "ground": true,
+   "prompt": "a bundle of glowing orange sticks tied with twine"
+  },
+  {
+   "id": "lg-pell-lamp",
+   "group": "loot",
+   "size_m": 0.7,
+   "ground": true,
+   "prompt": "an old battered brass oil lamp with a glowing flame and a handle"
+  },
+  {
+   "id": "lg-dog-bowl-bone",
+   "group": "loot",
+   "size_m": 0.5,
+   "ground": true,
+   "prompt": "a wooden dog bowl with a big bone beside it"
+  },
+  {
+   "id": "lg-banquet-roast",
+   "group": "loot",
+   "size_m": 0.9,
+   "ground": true,
+   "prompt": "a golden roast boar on a wooden platter with apples"
+  },
+  {
+   "id": "lg-giant-cake",
+   "group": "loot",
+   "size_m": 0.9,
+   "ground": true,
+   "prompt": "a layered cake with white cream, strawberries and a candle"
+  },
+  {
+   "id": "lg-blacksmith-hammer",
+   "group": "loot",
+   "size_m": 0.8,
+   "ground": true,
+   "prompt": "a heavy iron blacksmith hammer with a wooden handle"
+  },
+  {
+   "id": "lg-war-horn",
+   "group": "loot",
+   "size_m": 0.8,
+   "ground": true,
+   "prompt": "a big curved bronze war horn with a leather strap and brass bands"
+  },
+  {
+   "id": "lg-saddle-horse-statue",
+   "group": "mount",
+   "size_m": 3,
+   "ground": true,
+   "prompt": "a stone horse statue with a saddle, rearing, on a plinth"
+  },
+  {
+   "id": "lg-chariot",
+   "group": "mount",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "a wooden war chariot with two big spoked wheels and brass trim"
+  },
+  {
+   "id": "lg-stagecoach",
+   "group": "mount",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a wooden stagecoach with four wheels, a luggage rack and lanterns"
+  },
+  {
+   "id": "lg-hot-air-balloon",
+   "group": "mount",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a patched colourful hot air balloon with a wicker basket tied to the ground"
+  },
+  {
+   "id": "lg-airship",
+   "group": "mount",
+   "size_m": 9,
+   "ground": false,
+   "prompt": "a small wooden airship with a cigar-shaped balloon, brass propellers and a gondola"
+  },
+  {
+   "id": "lg-mech-walker",
+   "group": "mount",
+   "size_m": 4,
+   "ground": true,
+   "prompt": "an inactive brass steam walker mech with two stubby legs, a cockpit and gears"
+  },
+  {
+   "id": "lg-handcart",
+   "group": "mount",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a two-wheeled wooden hand cart with a handle and a few crates"
+  },
+  {
+   "id": "lg-rowboat-small",
+   "group": "mount",
+   "size_m": 3,
+   "ground": false,
+   "prompt": "a small wooden rowboat on the shore, with oars"
+  },
+  {
+   "id": "lg-saddle-stand",
+   "group": "mount",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a wooden stand holding a leather horse saddle and bridle"
+  },
+  {
+   "id": "lg-stable",
+   "group": "village",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a wooden horse stable with a slanted roof, two stalls and a hay bale"
+  },
+  {
+   "id": "lg-giant-gear-ruin",
+   "group": "ruin",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a huge broken brass gear wheel standing on its edge in a stone frame, covered with ivy"
+  },
+  {
+   "id": "lg-fallen-colossus-head",
+   "group": "ruin",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a giant broken stone head of a statue, half buried, covered with moss and ivy"
+  },
+  {
+   "id": "lg-giant-hand-statue",
+   "group": "ruin",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a giant stone hand reaching out of the ground, cracked and mossy"
+  },
+  {
+   "id": "lg-ruined-bridge",
+   "group": "ruin",
+   "size_m": 8,
+   "ground": false,
+   "prompt": "a collapsed ancient stone bridge with a broken arch"
+  },
+  {
+   "id": "lg-ruined-temple-front",
+   "group": "ruin",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a ruined temple facade with four columns, a broken triangular roof and steps"
+  },
+  {
+   "id": "lg-ruined-amphitheatre",
+   "group": "ruin",
+   "size_m": 9,
+   "ground": true,
+   "prompt": "a small curved ruined stone amphitheatre section with steps"
+  },
+  {
+   "id": "lg-ruined-fountain",
+   "group": "ruin",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a dry broken stone fountain with a cracked bowl and a statue stump"
+  },
+  {
+   "id": "lg-ancient-gate",
+   "group": "ruin",
+   "size_m": 8,
+   "ground": true,
+   "prompt": "a huge ancient stone gate with brass cog carvings, half collapsed"
+  },
+  {
+   "id": "lg-floating-island-rock",
+   "group": "ruin",
+   "size_m": 6,
+   "ground": false,
+   "prompt": "a small floating rock island with grass on top, roots hanging below and a tiny shrine"
+  },
+  {
+   "id": "lg-crystal-spire",
+   "group": "ruin",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a tall cluster of glowing blue crystals growing from rock"
+  },
+  {
+   "id": "lg-broken-sun-statue",
+   "group": "ruin",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a broken golden sun disc statue with rays, fallen over, on a stone base"
+  },
+  {
+   "id": "lg-wraith-gravestone",
+   "group": "crypt",
+   "size_m": 1.4,
+   "ground": true,
+   "prompt": "a black cracked grave marker with a dim blue glow and chains"
+  },
+  {
+   "id": "lg-lake-obelisk",
+   "group": "landmark",
+   "size_m": 3,
+   "ground": false,
+   "prompt": "a dark stone obelisk rising from a rocky island with pale blue light"
+  },
+  {
+   "id": "lg-farm-plough",
+   "group": "village",
+   "size_m": 2.2,
+   "ground": true,
+   "prompt": "a wooden hand plough with an iron blade"
+  },
+  {
+   "id": "lg-scarecrow",
+   "group": "village",
+   "size_m": 2.4,
+   "ground": true,
+   "prompt": "a straw scarecrow on a pole with a patched hat and tattered cloak"
+  },
+  {
+   "id": "lg-pumpkin-patch",
+   "group": "village",
+   "size_m": 1.6,
+   "ground": true,
+   "prompt": "a patch of big orange pumpkins on the ground with vines"
+  },
+  {
+   "id": "lg-apple-tree",
+   "group": "nature",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a round apple tree with red apples and a thick trunk"
+  },
+  {
+   "id": "lg-willow-tree",
+   "group": "nature",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a weeping willow tree with long drooping green branches"
+  },
+  {
+   "id": "lg-giant-mushroom",
+   "group": "nature",
+   "size_m": 3.5,
+   "ground": true,
+   "prompt": "a giant red mushroom with white spots and a thick stalk"
+  },
+  {
+   "id": "lg-sunflower-patch",
+   "group": "nature",
+   "size_m": 1.8,
+   "ground": true,
+   "prompt": "a patch of tall yellow sunflowers"
+  },
+  {
+   "id": "lg-rock-formation-big",
+   "group": "nature",
+   "size_m": 6,
+   "ground": true,
+   "prompt": "a large grey cliff rock formation with ledges and moss"
+  },
+  {
+   "id": "lg-waterfall-rock",
+   "group": "nature",
+   "size_m": 7,
+   "ground": true,
+   "prompt": "a rock cliff with a small waterfall pouring into a pool"
+  },
+  {
+   "id": "lg-crystal-cave-mouth",
+   "group": "nature",
+   "size_m": 5,
+   "ground": true,
+   "prompt": "a cave entrance in a rock with glowing purple crystals around its edge"
+  },
+  {
+   "id": "lg-wooden-bridge-long",
+   "group": "landmark",
+   "size_m": 8,
+   "ground": false,
+   "prompt": "a long wooden plank bridge with rope railings and sturdy posts"
+  },
+  {
+   "id": "lg-signal-beacon",
+   "group": "landmark",
+   "size_m": 4.5,
+   "ground": true,
+   "prompt": "a tall stone beacon tower with a big brass fire bowl on top, unlit"
+  },
+  {
+   "id": "lg-road-milestone",
+   "group": "landmark",
+   "size_m": 1.2,
+   "ground": true,
+   "prompt": "a short rounded road milestone stone with an arrow carved in"
+  },
+  {
+   "id": "lg-crossroads-shrine",
+   "group": "landmark",
+   "size_m": 2,
+   "ground": true,
+   "prompt": "a tiny roadside shrine of stone with a peaked roof, a candle and flowers"
+  },
+  {
+   "id": "lg-pet-bed",
+   "group": "village",
+   "size_m": 1,
+   "ground": true,
+   "prompt": "a round cushion pet bed with a blanket, in a small wooden frame"
+  }
+ ]
+}

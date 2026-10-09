@@ -1,0 +1,25 @@
+{
+  "ambient": {
+    "url": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/sfx/ambient.ogg",
+    "prompt": "ambient environment, soft wind through a rock canyon, faint creak of hanging lanterns and wooden beams, distant evening insects",
+    "seconds": 20
+  },
+  "impacts": {
+    "impact one-shot, short decay, heavy wooden barrel thud hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/light-wooden-barrel-left/impact.ogg",
+      "prompt": "impact one-shot, short decay, heavy wooden barrel thud hitting a hard floor"
+    },
+    "impact one-shot, short decay, hollow wooden crate crack hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/open-wooden-crate/impact.ogg",
+      "prompt": "impact one-shot, short decay, hollow wooden crate crack hitting a hard floor"
+    },
+    "impact one-shot, short decay, clay pot shatter hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/large-clay-pot-counter-right/impact.ogg",
+      "prompt": "impact one-shot, short decay, clay pot shatter hitting a hard floor"
+    },
+    "impact one-shot, short decay, small wooden box clatter hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/small-wooden-box-counter-right/impact.ogg",
+      "prompt": "impact one-shot, short decay, small wooden box clatter hitting a hard floor"
+    }
+  }
+}

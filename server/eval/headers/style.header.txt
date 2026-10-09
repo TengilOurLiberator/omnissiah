@@ -1,0 +1,12 @@
+// core/style.js — world.style: ONE global, toggleable look for everything in the scene (also things created later). Settings persist across hot reloads.
+//   const style = ctx.world.style;                       // guard: it may be reloading
+//   style.preset('storybook' | 'flat' | 'noir' | 'neon' | 'pastel')   // restyle the whole world in one call ('storybook' is the default look)
+//   style.set({ toon, bands, softness, rim, rimColor, saturation, fill, outline, outlineWidth, outlineColor, reflections, reflectionStrength, contactShadows })
+//   style.get() -> copy of the settings     style.presets -> the settings each preset applies
+//   toon true|false|0..1 banded light on every lit material (bands 2..6, softness 0.02..1)    rim 0..1.5 fresnel rim light (rimColor: colour or null = sky tint)
+//   saturation -1..1: +0.2 punchier, -0.3 pastel, -1 black and white    fill 0..1 lifts shadowed sides (soft, pastel look)
+//   outline true|false ink outlines on characters/props (PC tier only; outlineWidth px, outlineColor)    reflections true|false (sky reflections on metals/glTF)
+//   contactShadows true|false soft blob shadows under things (the Quest's substitute for shadow maps)
+//   Opt an object out with  object.userData.noOutline = true  /  object.userData.noShadow = true.
+//   Examples:  style.preset('noir')   style.set({ bands: 2, rim: 0.8, rimColor: 0x66ccff })   style.set({ saturation: -1 })   Event 'style:changed' fires after every change.
+//   "Comic book" = preset('flat') or set({ bands: 2, outline: true, saturation: 0.3 });  "black and white" = preset('noir') or set({ saturation: -1 }).

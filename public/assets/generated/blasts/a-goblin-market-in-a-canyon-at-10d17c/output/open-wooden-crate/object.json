@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "object": {
+    "id": "open-wooden-crate",
+    "name": "open brown wooden slat crate",
+    "description": "Rectangular open-topped crate built of horizontal brown wooden planks with corner posts.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+        "location_in_image": "left foreground on the ground near the bottom left corner"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/open-wooden-crate",
+    "count": 3,
+    "box": [
+      0.022,
+      0.73,
+      0.152,
+      0.89
+    ],
+    "depth": "near",
+    "size_m": [
+      0.9,
+      0.6,
+      0.7
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "hollow wooden crate crack",
+    "score": 12.644
+  },
+  "updated_at": "2026-10-08T18:05:18.470Z"
+}

@@ -1,0 +1,19 @@
+{
+  "pell-pilgrim": {
+    "id": "pell-pilgrim",
+    "group": "story",
+    "kind": "biped",
+    "prompt": "a hooded old pilgrim in a patched travelling cloak with a walking staff strapped on his back, in a T-pose, arms out, legs apart, hand-painted low-poly fantasy, chunky shapes, warm dusk palette",
+    "quality": "standard",
+    "seed": 2000,
+    "ok": false,
+    "rigged": false,
+    "glb": null,
+    "static": null,
+    "image": null,
+    "seconds": 640.9,
+    "error": "A pell-pilgrim: took longer than 45 minutes",
+    "finished": "2026-10-09T12:00:15.626Z",
+    "genSeconds": 560.1
+  }
+}

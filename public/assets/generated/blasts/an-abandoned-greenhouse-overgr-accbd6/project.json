@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "slug": "an-abandoned-greenhouse-overgr-accbd6",
+  "created": "2026-10-08T17:29:20.657Z",
+  "prompt": "an abandoned greenhouse overgrown with glowing plants",
+  "source_image": null,
+  "options": {
+    "maxObjects": 8,
+    "seed": 8441847
+  },
+  "timings": {
+    "image": 52.879,
+    "uncover": 34.571,
+    "edit": 67.875,
+    "place": 96.778,
+    "objects": 405.58,
+    "sounds": 97.516
+  },
+  "warnings": [],
+  "image": {
+    "file": "public\\assets\\generated\\blasts\\an-abandoned-greenhouse-overgr-accbd6\\source\\0-an-abandoned-greenhouse-overgr-accbd6.png",
+    "width": 1344,
+    "height": 768,
+    "aspect": 1.75,
+    "fov": 80
+  },
+  "finished": "2026-10-08T18:07:03.133Z",
+  "status": "done"
+}

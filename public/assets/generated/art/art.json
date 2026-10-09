@@ -1,0 +1,87 @@
+[
+ {
+  "id": "firebolt",
+  "kind": "icon",
+  "file": "icon/firebolt.webp",
+  "w": 256,
+  "h": 256,
+  "prompt": "a blazing fireball bolt streaking diagonally, comet tail of flame and sparks, fiery red and orange glow, fantasy RPG ability icon, rich painterly digital illustration with visible brushwork, a single bold emblem centered and filling the frame, isolated on a deep dark navy-black background with a soft vignette, strong simple silhouette readable at small size, glowing rim light, saturated jewel colours, game UI icon art, no text, no letters, no frame",
+  "group": "spell",
+  "name": "Firebolt",
+  "category": "offence"
+ },
+ {
+  "id": "q-goblin",
+  "kind": "card",
+  "file": "card/q-goblin.webp",
+  "w": 768,
+  "h": 432,
+  "prompt": "a horde of snarling green goblins with torches and crude spears charging across a dusk meadow toward a lone hero with a sword, smoke and embers, wide cinematic fantasy illustration, painterly digital concept art with soft brushwork, dramatic atmospheric lighting, rich saturated colour, storybook-meets-oil-painting style, strong focal point, no text, no letters, no watermark",
+  "group": "quest",
+  "name": "Goblin Raid"
+ },
+ {
+  "id": "first-blood",
+  "kind": "card",
+  "file": "card/q-goblin.webp",
+  "w": 768,
+  "h": 432,
+  "prompt": "a horde of snarling green goblins with torches and crude spears charging across a dusk meadow toward a lone hero with a sword, smoke and embers, wide cinematic fantasy illustration, painterly digital concept art with soft brushwork, dramatic atmospheric lighting, rich saturated colour, storybook-meets-oil-painting style, strong focal point, no text, no letters, no watermark",
+  "group": "quest",
+  "name": "Goblin Raid",
+  "alias": "q-goblin"
+ },
+ {
+  "id": "goblin-raid",
+  "kind": "card",
+  "file": "card/q-goblin.webp",
+  "w": 768,
+  "h": 432,
+  "prompt": "a horde of snarling green goblins with torches and crude spears charging across a dusk meadow toward a lone hero with a sword, smoke and embers, wide cinematic fantasy illustration, painterly digital concept art with soft brushwork, dramatic atmospheric lighting, rich saturated colour, storybook-meets-oil-painting style, strong focal point, no text, no letters, no watermark",
+  "group": "quest",
+  "name": "Goblin Raid",
+  "alias": "q-goblin"
+ },
+ {
+  "id": "untouched",
+  "kind": "card",
+  "file": "card/q-goblin.webp",
+  "w": 768,
+  "h": 432,
+  "prompt": "a horde of snarling green goblins with torches and crude spears charging across a dusk meadow toward a lone hero with a sword, smoke and embers, wide cinematic fantasy illustration, painterly digital concept art with soft brushwork, dramatic atmospheric lighting, rich saturated colour, storybook-meets-oil-painting style, strong focal point, no text, no letters, no watermark",
+  "group": "quest",
+  "name": "Goblin Raid",
+  "alias": "q-goblin"
+ },
+ {
+  "id": "hundred-fallen",
+  "kind": "card",
+  "file": "card/q-goblin.webp",
+  "w": 768,
+  "h": 432,
+  "prompt": "a horde of snarling green goblins with torches and crude spears charging across a dusk meadow toward a lone hero with a sword, smoke and embers, wide cinematic fantasy illustration, painterly digital concept art with soft brushwork, dramatic atmospheric lighting, rich saturated colour, storybook-meets-oil-painting style, strong focal point, no text, no letters, no watermark",
+  "group": "quest",
+  "name": "Goblin Raid",
+  "alias": "q-goblin"
+ },
+ {
+  "id": "hob",
+  "kind": "portrait",
+  "file": "portrait/hob.webp",
+  "w": 512,
+  "h": 512,
+  "prompt": "a gruff weathered old farmer elder with a grey beard and a straw hat, suspicious dry eyes, wearing a rough wool coat, fantasy character portrait, painterly digital illustration with visible brushwork, head and shoulders, centered, expressive face, dark moody gradient background with a soft coloured rim light, rich colour, storybook-meets-oil-painting style, no text, no letters",
+  "group": "npc",
+  "name": "Hob Brindle"
+ },
+ {
+  "id": "title-bg",
+  "kind": "title",
+  "file": "title/title-bg.webp",
+  "w": 1920,
+  "h": 1080,
+  "prompt": "the Omnissiah, a colossal fractal machine-god: a vast glowing sphere of interlocking golden geometric fractal rings, gears and lattices, radiating soft light, hovering high in the sky above a vast peaceful meadow of tall grass and wildflowers at dusk, warm orange and violet sunset sky with long god rays, one tiny silhouette of a pilgrim standing in the grass looking up, epic cinematic painting, painterly digital illustration with visible brushwork, no text, no letters",
+  "group": "title",
+  "name": "Title (textless)"
+ }
+]

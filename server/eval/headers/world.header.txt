@@ -1,0 +1,18 @@
+// core/world.js — the stage: twilight field, sky, light, fog, grass, glow-motes, far standing stones, a lake. Nothing to call except the services below.
+// THE LAKE: centre (-30, -78), ~48 m long, up to ~1.7 m deep.
+// MIXED REALITY (Quest passthrough, env.passthrough / ctx.input.passthrough true): sky, terrain, lake, grass, mist and stones are hidden, scene.background/fog are null, groundHeight is 0 everywhere (the real floor),
+//   the rig sits at the origin; the player's real room is the stage. Keep things small and near (within ~2.5 m); never set scene.background or fog. kit.particles already uses an alpha-safe blend there.
+//
+//   world.groundHeight(x, z) -> metres, allocation-free. Within 60 m of the origin it is ±~1.4 m and smooth (h(0,0) = 0); beyond, soft hills up to ±25 m; the lake is a bowl.
+//
+//   world.env — restyle the world cheaply (all colour args: THREE.Color | 0xRRGGBB | 'css string'). Changes ease in over ~1.5 s. All methods return env.
+//       setSkyColors({ zenith, horizon, mid? })  sky gradient (fog and light tint follow the horizon)
+//       setFog(color|null|undefined, density?)   null = re-follow horizon, undefined = unchanged; density is FogExp2, clamped [0.0036, 0.05] (default ~0.0046)
+//       setGrassColor(color)                     grass + ground tint
+//       setTimeOfDay(t)                          0 = deep night (stars, aurora), 0.5 = twilight (default), 1 = golden hour. Resets custom sky/fog colours.
+//       setStars(0..1)  setAurora(0..1)  setWind(0..1 | null = natural gusts)  setTransition(seconds; 0 = instant)
+//       setWater({ color, level, enabled })      the lake: shallow tint, surface height (clamped [-2.0, -0.6], default -1.4), enabled:false hides it
+//       isWater(x, z) -> boolean                 true where the lake covers the ground (keep things out of it / splash into it)
+//     Read-only: env.wind, env.timeOfDay, env.passthrough, env.waterLevel, env.lake { x, z, radius }, env.palette (live colours, do not mutate), env.sunDirection.
+//     Whole-place changes (terrain, ground palette, ocean, sky picture) belong to world.travel; do not call env.setTerrain / setGround / setOcean / setSkyPano yourself.
+//   Restore anything you change when your creation is disposed (or use a library weather/time entry: night, dusk, day, rain, snow, storm, fog-bank, aurora restore themselves).

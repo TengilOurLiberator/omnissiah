@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "object": {
+    "id": "small-wooden-box-counter-right",
+    "name": "small brown wooden slat box",
+    "description": "Small square box of horizontal brown wooden slats with an open top.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+        "location_in_image": "right side on the nearest right counter top"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/small-wooden-box-counter-right",
+    "count": 1,
+    "box": [
+      0.812,
+      0.594,
+      0.857,
+      0.647
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.45,
+      0.35,
+      0.4
+    ],
+    "rests_on": "object",
+    "rests_on_id": "market-stall-right-near",
+    "break_material": "wood",
+    "impact_sound": "small wooden box clatter",
+    "score": 10.331175
+  },
+  "updated_at": "2026-10-08T18:05:18.472Z"
+}

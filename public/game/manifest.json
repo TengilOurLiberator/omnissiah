@@ -1,0 +1,29 @@
+{
+  "core": [
+    "core/world.js",
+    "core/meadow.js",
+    "core/style.js",
+    "core/perf.js",
+    "core/ambience.js",
+    "core/physics.js",
+    "core/kit.js",
+    "core/models.js",
+    "core/genset.js",
+    "core/audio.js",
+    "core/combat.js",
+    "core/oracle.js",
+    "core/player.js",
+    "core/spells.js",
+    "core/weapons.js",
+    "core/library.js",
+    "core/startzone.js",
+    "core/voices.js",
+    "core/quests.js",
+    "core/travel.js",
+    "core/intro.js",
+    "core/blast.js",
+    "core/menu.js",
+    "core/commentary.js"
+  ],
+  "disabled_unfinished": ["core/games.js", "core/society.js", "core/mr.js", "core/campaign.js"]
+}

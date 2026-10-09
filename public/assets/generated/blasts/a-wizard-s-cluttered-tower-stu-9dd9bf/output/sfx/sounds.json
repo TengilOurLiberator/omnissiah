@@ -1,0 +1,41 @@
+{
+  "ambient": {
+    "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/sfx/ambient.ogg",
+    "prompt": "ambient environment, quiet stone room tone, faint wind through a tall tower, soft creaking of wooden beams",
+    "seconds": 20
+  },
+  "impacts": {
+    "impact one-shot, short decay, hollow wooden box thud hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/purple-cube-pedestal/impact.ogg",
+      "prompt": "impact one-shot, short decay, hollow wooden box thud hitting a hard floor"
+    },
+    "impact one-shot, short decay, heavy wooden table thud hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/central-wooden-table/impact.ogg",
+      "prompt": "impact one-shot, short decay, heavy wooden table thud hitting a hard floor"
+    },
+    "impact one-shot, short decay, small lamp clatter and crack hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-shade-table-lamp/impact.ogg",
+      "prompt": "impact one-shot, short decay, small lamp clatter and crack hitting a hard floor"
+    },
+    "impact one-shot, short decay, wooden chair clattering over hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-wooden-chair/impact.ogg",
+      "prompt": "impact one-shot, short decay, wooden chair clattering over hitting a hard floor"
+    },
+    "impact one-shot, short decay, wooden frame clattering hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/empty-red-wooden-frame/impact.ogg",
+      "prompt": "impact one-shot, short decay, wooden frame clattering hitting a hard floor"
+    },
+    "impact one-shot, short decay, wooden stand toppling thud hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/round-pedestal-side-table/impact.ogg",
+      "prompt": "impact one-shot, short decay, wooden stand toppling thud hitting a hard floor"
+    },
+    "impact one-shot, short decay, stack of books thumping down hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/stack-of-books/impact.ogg",
+      "prompt": "impact one-shot, short decay, stack of books thumping down hitting a hard floor"
+    },
+    "impact one-shot, short decay, small framed glass panel cracking hitting a hard floor": {
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/green-framed-panel/impact.ogg",
+      "prompt": "impact one-shot, short decay, small framed glass panel cracking hitting a hard floor"
+    }
+  }
+}

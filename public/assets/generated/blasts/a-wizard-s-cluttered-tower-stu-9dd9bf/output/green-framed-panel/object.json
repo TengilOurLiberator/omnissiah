@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "green-framed-panel",
+    "name": "small green panel in a pale yellow arched frame",
+    "description": "Small upright green rectangular panel set in a pale yellow frame with an arched top.",
+    "materials": [
+      "wood",
+      "glass"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "centre, just above the middle of the picture"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/green-framed-panel",
+    "count": 1,
+    "box": [
+      0.487,
+      0.481,
+      0.516,
+      0.542
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.3,
+      0.4,
+      0.08
+    ],
+    "rests_on": "object",
+    "rests_on_id": "central-wooden-table",
+    "break_material": "wood",
+    "impact_sound": "small framed glass panel cracking",
+    "score": 10.297295
+  },
+  "updated_at": "2026-10-08T18:04:25.706Z"
+}

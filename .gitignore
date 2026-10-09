@@ -1,0 +1,61 @@
+﻿# dependencies and portable tools (install with start.bat / see docs/GETTING_STARTED.md)
+node_modules/
+tools/node/
+tools/git/
+tools/gh/
+
+# local state, caches, certificates, logs (never commit: contains the self-signed HTTPS key and test sandboxes)
+.cache/
+.snapshots/
+.backups/
+.archive/
+.trash/
+saves/
+input/
+media/
+debug.log
+*.log
+*.pem
+*.key
+.env
+.env.*
+
+# test output
+tests/results/
+
+# third-party reference copy (see https://github.com/neilsonnn/image-blaster)
+image-blaster/
+
+# process ids and run logs of the unattended generation jobs
+tools/**/pid.txt
+tools/**/*-pid.txt
+tools/**/run*.log
+tools/**/chain.log
+tools/**/optimize.log
+
+# internal work logs written during development (machine paths, agent notes)
+docs/STATUS.md
+docs/review/
+docs/SPRINT.md
+docs/SPRINT2.md
+docs/PAIRING.md
+docs/AGENT_RULES.md
+server/eval/runs/
+server/eval/out/
+
+# stray scratch scripts in the project root
+/*.mjs
+/menu.js
+
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+server/eval/results/
+
+# python caches
+__pycache__/
+*.pyc

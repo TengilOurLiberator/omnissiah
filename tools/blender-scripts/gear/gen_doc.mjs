@@ -1,0 +1,66 @@
+﻿// gen_doc.mjs -- regenerate docs/GEAR_MODELS.md from the live catalogue (only the gear ids that are registered) + the mapping table below.
+//   node gen_doc.mjs
+import fs from 'fs';
+const cat = JSON.parse(fs.readFileSync('D:/omnissiah/public/assets/catalog.json', 'utf8'));
+// id -> [replaces / use, suggested weapons.js `model` fields or placement note]
+const MAP = {
+  'pilgrim-sword':      ['`sword` (starter melee)', "model: { name: 'pilgrim-sword', axis: '-z', up: '+y', len: LEN }"],
+  'pilgrim-bow':        ['`bow` (procedural placeholder today)', "model: { name: 'pilgrim-bow', axis: '-z', up: '+y', fit: 'span', span: 1.25 } (limbs vertical, string at +Z behind the riser, arrow axis -Z; same layout as star-bow)"],
+  'pilgrim-shield':     ['`shield` (round, left hand)', "model: { name: 'pilgrim-shield', axis: '-z', up: '+y', fit: 'width', width: 0.73 } (face toward -Z, handle behind the origin)"],
+  'novice-staff':       ['`magic-staff` (starter caster)', "model: { name: 'novice-staff', axis: '-z', up: '+y', len: LEN } (orb centre is ~1.2 m from the grip; muzzle = model tip)"],
+  'reliquary-lantern':  ['pickup/held light `lantern` (left hand)', "hold by the origin (top of the bail); it hangs along -Y, hand rotation 0 (NOT holdRotateX 90). Light point ~0.2 m below the origin."],
+  'health-vial':        ['health pickup', 'bbox-centred (origin = middle of the flask), upright +Y; spin about Y; ~0.26 m tall'],
+  'mana-vial':          ['mana pickup', 'same as health-vial, blue'],
+  'cog-crown':          ['first-reward relic / wearable', 'attach to the head: origin = centre of the head ring, +Y up, front -Z, ~0.24 m wide; as a floating pickup lift it 0.1 m and spin about Y'],
+  'cog-greatsword':     ['`greatsword`', "model: { name: 'cog-greatsword', axis: '-z', up: '+y', len: LEN }"],
+  'lightning-spear':    ['`spear` (procedural placeholder)', "model: { name: 'lightning-spear', axis: '-z', up: '+y', len: LEN, shape: 'blade' }"],
+  'censer-flail':       ['`mace` (procedural placeholder)', "model: { name: 'censer-flail', axis: '-z', up: '+y', len: LEN, shape: 'head' } (rigid chain; the ball sits slightly below the axis)"],
+  'rune-hammer':        ['`club` (procedural placeholder) or `warhammer`', "model: { name: 'rune-hammer', axis: '-z', up: '+y', len: LEN, shape: 'head' }"],
+  'clockwork-crossbow': ['`crossbow` / `heavy-crossbow`', "model: { name: 'clockwork-crossbow', axis: '-z', up: '+y', len: LEN, bolt: true } (no bolt in the model; the procedural nocked bolt is reused)"],
+  'plasma-blunderbuss': ['`shotgun` / `plasma-rifle`', "model: { name: 'plasma-blunderbuss', axis: '-z', up: '+y', len: LEN } (muzzle = the flared bell)"],
+  'fractal-staff':      ['`magic-staff` (upgrade) / `bone-staff`', "model: { name: 'fractal-staff', axis: '-z', up: '+y', len: LEN }"],
+  'twin-sickles':       ['`katana` (procedural placeholder)', "model: { name: 'twin-sickles', axis: '-z', up: '+y', len: LEN, shape: 'head' } (both blades curve forward from a hub; the trail sweeps across them)"],
+  'eye-tower-shield':   ['`tower-shield`', "model: { name: 'eye-tower-shield', axis: '-z', up: '+y', fit: 'width', width: 1.2 } (tall: 0.62 wide x 1.2 high; fit: 'width' uses the larger side)"],
+  'grapple-gauntlet':   ['new tool type `grapple-gauntlet` (W.define, kind tool)', "grip = inside the fist; the hook head is the model tip (-Z), 0.56 m ahead"],
+  'spell-tome':         ['`spellbook`', "model: { name: 'spell-tome', axis: '-z', up: '+y', fit: 'width', width: 0.3 }; origin = centre of the spine, cover faces -Z"],
+  'brass-key':          ['key pickup', 'bbox-centred, shaft along Y, flat in XY'],
+  'treasure-idol':      ['treasure pickup', 'bbox-centred, upright'],
+  'pilgrim-hood':       ['wearable (head)', 'origin = head centre, +Y up, front -Z; double-sided material'],
+  'gear-halo':          ['wearable (floating above the head)', 'origin = ring centre; place 0.28 m above the head centre; spin about Y'],
+  'hover-sled':         ['vehicle', 'see vehicle notes below'],
+  'brass-strider':      ['vehicle / mount', 'see vehicle notes below'],
+  'biplane':            ['vehicle', 'see vehicle notes below'],
+};
+const rows = [];
+for (const [id, [use, how]] of Object.entries(MAP)) {
+  const m = cat.models[id]; if (!m || m.pack !== 'hero') continue;
+  const fwd = m.min ? +(-m.min[2]).toFixed(3) : 0;
+  rows.push(`| \`${id}\` | ${m.category} | ${m.tris} | ${m.size.join(' x ')} | ${m.hand !== undefined ? '' : ''}${m.min.map((v) => +v.toFixed(2)).join(', ')} | ${fwd} | ${use} | ${how.replace(/LEN/g, String(fwd))} |`);
+}
+const doc = `# Gear models (public/assets/hero) -> what they replace, grips, orientation
+
+Made in Blender (headless, scripts in \`tools/blender-scripts/gear/\`), same pipeline and shared \`hero/hero-palette.png\` as the other hero models. Registered in \`public/assets/catalog.json\` (pack \`hero\`, scale 1, **real metres**: do not apply the 0.8 KayKit factor).
+This file is generated by \`tools/blender-scripts/gear/gen_doc.mjs\` from the live catalogue; the weapons owner wires the models into \`core/weapons.js\` (I do not edit it).
+
+## Conventions (identical to the existing hero weapons)
+* glTF space: **grip at the origin, business end along -Z, +Y up**. Hand items use the weapons.js hero spec \`{ axis: '-z', up: '+y' }\` and the fit rescales to \`len\`.
+* \`len\` below = distance from the grip to the far tip along -Z (= -min.z); only meaningful for blades/staffs/guns that use \`fit: 'length'\` (bow, shields, lantern, pickups ignore it). Hand items' \`height\` in the catalogue is the model's up-extent, not its length: never pass \`height:\` to spawn() for them. \`min\` is the model's bounding-box minimum (x, y, z).
+* Material \`Palette\` (flat colours) + \`Emissive\` (same palette, \`emissiveFactor\` 1; weapons.js pulses it for \`hero: true\` models).
+* Catalogue entries: weapons carry \`attach.hand\`, \`forward: '-z'\`, \`up: '+y'\`, \`holdRotateX: 90\` (only for \`h.hold()\` on a KayKit hand slot; weapons.js does its own fit and ignores it). Pickups/wearables/vehicles carry \`origin\`.
+* Triangle budget: every hand item <= 1.5k (max ${Math.max(...rows.map((r) => +r.split('|')[3]))}), vehicles <= 5k.
+
+## Models
+
+| id | category | tris | bbox size (x y z) | bbox min | len | replaces / use | suggested spec / placement |
+|---|---|---:|---|---|---:|---|---|
+${rows.join('\n')}
+
+## Vehicles (physics.js \`P.vehicle\`)
+**NOT BUILT YET**: \`hover-sled\`, \`brass-strider\` and \`biplane\` were skipped when the sprint was redirected to the starting zone (planned in \`gear_vehicles.py\`). When they exist: origin at the ground centre, forward -Z, wheels/legs are separate named nodes (the GLB carries a tiny node clip, so \`models.js\` keeps the node tree instead of merging the geometry; find nodes with \`h.root.getObjectByName('wheel_fl')\`). Pass those node objects as wheel \`object\` / \`spin\` in \`P.vehicle\`.
+
+## Not verified
+Nothing was tested in a headset. Models were checked in Blender Workbench renders, with three.js GLTFLoader statistics and through the real \`core/models.js\` in a Node harness (spawn, find, bounds). See docs/STATUS.md.
+`;
+fs.writeFileSync('D:/omnissiah/docs/GEAR_MODELS.md', doc);
+console.log('wrote GEAR_MODELS.md with', rows.length, 'models');
+

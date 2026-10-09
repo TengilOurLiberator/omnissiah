@@ -1,0 +1,2650 @@
+{
+ "swing-light": {
+  "url": "/assets/generated/audio/pack/swing-light-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/swing-light-0.ogg",
+   "/assets/generated/audio/pack/swing-light-1.ogg",
+   "/assets/generated/audio/pack/swing-light-2.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.514,
+   0.785,
+   1
+  ]
+ },
+ "swing-medium": {
+  "url": "/assets/generated/audio/pack/swing-medium-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/swing-medium-0.ogg",
+   "/assets/generated/audio/pack/swing-medium-1.ogg",
+   "/assets/generated/audio/pack/swing-medium-2.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "oneshot",
+  "durations": [
+   0.189,
+   0.385,
+   0.309
+  ]
+ },
+ "swing-heavy": {
+  "url": "/assets/generated/audio/pack/swing-heavy-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/swing-heavy-0.ogg",
+   "/assets/generated/audio/pack/swing-heavy-1.ogg",
+   "/assets/generated/audio/pack/swing-heavy-2.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   0.62,
+   1.5,
+   1.5
+  ]
+ },
+ "thrust": {
+  "url": "/assets/generated/audio/pack/thrust-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/thrust-0.ogg",
+   "/assets/generated/audio/pack/thrust-1.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.595,
+   0.324
+  ]
+ },
+ "boomerang-whirl": {
+  "url": "/assets/generated/audio/pack/boomerang-whirl-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/boomerang-whirl-0.ogg",
+   "/assets/generated/audio/pack/boomerang-whirl-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   1.565,
+   2
+  ]
+ },
+ "weapon-throw": {
+  "url": "/assets/generated/audio/pack/weapon-throw-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/weapon-throw-0.ogg",
+   "/assets/generated/audio/pack/weapon-throw-1.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.224,
+   0.94
+  ]
+ },
+ "slash-flesh": {
+  "url": "/assets/generated/audio/pack/slash-flesh-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/slash-flesh-0.ogg",
+   "/assets/generated/audio/pack/slash-flesh-1.ogg",
+   "/assets/generated/audio/pack/slash-flesh-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   0.149,
+   0.95
+  ]
+ },
+ "slash-armor": {
+  "url": "/assets/generated/audio/pack/slash-armor-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/slash-armor-0.ogg",
+   "/assets/generated/audio/pack/slash-armor-1.ogg",
+   "/assets/generated/audio/pack/slash-armor-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.029,
+   0.57,
+   1.2
+  ]
+ },
+ "slash-wood": {
+  "url": "/assets/generated/audio/pack/slash-wood-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/slash-wood-0.ogg",
+   "/assets/generated/audio/pack/slash-wood-1.ogg",
+   "/assets/generated/audio/pack/slash-wood-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   0.945,
+   1.2,
+   1.2
+  ]
+ },
+ "slash-stone": {
+  "url": "/assets/generated/audio/pack/slash-stone-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/slash-stone-0.ogg",
+   "/assets/generated/audio/pack/slash-stone-1.ogg",
+   "/assets/generated/audio/pack/slash-stone-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   1.2,
+   1.2
+  ]
+ },
+ "blunt-flesh": {
+  "url": "/assets/generated/audio/pack/blunt-flesh-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blunt-flesh-0.ogg",
+   "/assets/generated/audio/pack/blunt-flesh-1.ogg",
+   "/assets/generated/audio/pack/blunt-flesh-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   0.155,
+   0.574
+  ]
+ },
+ "blunt-armor": {
+  "url": "/assets/generated/audio/pack/blunt-armor-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blunt-armor-0.ogg",
+   "/assets/generated/audio/pack/blunt-armor-1.ogg",
+   "/assets/generated/audio/pack/blunt-armor-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   0.685,
+   0.185,
+   1.3
+  ]
+ },
+ "blunt-wood": {
+  "url": "/assets/generated/audio/pack/blunt-wood-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blunt-wood-0.ogg",
+   "/assets/generated/audio/pack/blunt-wood-1.ogg",
+   "/assets/generated/audio/pack/blunt-wood-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   0.204,
+   0.474,
+   1.2
+  ]
+ },
+ "blunt-stone": {
+  "url": "/assets/generated/audio/pack/blunt-stone-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blunt-stone-0.ogg",
+   "/assets/generated/audio/pack/blunt-stone-1.ogg",
+   "/assets/generated/audio/pack/blunt-stone-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.4,
+   1.4,
+   0.129
+  ]
+ },
+ "pierce-flesh": {
+  "url": "/assets/generated/audio/pack/pierce-flesh-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pierce-flesh-0.ogg",
+   "/assets/generated/audio/pack/pierce-flesh-1.ogg",
+   "/assets/generated/audio/pack/pierce-flesh-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   0.119,
+   0.81,
+   0.245
+  ]
+ },
+ "pierce-armor": {
+  "url": "/assets/generated/audio/pack/pierce-armor-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pierce-armor-0.ogg",
+   "/assets/generated/audio/pack/pierce-armor-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   0.809,
+   1
+  ]
+ },
+ "pierce-wood": {
+  "url": "/assets/generated/audio/pack/pierce-wood-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pierce-wood-0.ogg",
+   "/assets/generated/audio/pack/pierce-wood-1.ogg",
+   "/assets/generated/audio/pack/pierce-wood-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   0.335,
+   0.58,
+   0.814
+  ]
+ },
+ "pierce-stone": {
+  "url": "/assets/generated/audio/pack/pierce-stone-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pierce-stone-0.ogg",
+   "/assets/generated/audio/pack/pierce-stone-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   0.89,
+   0.98
+  ]
+ },
+ "hit-generic": {
+  "url": "/assets/generated/audio/pack/hit-generic-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/hit-generic-0.ogg",
+   "/assets/generated/audio/pack/hit-generic-1.ogg",
+   "/assets/generated/audio/pack/hit-generic-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.62,
+   0.4,
+   0.61
+  ]
+ },
+ "ground-slam": {
+  "url": "/assets/generated/audio/pack/ground-slam-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ground-slam-0.ogg",
+   "/assets/generated/audio/pack/ground-slam-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   2.5,
+   0.574
+  ]
+ },
+ "clang": {
+  "url": "/assets/generated/audio/pack/clang-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/clang-0.ogg",
+   "/assets/generated/audio/pack/clang-1.ogg",
+   "/assets/generated/audio/pack/clang-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.6,
+   1.594
+  ]
+ },
+ "shield-block": {
+  "url": "/assets/generated/audio/pack/shield-block-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/shield-block-0.ogg",
+   "/assets/generated/audio/pack/shield-block-1.ogg",
+   "/assets/generated/audio/pack/shield-block-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   1.2,
+   1.2
+  ]
+ },
+ "shield-bash": {
+  "url": "/assets/generated/audio/pack/shield-bash-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/shield-bash-0.ogg",
+   "/assets/generated/audio/pack/shield-bash-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   0.76,
+   0.104
+  ]
+ },
+ "weapon-grab": {
+  "url": "/assets/generated/audio/pack/weapon-grab-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/weapon-grab-0.ogg",
+   "/assets/generated/audio/pack/weapon-grab-1.ogg",
+   "/assets/generated/audio/pack/weapon-grab-2.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.7,
+   0.7,
+   0.7
+  ]
+ },
+ "weapon-drop": {
+  "url": "/assets/generated/audio/pack/weapon-drop-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/weapon-drop-0.ogg",
+   "/assets/generated/audio/pack/weapon-drop-1.ogg",
+   "/assets/generated/audio/pack/weapon-drop-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.62,
+   0.89,
+   1.07
+  ]
+ },
+ "bow-draw": {
+  "url": "/assets/generated/audio/pack/bow-draw-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/bow-draw-0.ogg",
+   "/assets/generated/audio/pack/bow-draw-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   1.265,
+   1.6
+  ]
+ },
+ "arrow-loose": {
+  "url": "/assets/generated/audio/pack/arrow-loose-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/arrow-loose-0.ogg",
+   "/assets/generated/audio/pack/arrow-loose-1.ogg",
+   "/assets/generated/audio/pack/arrow-loose-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.64,
+   1.01,
+   0.799
+  ]
+ },
+ "arrow-hit-flesh": {
+  "url": "/assets/generated/audio/pack/arrow-hit-flesh-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/arrow-hit-flesh-0.ogg",
+   "/assets/generated/audio/pack/arrow-hit-flesh-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.424,
+   0.219
+  ]
+ },
+ "arrow-hit-ground": {
+  "url": "/assets/generated/audio/pack/arrow-hit-ground-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/arrow-hit-ground-0.ogg",
+   "/assets/generated/audio/pack/arrow-hit-ground-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.484,
+   0.9
+  ]
+ },
+ "crossbow-shot": {
+  "url": "/assets/generated/audio/pack/crossbow-shot-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/crossbow-shot-0.ogg",
+   "/assets/generated/audio/pack/crossbow-shot-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.544,
+   0.22
+  ]
+ },
+ "crossbow-reload": {
+  "url": "/assets/generated/audio/pack/crossbow-reload-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/crossbow-reload-0.ogg",
+   "/assets/generated/audio/pack/crossbow-reload-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   1.8,
+   1.445
+  ]
+ },
+ "blaster-shot": {
+  "url": "/assets/generated/audio/pack/blaster-shot-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blaster-shot-0.ogg",
+   "/assets/generated/audio/pack/blaster-shot-1.ogg",
+   "/assets/generated/audio/pack/blaster-shot-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.345,
+   0.27,
+   0.345
+  ]
+ },
+ "blaster-heavy": {
+  "url": "/assets/generated/audio/pack/blaster-heavy-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blaster-heavy-0.ogg",
+   "/assets/generated/audio/pack/blaster-heavy-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.945,
+   1.02
+  ]
+ },
+ "plasma-shot": {
+  "url": "/assets/generated/audio/pack/plasma-shot-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/plasma-shot-0.ogg",
+   "/assets/generated/audio/pack/plasma-shot-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1,
+   0.505
+  ]
+ },
+ "shotgun-blast": {
+  "url": "/assets/generated/audio/pack/shotgun-blast-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/shotgun-blast-0.ogg",
+   "/assets/generated/audio/pack/shotgun-blast-1.ogg",
+   "/assets/generated/audio/pack/shotgun-blast-2.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   2,
+   0.57,
+   2
+  ]
+ },
+ "rifle-crack": {
+  "url": "/assets/generated/audio/pack/rifle-crack-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/rifle-crack-0.ogg",
+   "/assets/generated/audio/pack/rifle-crack-1.ogg",
+   "/assets/generated/audio/pack/rifle-crack-2.ogg"
+  ],
+  "volume": 0.95,
+  "kind": "oneshot",
+  "durations": [
+   1.259,
+   0.635,
+   0.2
+  ]
+ },
+ "pistol-shot": {
+  "url": "/assets/generated/audio/pack/pistol-shot-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pistol-shot-0.ogg",
+   "/assets/generated/audio/pack/pistol-shot-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   0.439,
+   1.01
+  ]
+ },
+ "gunshot-small": {
+  "url": "/assets/generated/audio/pack/gunshot-small-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/gunshot-small-0.ogg",
+   "/assets/generated/audio/pack/gunshot-small-1.ogg",
+   "/assets/generated/audio/pack/gunshot-small-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.155,
+   0.8,
+   0.464
+  ]
+ },
+ "sniper-shot": {
+  "url": "/assets/generated/audio/pack/sniper-shot-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/sniper-shot-0.ogg",
+   "/assets/generated/audio/pack/sniper-shot-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   2.815,
+   2.09
+  ]
+ },
+ "rocket-launch": {
+  "url": "/assets/generated/audio/pack/rocket-launch-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/rocket-launch-0.ogg",
+   "/assets/generated/audio/pack/rocket-launch-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   2.5,
+   0.555
+  ]
+ },
+ "bullet-impact": {
+  "url": "/assets/generated/audio/pack/bullet-impact-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/bullet-impact-0.ogg",
+   "/assets/generated/audio/pack/bullet-impact-1.ogg",
+   "/assets/generated/audio/pack/bullet-impact-2.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   0.665,
+   0.8,
+   0.775
+  ]
+ },
+ "grenade-pin": {
+  "url": "/assets/generated/audio/pack/grenade-pin-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/grenade-pin-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   1
+  ]
+ },
+ "grenade-beep": {
+  "url": "/assets/generated/audio/pack/grenade-beep-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/grenade-beep-0.ogg",
+   "/assets/generated/audio/pack/grenade-beep-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.19,
+   0.39
+  ],
+  "single": true
+ },
+ "smoke-pop": {
+  "url": "/assets/generated/audio/pack/smoke-pop-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/smoke-pop-0.ogg",
+   "/assets/generated/audio/pack/smoke-pop-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1.91,
+   1.775
+  ]
+ },
+ "limb-sever": {
+  "url": "/assets/generated/audio/pack/limb-sever-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/limb-sever-0.ogg",
+   "/assets/generated/audio/pack/limb-sever-1.ogg",
+   "/assets/generated/audio/pack/limb-sever-2.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   0.344,
+   0.15,
+   1.4
+  ]
+ },
+ "gore-squelch": {
+  "url": "/assets/generated/audio/pack/gore-squelch-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/gore-squelch-0.ogg",
+   "/assets/generated/audio/pack/gore-squelch-1.ogg",
+   "/assets/generated/audio/pack/gore-squelch-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1,
+   0.83,
+   0.735
+  ]
+ },
+ "bone-crack": {
+  "url": "/assets/generated/audio/pack/bone-crack-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/bone-crack-0.ogg",
+   "/assets/generated/audio/pack/bone-crack-1.ogg",
+   "/assets/generated/audio/pack/bone-crack-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.114,
+   0.9,
+   0.345
+  ]
+ },
+ "body-fall": {
+  "url": "/assets/generated/audio/pack/body-fall-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/body-fall-0.ogg",
+   "/assets/generated/audio/pack/body-fall-1.ogg",
+   "/assets/generated/audio/pack/body-fall-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.035,
+   1.4,
+   1.4
+  ]
+ },
+ "armor-fall": {
+  "url": "/assets/generated/audio/pack/armor-fall-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/armor-fall-0.ogg",
+   "/assets/generated/audio/pack/armor-fall-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   0.6,
+   1.615
+  ]
+ },
+ "blood-splat": {
+  "url": "/assets/generated/audio/pack/blood-splat-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/blood-splat-0.ogg",
+   "/assets/generated/audio/pack/blood-splat-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   0.8,
+   0.74
+  ]
+ },
+ "player-hurt": {
+  "url": "/assets/generated/audio/pack/player-hurt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/player-hurt-0.ogg",
+   "/assets/generated/audio/pack/player-hurt-1.ogg",
+   "/assets/generated/audio/pack/player-hurt-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.225,
+   0.789,
+   1
+  ]
+ },
+ "player-death": {
+  "url": "/assets/generated/audio/pack/player-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/player-death-0.ogg",
+   "/assets/generated/audio/pack/player-death-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   2.199,
+   1.91
+  ]
+ },
+ "heartbeat": {
+  "url": "/assets/generated/audio/pack/heartbeat-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/heartbeat-0.ogg",
+   "/assets/generated/audio/pack/heartbeat-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1.799,
+   1.8
+  ]
+ },
+ "humanoid-grunt": {
+  "url": "/assets/generated/audio/pack/humanoid-grunt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/humanoid-grunt-0.ogg",
+   "/assets/generated/audio/pack/humanoid-grunt-1.ogg",
+   "/assets/generated/audio/pack/humanoid-grunt-2.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   0.9,
+   0.9,
+   0.469
+  ]
+ },
+ "humanoid-hurt": {
+  "url": "/assets/generated/audio/pack/humanoid-hurt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/humanoid-hurt-0.ogg",
+   "/assets/generated/audio/pack/humanoid-hurt-1.ogg",
+   "/assets/generated/audio/pack/humanoid-hurt-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.7,
+   0.555,
+   1
+  ]
+ },
+ "humanoid-death": {
+  "url": "/assets/generated/audio/pack/humanoid-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/humanoid-death-0.ogg",
+   "/assets/generated/audio/pack/humanoid-death-1.ogg",
+   "/assets/generated/audio/pack/humanoid-death-2.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   1.14,
+   1.4,
+   2.2
+  ]
+ },
+ "goblin-cackle": {
+  "url": "/assets/generated/audio/pack/goblin-cackle-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/goblin-cackle-0.ogg",
+   "/assets/generated/audio/pack/goblin-cackle-1.ogg",
+   "/assets/generated/audio/pack/goblin-cackle-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   2.5,
+   1.555,
+   2.445
+  ]
+ },
+ "goblin-grunt": {
+  "url": "/assets/generated/audio/pack/goblin-grunt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/goblin-grunt-0.ogg",
+   "/assets/generated/audio/pack/goblin-grunt-1.ogg",
+   "/assets/generated/audio/pack/goblin-grunt-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1,
+   0.915,
+   1
+  ]
+ },
+ "goblin-death": {
+  "url": "/assets/generated/audio/pack/goblin-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/goblin-death-0.ogg",
+   "/assets/generated/audio/pack/goblin-death-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.435
+  ]
+ },
+ "orc-roar": {
+  "url": "/assets/generated/audio/pack/orc-roar-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/orc-roar-0.ogg",
+   "/assets/generated/audio/pack/orc-roar-1.ogg",
+   "/assets/generated/audio/pack/orc-roar-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   2.6,
+   2.37
+  ]
+ },
+ "orc-grunt": {
+  "url": "/assets/generated/audio/pack/orc-grunt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/orc-grunt-0.ogg",
+   "/assets/generated/audio/pack/orc-grunt-1.ogg",
+   "/assets/generated/audio/pack/orc-grunt-2.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   1,
+   1,
+   0.645
+  ]
+ },
+ "orc-death": {
+  "url": "/assets/generated/audio/pack/orc-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/orc-death-0.ogg",
+   "/assets/generated/audio/pack/orc-death-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   1.085,
+   0.595
+  ]
+ },
+ "troll-bellow": {
+  "url": "/assets/generated/audio/pack/troll-bellow-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/troll-bellow-0.ogg",
+   "/assets/generated/audio/pack/troll-bellow-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   2.765,
+   3.2
+  ]
+ },
+ "troll-grunt": {
+  "url": "/assets/generated/audio/pack/troll-grunt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/troll-grunt-0.ogg",
+   "/assets/generated/audio/pack/troll-grunt-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.32
+  ]
+ },
+ "skeleton-rattle": {
+  "url": "/assets/generated/audio/pack/skeleton-rattle-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/skeleton-rattle-0.ogg",
+   "/assets/generated/audio/pack/skeleton-rattle-1.ogg",
+   "/assets/generated/audio/pack/skeleton-rattle-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.875,
+   1.6,
+   1.6
+  ]
+ },
+ "skeleton-collapse": {
+  "url": "/assets/generated/audio/pack/skeleton-collapse-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/skeleton-collapse-0.ogg",
+   "/assets/generated/audio/pack/skeleton-collapse-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   0.61,
+   2.2
+  ]
+ },
+ "zombie-groan": {
+  "url": "/assets/generated/audio/pack/zombie-groan-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/zombie-groan-0.ogg",
+   "/assets/generated/audio/pack/zombie-groan-1.ogg",
+   "/assets/generated/audio/pack/zombie-groan-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   2.5,
+   0.935,
+   1.845
+  ]
+ },
+ "zombie-death": {
+  "url": "/assets/generated/audio/pack/zombie-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/zombie-death-0.ogg",
+   "/assets/generated/audio/pack/zombie-death-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   2.2,
+   2.2
+  ]
+ },
+ "demon-growl": {
+  "url": "/assets/generated/audio/pack/demon-growl-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/demon-growl-0.ogg",
+   "/assets/generated/audio/pack/demon-growl-1.ogg",
+   "/assets/generated/audio/pack/demon-growl-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   1.625,
+   2.585
+  ]
+ },
+ "demon-death": {
+  "url": "/assets/generated/audio/pack/demon-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/demon-death-0.ogg",
+   "/assets/generated/audio/pack/demon-death-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.815,
+   2.6
+  ]
+ },
+ "dragon-roar": {
+  "url": "/assets/generated/audio/pack/dragon-roar-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/dragon-roar-0.ogg",
+   "/assets/generated/audio/pack/dragon-roar-1.ogg",
+   "/assets/generated/audio/pack/dragon-roar-2.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   3.495,
+   4.2,
+   4.2
+  ]
+ },
+ "dragon-fire-breath": {
+  "url": "/assets/generated/audio/pack/dragon-fire-breath-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/dragon-fire-breath-0.ogg",
+   "/assets/generated/audio/pack/dragon-fire-breath-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   3.6,
+   1.665
+  ]
+ },
+ "wolf-growl": {
+  "url": "/assets/generated/audio/pack/wolf-growl-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/wolf-growl-0.ogg",
+   "/assets/generated/audio/pack/wolf-growl-1.ogg",
+   "/assets/generated/audio/pack/wolf-growl-2.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   1.105,
+   2,
+   1.815
+  ]
+ },
+ "wolf-howl": {
+  "url": "/assets/generated/audio/pack/wolf-howl-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/wolf-howl-0.ogg",
+   "/assets/generated/audio/pack/wolf-howl-1.ogg",
+   "/assets/generated/audio/pack/wolf-howl-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   3.715,
+   4,
+   2.42
+  ]
+ },
+ "wolf-yelp": {
+  "url": "/assets/generated/audio/pack/wolf-yelp-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/wolf-yelp-0.ogg",
+   "/assets/generated/audio/pack/wolf-yelp-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.745,
+   1
+  ]
+ },
+ "bear-roar": {
+  "url": "/assets/generated/audio/pack/bear-roar-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/bear-roar-0.ogg",
+   "/assets/generated/audio/pack/bear-roar-1.ogg"
+  ],
+  "volume": 0.95,
+  "kind": "oneshot",
+  "durations": [
+   1.72,
+   2.745
+  ]
+ },
+ "spider-skitter": {
+  "url": "/assets/generated/audio/pack/spider-skitter-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/spider-skitter-0.ogg",
+   "/assets/generated/audio/pack/spider-skitter-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   2,
+   2
+  ]
+ },
+ "slime-squish": {
+  "url": "/assets/generated/audio/pack/slime-squish-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/slime-squish-0.ogg",
+   "/assets/generated/audio/pack/slime-squish-1.ogg",
+   "/assets/generated/audio/pack/slime-squish-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1,
+   0.8,
+   1
+  ]
+ },
+ "slime-splat": {
+  "url": "/assets/generated/audio/pack/slime-splat-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/slime-splat-0.ogg",
+   "/assets/generated/audio/pack/slime-splat-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   1.2
+  ]
+ },
+ "ghost-wail": {
+  "url": "/assets/generated/audio/pack/ghost-wail-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ghost-wail-0.ogg",
+   "/assets/generated/audio/pack/ghost-wail-1.ogg",
+   "/assets/generated/audio/pack/ghost-wail-2.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   4,
+   3.065,
+   4
+  ]
+ },
+ "wraith-whisper": {
+  "url": "/assets/generated/audio/pack/wraith-whisper-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/wraith-whisper-0.ogg",
+   "/assets/generated/audio/pack/wraith-whisper-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   3,
+   2.625
+  ]
+ },
+ "imp-cackle": {
+  "url": "/assets/generated/audio/pack/imp-cackle-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/imp-cackle-0.ogg",
+   "/assets/generated/audio/pack/imp-cackle-1.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   1.705
+  ]
+ },
+ "bat-screech": {
+  "url": "/assets/generated/audio/pack/bat-screech-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/bat-screech-0.ogg",
+   "/assets/generated/audio/pack/bat-screech-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   1.465,
+   1.5
+  ]
+ },
+ "robot-beep": {
+  "url": "/assets/generated/audio/pack/robot-beep-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/robot-beep-0.ogg",
+   "/assets/generated/audio/pack/robot-beep-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   1,
+   1
+  ]
+ },
+ "robot-death": {
+  "url": "/assets/generated/audio/pack/robot-death-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/robot-death-0.ogg",
+   "/assets/generated/audio/pack/robot-death-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   2.2,
+   2.2
+  ]
+ },
+ "golem-rumble": {
+  "url": "/assets/generated/audio/pack/golem-rumble-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/golem-rumble-0.ogg",
+   "/assets/generated/audio/pack/golem-rumble-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   2.6
+  ]
+ },
+ "elemental-roar": {
+  "url": "/assets/generated/audio/pack/elemental-roar-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/elemental-roar-0.ogg",
+   "/assets/generated/audio/pack/elemental-roar-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   2.6
+  ]
+ },
+ "monster-bite": {
+  "url": "/assets/generated/audio/pack/monster-bite-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/monster-bite-0.ogg",
+   "/assets/generated/audio/pack/monster-bite-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.189,
+   0.439
+  ]
+ },
+ "villager-murmur": {
+  "url": "/assets/generated/audio/pack/villager-murmur-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/villager-murmur-0.ogg",
+   "/assets/generated/audio/pack/villager-murmur-1.ogg",
+   "/assets/generated/audio/pack/villager-murmur-2.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   2.5,
+   2.999,
+   1.145
+  ]
+ },
+ "crowd-cheer": {
+  "url": "/assets/generated/audio/pack/crowd-cheer-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/crowd-cheer-0.ogg",
+   "/assets/generated/audio/pack/crowd-cheer-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   3,
+   3
+  ]
+ },
+ "child-giggle": {
+  "url": "/assets/generated/audio/pack/child-giggle-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/child-giggle-0.ogg",
+   "/assets/generated/audio/pack/child-giggle-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   1.8,
+   1.205
+  ]
+ },
+ "cow-moo": {
+  "url": "/assets/generated/audio/pack/cow-moo-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/cow-moo-0.ogg",
+   "/assets/generated/audio/pack/cow-moo-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1.78,
+   0.75
+  ]
+ },
+ "sheep-baa": {
+  "url": "/assets/generated/audio/pack/sheep-baa-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/sheep-baa-0.ogg",
+   "/assets/generated/audio/pack/sheep-baa-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   1.055,
+   2
+  ]
+ },
+ "pig-oink": {
+  "url": "/assets/generated/audio/pack/pig-oink-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pig-oink-0.ogg",
+   "/assets/generated/audio/pack/pig-oink-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   1.5,
+   1.055
+  ]
+ },
+ "chicken-cluck": {
+  "url": "/assets/generated/audio/pack/chicken-cluck-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/chicken-cluck-0.ogg",
+   "/assets/generated/audio/pack/chicken-cluck-1.ogg",
+   "/assets/generated/audio/pack/chicken-cluck-2.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   1.465,
+   0.34,
+   1.5
+  ]
+ },
+ "horse-whinny": {
+  "url": "/assets/generated/audio/pack/horse-whinny-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/horse-whinny-0.ogg",
+   "/assets/generated/audio/pack/horse-whinny-1.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   1.07,
+   1.145
+  ]
+ },
+ "cat-meow": {
+  "url": "/assets/generated/audio/pack/cat-meow-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/cat-meow-0.ogg",
+   "/assets/generated/audio/pack/cat-meow-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   1.22,
+   0.744
+  ]
+ },
+ "dog-bark": {
+  "url": "/assets/generated/audio/pack/dog-bark-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/dog-bark-0.ogg",
+   "/assets/generated/audio/pack/dog-bark-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   0.809,
+   0.515
+  ]
+ },
+ "crow-caw": {
+  "url": "/assets/generated/audio/pack/crow-caw-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/crow-caw-0.ogg",
+   "/assets/generated/audio/pack/crow-caw-1.ogg",
+   "/assets/generated/audio/pack/crow-caw-2.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.215,
+   0.455,
+   0.97
+  ]
+ },
+ "fox-yip": {
+  "url": "/assets/generated/audio/pack/fox-yip-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/fox-yip-0.ogg",
+   "/assets/generated/audio/pack/fox-yip-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.23,
+   0.86
+  ]
+ },
+ "owl-hoot": {
+  "url": "/assets/generated/audio/pack/owl-hoot-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/owl-hoot-0.ogg",
+   "/assets/generated/audio/pack/owl-hoot-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   2.395,
+   0.955
+  ]
+ },
+ "bird-chirp": {
+  "url": "/assets/generated/audio/pack/bird-chirp-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/bird-chirp-0.ogg",
+   "/assets/generated/audio/pack/bird-chirp-1.ogg",
+   "/assets/generated/audio/pack/bird-chirp-2.ogg"
+  ],
+  "volume": 0.4,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.6,
+   1.6
+  ]
+ },
+ "frog-croak": {
+  "url": "/assets/generated/audio/pack/frog-croak-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/frog-croak-0.ogg",
+   "/assets/generated/audio/pack/frog-croak-1.ogg"
+  ],
+  "volume": 0.4,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   0.9
+  ]
+ },
+ "deer-snort": {
+  "url": "/assets/generated/audio/pack/deer-snort-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/deer-snort-0.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.215
+  ]
+ },
+ "fire-whoosh": {
+  "url": "/assets/generated/audio/pack/fire-whoosh-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/fire-whoosh-0.ogg",
+   "/assets/generated/audio/pack/fire-whoosh-1.ogg",
+   "/assets/generated/audio/pack/fire-whoosh-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   1.8,
+   1.045,
+   1.8
+  ]
+ },
+ "fire-cast": {
+  "url": "/assets/generated/audio/pack/fire-cast-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/fire-cast-0.ogg",
+   "/assets/generated/audio/pack/fire-cast-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   0.325,
+   1.5
+  ]
+ },
+ "fire-burst": {
+  "url": "/assets/generated/audio/pack/fire-burst-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/fire-burst-0.ogg",
+   "/assets/generated/audio/pack/fire-burst-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.6
+  ]
+ },
+ "flame-loop": {
+  "url": "/assets/generated/audio/pack/flame-loop-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/flame-loop-0.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "loop",
+  "durations": [
+   6.89
+  ]
+ },
+ "ice-cast": {
+  "url": "/assets/generated/audio/pack/ice-cast-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ice-cast-0.ogg",
+   "/assets/generated/audio/pack/ice-cast-1.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.6
+  ]
+ },
+ "ice-crack": {
+  "url": "/assets/generated/audio/pack/ice-crack-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ice-crack-0.ogg",
+   "/assets/generated/audio/pack/ice-crack-1.ogg",
+   "/assets/generated/audio/pack/ice-crack-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   1.4,
+   1.4,
+   1.4
+  ]
+ },
+ "lightning-zap": {
+  "url": "/assets/generated/audio/pack/lightning-zap-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/lightning-zap-0.ogg",
+   "/assets/generated/audio/pack/lightning-zap-1.ogg",
+   "/assets/generated/audio/pack/lightning-zap-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.19,
+   1.4,
+   1.4
+  ]
+ },
+ "chain-lightning": {
+  "url": "/assets/generated/audio/pack/chain-lightning-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/chain-lightning-0.ogg",
+   "/assets/generated/audio/pack/chain-lightning-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   2,
+   2
+  ]
+ },
+ "thunder-crack": {
+  "url": "/assets/generated/audio/pack/thunder-crack-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/thunder-crack-0.ogg",
+   "/assets/generated/audio/pack/thunder-crack-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   2.369,
+   3.5
+  ]
+ },
+ "heal-chime": {
+  "url": "/assets/generated/audio/pack/heal-chime-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/heal-chime-0.ogg",
+   "/assets/generated/audio/pack/heal-chime-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   1.675
+  ]
+ },
+ "heal-loop": {
+  "url": "/assets/generated/audio/pack/heal-loop-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/heal-loop-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   6.89
+  ]
+ },
+ "teleport": {
+  "url": "/assets/generated/audio/pack/teleport-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/teleport-0.ogg",
+   "/assets/generated/audio/pack/teleport-1.ogg",
+   "/assets/generated/audio/pack/teleport-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.15,
+   1.6
+  ]
+ },
+ "shield-hum": {
+  "url": "/assets/generated/audio/pack/shield-hum-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/shield-hum-0.ogg",
+   "/assets/generated/audio/pack/shield-hum-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   2.2,
+   1.915
+  ]
+ },
+ "meteor-fall": {
+  "url": "/assets/generated/audio/pack/meteor-fall-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/meteor-fall-0.ogg",
+   "/assets/generated/audio/pack/meteor-fall-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   4,
+   4
+  ]
+ },
+ "gravity-rumble": {
+  "url": "/assets/generated/audio/pack/gravity-rumble-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/gravity-rumble-0.ogg",
+   "/assets/generated/audio/pack/gravity-rumble-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   3.6,
+   2.16
+  ]
+ },
+ "telekinesis-hum": {
+  "url": "/assets/generated/audio/pack/telekinesis-hum-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/telekinesis-hum-0.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "loop",
+  "durations": [
+   6.89
+  ]
+ },
+ "summon": {
+  "url": "/assets/generated/audio/pack/summon-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/summon-0.ogg",
+   "/assets/generated/audio/pack/summon-1.ogg",
+   "/assets/generated/audio/pack/summon-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   2.6,
+   2.59
+  ]
+ },
+ "force-push": {
+  "url": "/assets/generated/audio/pack/force-push-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/force-push-0.ogg",
+   "/assets/generated/audio/pack/force-push-1.ogg",
+   "/assets/generated/audio/pack/force-push-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.6,
+   1.6
+  ]
+ },
+ "earth-wall": {
+  "url": "/assets/generated/audio/pack/earth-wall-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/earth-wall-0.ogg",
+   "/assets/generated/audio/pack/earth-wall-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   2.6
+  ]
+ },
+ "levitate": {
+  "url": "/assets/generated/audio/pack/levitate-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/levitate-0.ogg",
+   "/assets/generated/audio/pack/levitate-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   2,
+   1.155
+  ]
+ },
+ "conjure-orb": {
+  "url": "/assets/generated/audio/pack/conjure-orb-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/conjure-orb-0.ogg",
+   "/assets/generated/audio/pack/conjure-orb-1.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "oneshot",
+  "durations": [
+   0.75,
+   1.6
+  ]
+ },
+ "magic-cast": {
+  "url": "/assets/generated/audio/pack/magic-cast-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/magic-cast-0.ogg",
+   "/assets/generated/audio/pack/magic-cast-1.ogg",
+   "/assets/generated/audio/pack/magic-cast-2.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "oneshot",
+  "durations": [
+   0.455,
+   0.64,
+   0.44
+  ]
+ },
+ "magic-impact": {
+  "url": "/assets/generated/audio/pack/magic-impact-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/magic-impact-0.ogg",
+   "/assets/generated/audio/pack/magic-impact-1.ogg",
+   "/assets/generated/audio/pack/magic-impact-2.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   1.2,
+   1.2
+  ]
+ },
+ "arcane-bolt": {
+  "url": "/assets/generated/audio/pack/arcane-bolt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/arcane-bolt-0.ogg",
+   "/assets/generated/audio/pack/arcane-bolt-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   1.2,
+   1.115
+  ]
+ },
+ "necro-bolt": {
+  "url": "/assets/generated/audio/pack/necro-bolt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/necro-bolt-0.ogg",
+   "/assets/generated/audio/pack/necro-bolt-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   0.745
+  ]
+ },
+ "break-wood": {
+  "url": "/assets/generated/audio/pack/break-wood-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-wood-0.ogg",
+   "/assets/generated/audio/pack/break-wood-1.ogg",
+   "/assets/generated/audio/pack/break-wood-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.055,
+   0.985,
+   0.849
+  ]
+ },
+ "break-stone": {
+  "url": "/assets/generated/audio/pack/break-stone-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-stone-0.ogg",
+   "/assets/generated/audio/pack/break-stone-1.ogg",
+   "/assets/generated/audio/pack/break-stone-2.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   1.24,
+   2.2,
+   0.325
+  ]
+ },
+ "break-glass": {
+  "url": "/assets/generated/audio/pack/break-glass-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-glass-0.ogg",
+   "/assets/generated/audio/pack/break-glass-1.ogg",
+   "/assets/generated/audio/pack/break-glass-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   1.175,
+   1.6
+  ]
+ },
+ "break-metal": {
+  "url": "/assets/generated/audio/pack/break-metal-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-metal-0.ogg",
+   "/assets/generated/audio/pack/break-metal-1.ogg",
+   "/assets/generated/audio/pack/break-metal-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.34,
+   1.8,
+   1.8
+  ]
+ },
+ "break-crystal": {
+  "url": "/assets/generated/audio/pack/break-crystal-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-crystal-0.ogg",
+   "/assets/generated/audio/pack/break-crystal-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.8,
+   1.435
+  ]
+ },
+ "break-ice": {
+  "url": "/assets/generated/audio/pack/break-ice-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-ice-0.ogg",
+   "/assets/generated/audio/pack/break-ice-1.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   0.264,
+   0.515
+  ]
+ },
+ "break-earth": {
+  "url": "/assets/generated/audio/pack/break-earth-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-earth-0.ogg",
+   "/assets/generated/audio/pack/break-earth-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   1.6,
+   0.505
+  ]
+ },
+ "break-cloth": {
+  "url": "/assets/generated/audio/pack/break-cloth-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/break-cloth-0.ogg",
+   "/assets/generated/audio/pack/break-cloth-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.269,
+   0.89
+  ]
+ },
+ "building-collapse": {
+  "url": "/assets/generated/audio/pack/building-collapse-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/building-collapse-0.ogg",
+   "/assets/generated/audio/pack/building-collapse-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   5.5,
+   4.71
+  ]
+ },
+ "tree-creak": {
+  "url": "/assets/generated/audio/pack/tree-creak-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/tree-creak-0.ogg",
+   "/assets/generated/audio/pack/tree-creak-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   1.45,
+   1.704
+  ]
+ },
+ "tree-fall": {
+  "url": "/assets/generated/audio/pack/tree-fall-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/tree-fall-0.ogg",
+   "/assets/generated/audio/pack/tree-fall-1.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   3.12,
+   3.6
+  ]
+ },
+ "debris-thud": {
+  "url": "/assets/generated/audio/pack/debris-thud-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/debris-thud-0.ogg",
+   "/assets/generated/audio/pack/debris-thud-1.ogg",
+   "/assets/generated/audio/pack/debris-thud-2.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.9,
+   0.9,
+   0.9
+  ]
+ },
+ "door-creak": {
+  "url": "/assets/generated/audio/pack/door-creak-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/door-creak-0.ogg",
+   "/assets/generated/audio/pack/door-creak-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   1.975,
+   0.515
+  ]
+ },
+ "chest-open": {
+  "url": "/assets/generated/audio/pack/chest-open-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/chest-open-0.ogg",
+   "/assets/generated/audio/pack/chest-open-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   0.725,
+   1.6
+  ]
+ },
+ "chain-rattle": {
+  "url": "/assets/generated/audio/pack/chain-rattle-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/chain-rattle-0.ogg",
+   "/assets/generated/audio/pack/chain-rattle-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   2.4,
+   0.49
+  ]
+ },
+ "explosion-small": {
+  "url": "/assets/generated/audio/pack/explosion-small-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/explosion-small-0.ogg",
+   "/assets/generated/audio/pack/explosion-small-1.ogg",
+   "/assets/generated/audio/pack/explosion-small-2.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   2.6,
+   2.6,
+   2.6
+  ]
+ },
+ "explosion-large": {
+  "url": "/assets/generated/audio/pack/explosion-large-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/explosion-large-0.ogg",
+   "/assets/generated/audio/pack/explosion-large-1.ogg",
+   "/assets/generated/audio/pack/explosion-large-2.ogg"
+  ],
+  "volume": 1,
+  "kind": "oneshot",
+  "durations": [
+   1.51,
+   4.37,
+   3.035
+  ]
+ },
+ "explosion-distant": {
+  "url": "/assets/generated/audio/pack/explosion-distant-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/explosion-distant-0.ogg",
+   "/assets/generated/audio/pack/explosion-distant-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   2.335,
+   3.69
+  ]
+ },
+ "ui-open": {
+  "url": "/assets/generated/audio/pack/ui-open-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ui-open-0.ogg",
+   "/assets/generated/audio/pack/ui-open-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.58,
+   0.9
+  ]
+ },
+ "ui-close": {
+  "url": "/assets/generated/audio/pack/ui-close-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ui-close-0.ogg",
+   "/assets/generated/audio/pack/ui-close-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.8,
+   0.8
+  ]
+ },
+ "ui-tick": {
+  "url": "/assets/generated/audio/pack/ui-tick-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ui-tick-0.ogg",
+   "/assets/generated/audio/pack/ui-tick-1.ogg",
+   "/assets/generated/audio/pack/ui-tick-2.ogg"
+  ],
+  "volume": 0.35,
+  "kind": "oneshot",
+  "durations": [
+   0.159,
+   0.085,
+   0.4
+  ],
+  "single": true
+ },
+ "ui-select": {
+  "url": "/assets/generated/audio/pack/ui-select-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ui-select-0.ogg",
+   "/assets/generated/audio/pack/ui-select-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.8,
+   0.8
+  ]
+ },
+ "ui-error": {
+  "url": "/assets/generated/audio/pack/ui-error-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/ui-error-0.ogg",
+   "/assets/generated/audio/pack/ui-error-1.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.9,
+   0.9
+  ]
+ },
+ "quest-start": {
+  "url": "/assets/generated/audio/pack/quest-start-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/quest-start-0.ogg",
+   "/assets/generated/audio/pack/quest-start-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   3,
+   0.849
+  ]
+ },
+ "quest-complete": {
+  "url": "/assets/generated/audio/pack/quest-complete-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/quest-complete-0.ogg",
+   "/assets/generated/audio/pack/quest-complete-1.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   3.1,
+   2.81
+  ]
+ },
+ "level-up": {
+  "url": "/assets/generated/audio/pack/level-up-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/level-up-0.ogg",
+   "/assets/generated/audio/pack/level-up-1.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "oneshot",
+  "durations": [
+   2.975,
+   3.2
+  ]
+ },
+ "pickup": {
+  "url": "/assets/generated/audio/pack/pickup-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pickup-0.ogg",
+   "/assets/generated/audio/pack/pickup-1.ogg",
+   "/assets/generated/audio/pack/pickup-2.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.7,
+   0.7,
+   0.7
+  ]
+ },
+ "pickup-coin": {
+  "url": "/assets/generated/audio/pack/pickup-coin-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/pickup-coin-0.ogg",
+   "/assets/generated/audio/pack/pickup-coin-1.ogg",
+   "/assets/generated/audio/pack/pickup-coin-2.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.625,
+   0.7,
+   0.7
+  ]
+ },
+ "spell-select": {
+  "url": "/assets/generated/audio/pack/spell-select-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/spell-select-0.ogg",
+   "/assets/generated/audio/pack/spell-select-1.ogg"
+  ],
+  "volume": 0.4,
+  "kind": "oneshot",
+  "durations": [
+   0.5,
+   0.32
+  ],
+  "single": true
+ },
+ "step-grass": {
+  "url": "/assets/generated/audio/pack/step-grass-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/step-grass-0.ogg",
+   "/assets/generated/audio/pack/step-grass-1.ogg",
+   "/assets/generated/audio/pack/step-grass-2.ogg",
+   "/assets/generated/audio/pack/step-grass-3.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.7,
+   0.684,
+   0.285,
+   0.169
+  ],
+  "single": true
+ },
+ "step-stone": {
+  "url": "/assets/generated/audio/pack/step-stone-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/step-stone-0.ogg",
+   "/assets/generated/audio/pack/step-stone-1.ogg",
+   "/assets/generated/audio/pack/step-stone-2.ogg",
+   "/assets/generated/audio/pack/step-stone-3.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.7,
+   0.693,
+   0.223,
+   0.7
+  ],
+  "single": true
+ },
+ "step-wood": {
+  "url": "/assets/generated/audio/pack/step-wood-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/step-wood-0.ogg",
+   "/assets/generated/audio/pack/step-wood-1.ogg",
+   "/assets/generated/audio/pack/step-wood-2.ogg",
+   "/assets/generated/audio/pack/step-wood-3.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.174,
+   0.294,
+   0.295,
+   0.58
+  ],
+  "single": true
+ },
+ "step-water": {
+  "url": "/assets/generated/audio/pack/step-water-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/step-water-0.ogg",
+   "/assets/generated/audio/pack/step-water-1.ogg",
+   "/assets/generated/audio/pack/step-water-2.ogg",
+   "/assets/generated/audio/pack/step-water-3.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "oneshot",
+  "durations": [
+   0.705,
+   0.71,
+   0.8,
+   0.8
+  ],
+  "single": true
+ },
+ "step-dirt": {
+  "url": "/assets/generated/audio/pack/step-dirt-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/step-dirt-0.ogg",
+   "/assets/generated/audio/pack/step-dirt-1.ogg",
+   "/assets/generated/audio/pack/step-dirt-2.ogg"
+  ],
+  "volume": 0.5,
+  "kind": "oneshot",
+  "durations": [
+   0.39,
+   0.35,
+   0.625
+  ],
+  "single": true
+ },
+ "land-thud": {
+  "url": "/assets/generated/audio/pack/land-thud-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/land-thud-0.ogg",
+   "/assets/generated/audio/pack/land-thud-1.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "oneshot",
+  "durations": [
+   0.59,
+   0.415
+  ],
+  "single": true
+ },
+ "amb-night-field": {
+  "url": "/assets/generated/audio/pack/amb-night-field-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-night-field-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-forest": {
+  "url": "/assets/generated/audio/pack/amb-forest-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-forest-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-village": {
+  "url": "/assets/generated/audio/pack/amb-village-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-village-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-tavern": {
+  "url": "/assets/generated/audio/pack/amb-tavern-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-tavern-0.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-dungeon": {
+  "url": "/assets/generated/audio/pack/amb-dungeon-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-dungeon-0.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-graveyard": {
+  "url": "/assets/generated/audio/pack/amb-graveyard-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-graveyard-0.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-battlefield": {
+  "url": "/assets/generated/audio/pack/amb-battlefield-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-battlefield-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-storm": {
+  "url": "/assets/generated/audio/pack/amb-storm-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-storm-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-campfire": {
+  "url": "/assets/generated/audio/pack/amb-campfire-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-campfire-0.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "loop",
+  "durations": [
+   21.85
+  ]
+ },
+ "amb-lake": {
+  "url": "/assets/generated/audio/pack/amb-lake-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-lake-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-wind": {
+  "url": "/assets/generated/audio/pack/amb-wind-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-wind-0.ogg"
+  ],
+  "volume": 0.55,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "amb-rain": {
+  "url": "/assets/generated/audio/pack/amb-rain-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/amb-rain-0.ogg"
+  ],
+  "volume": 0.6,
+  "kind": "loop",
+  "durations": [
+   25.85
+  ]
+ },
+ "omni-think": {
+  "url": "/assets/generated/audio/pack/omni-think-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/omni-think-0.ogg"
+  ],
+  "volume": 0.4,
+  "kind": "loop",
+  "durations": [
+   6.89
+  ]
+ },
+ "omni-awaken": {
+  "url": "/assets/generated/audio/pack/omni-awaken-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/omni-awaken-0.ogg",
+   "/assets/generated/audio/pack/omni-awaken-1.ogg"
+  ],
+  "volume": 0.9,
+  "kind": "oneshot",
+  "durations": [
+   8,
+   8
+  ]
+ },
+ "omni-create": {
+  "url": "/assets/generated/audio/pack/omni-create-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/omni-create-0.ogg",
+   "/assets/generated/audio/pack/omni-create-1.ogg",
+   "/assets/generated/audio/pack/omni-create-2.ogg"
+  ],
+  "volume": 0.85,
+  "kind": "oneshot",
+  "durations": [
+   4,
+   4,
+   4
+  ]
+ },
+ "omni-approve": {
+  "url": "/assets/generated/audio/pack/omni-approve-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/omni-approve-0.ogg",
+   "/assets/generated/audio/pack/omni-approve-1.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "oneshot",
+  "durations": [
+   1.74,
+   2.515
+  ]
+ },
+ "omni-displeased": {
+  "url": "/assets/generated/audio/pack/omni-displeased-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/omni-displeased-0.ogg",
+   "/assets/generated/audio/pack/omni-displeased-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   3,
+   3
+  ]
+ },
+ "omni-listen": {
+  "url": "/assets/generated/audio/pack/omni-listen-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/omni-listen-0.ogg",
+   "/assets/generated/audio/pack/omni-listen-1.ogg"
+  ],
+  "volume": 0.4,
+  "kind": "oneshot",
+  "durations": [
+   1.5,
+   1.5
+  ]
+ },
+ "music-calm": {
+  "url": "/assets/generated/audio/pack/music-calm-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-calm-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "music",
+  "durations": [
+   63.333
+  ],
+  "bpm": 72
+ },
+ "music-wonder": {
+  "url": "/assets/generated/audio/pack/music-wonder-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-wonder-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "music",
+  "durations": [
+   63
+  ],
+  "bpm": 80
+ },
+ "music-village": {
+  "url": "/assets/generated/audio/pack/music-village-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-village-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "music",
+  "durations": [
+   62.308
+  ],
+  "bpm": 104
+ },
+ "music-tavern": {
+  "url": "/assets/generated/audio/pack/music-tavern-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-tavern-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "music",
+  "durations": [
+   64.286
+  ],
+  "bpm": 112
+ },
+ "music-tension": {
+  "url": "/assets/generated/audio/pack/music-tension-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-tension-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "music",
+  "durations": [
+   64
+  ],
+  "bpm": 90
+ },
+ "music-battle": {
+  "url": "/assets/generated/audio/pack/music-battle-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-battle-0.ogg"
+  ],
+  "volume": 0.75,
+  "kind": "music",
+  "durations": [
+   63.333
+  ],
+  "bpm": 144
+ },
+ "music-boss": {
+  "url": "/assets/generated/audio/pack/music-boss-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-boss-0.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "music",
+  "durations": [
+   64
+  ],
+  "bpm": 120
+ },
+ "music-night": {
+  "url": "/assets/generated/audio/pack/music-night-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-night-0.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "music",
+  "durations": [
+   64
+  ],
+  "bpm": 60
+ },
+ "music-sacred": {
+  "url": "/assets/generated/audio/pack/music-sacred-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-sacred-0.ogg"
+  ],
+  "volume": 0.7,
+  "kind": "music",
+  "durations": [
+   63.75
+  ],
+  "bpm": 64
+ },
+ "music-dungeon": {
+  "url": "/assets/generated/audio/pack/music-dungeon-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-dungeon-0.ogg"
+  ],
+  "volume": 0.65,
+  "kind": "music",
+  "durations": [
+   61.714
+  ],
+  "bpm": 70
+ },
+ "music-victory": {
+  "url": "/assets/generated/audio/pack/music-victory-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-victory-0.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "stinger",
+  "durations": [
+   6.47
+  ],
+  "bpm": 100
+ },
+ "music-defeat": {
+  "url": "/assets/generated/audio/pack/music-defeat-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/music-defeat-0.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "stinger",
+  "durations": [
+   7.972
+  ],
+  "bpm": 60
+ },
+ "dragon-wings": {
+  "url": "/assets/generated/audio/pack/dragon-wings-0.ogg",
+  "variants": [
+   "/assets/generated/audio/pack/dragon-wings-0.ogg",
+   "/assets/generated/audio/pack/dragon-wings-1.ogg"
+  ],
+  "volume": 0.8,
+  "kind": "oneshot",
+  "durations": [
+   3,
+   3
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+﻿// core/audio.js — world.audio: the game's sound. ~190 generated pack sounds (MOSS-SoundEffect + ACE-Step, 1-4 variants each) play AUTOMATICALLY for weapons, kit.hit
+//   damage, deaths + creature voices, gore, destruction, spells, footsteps, quests, new creations, plus an adaptive music score + ambience beds. Add only what is special.
+// USE  const A = ctx.world.audio;   // may be missing/reloading: guard it.   Positions are world coordinates (Vector3 or {x,y,z}).
+//   A.sfx(nameOrPrompt, { at, volume = 1, pitch = 1, variant, generate, seconds = 2, cooldown }) -> boolean, SYNCHRONOUS: true = played (or deliberately muted/inaudible),
+//        false = nothing could be played (unknown name, still decoding, no audio context) -> then fall back:  A?.sfx('goblin-grunt', { at }) || snd.noise({ ... , at })
+//        at = positional (3D panner, distance fall-off), omit = flat. Random variant (never the same twice) + pitch jitter, per-name cooldown + group limits (30 hits in one
+//        frame do not pile up), global voice cap with priority (ui/omni > player > booms > impacts > ambient). Never throws.
+//   BESPOKE SOUND  A.sfx('a crystal bell ringing underwater', { at })  — a SENTENCE (contains a space) that is not a pack name is generated once by the local model (3-10 s,
+//        then cached on disk for good): a soft kit.sound stand-in plays now, the real file from the next call on. An identifier-like unknown name (no space, e.g. a typo) NEVER
+//        triggers generation unless you pass { generate: true } (dashes become spaces); { generate: false } never generates. seconds 0.5-30. Every creation can voice itself.
+//   A.has(name)  A.list()  A.preload([names]) -> Promise   A.generate(prompt, { kind: 'sfx'|'music', seconds, loop }) -> Promise<url | null>   A.stats()
+//   MUSIC  A.music('battle' | 'slow ominous cave theme') mood name, or a prompt (generated + cached, then crossfaded in)   A.setMood(name | null) pins a mood (null = director back on)
+//        A.stopMusic()  A.mood  A.moods  A.stinger('music-victory')  event 'music:changed' { mood, previous, name, url, source }  moods: calm wonder village tavern tension battle boss
+//        night sacred dungeon. With nobody asking, a director picks the mood from game state (enemies near -> tension, fighting -> battle, boss-named fighter -> boss, last enemy
+//        dead -> victory sting, player:died -> defeat sting, night, gazing at the Omnissiah -> sacred, village/tavern/dungeon zone, new creation -> wonder), hysteresis, >= 2 s fades.
+//   A.bed('amb-forest' | null, { fade }) loops an ambience bed (core/ambience.js picks one from what is around the player)   A.enabled  A.musicVolume .6  A.sfxVolume 1  A.ambienceVolume .8
+// PACK NAMES  (name = one-shot unless noted)
+//   swing-{light,medium,heavy} thrust boomerang-whirl weapon-{throw,grab,drop} ground-slam clang shield-{block,bash} hit-generic  slash-{flesh,armor,wood,stone}
+//   blunt-{flesh,armor,wood,stone} pierce-{flesh,armor,wood,stone} bow-draw arrow-{loose,hit-flesh,hit-ground} crossbow-{shot,reload} blaster-{shot,heavy} plasma-shot shotgun-blast
+//   rifle-crack pistol-shot gunshot-small sniper-shot rocket-launch bullet-impact grenade-{pin,beep} smoke-pop  limb-sever gore-squelch bone-crack body-fall armor-fall blood-splat
+//   player-{hurt,death} heartbeat humanoid-{grunt,hurt,death} goblin-{cackle,grunt,death} orc-{roar,grunt,death} troll-{bellow,grunt} skeleton-{rattle,collapse} zombie-{groan,death}
+//   demon-{growl,death} dragon-{roar,wings,fire-breath} wolf-{growl,howl,yelp} bear-roar spider-skitter slime-{squish,splat} ghost-wail wraith-whisper imp-cackle bat-screech
+//   robot-{beep,death} golem-rumble elemental-roar monster-bite villager-murmur crowd-cheer child-giggle cow-moo sheep-baa pig-oink chicken-cluck horse-whinny cat-meow dog-bark
+//   crow-caw fox-yip owl-hoot bird-chirp frog-croak deer-snort  fire-{whoosh,cast,burst} ice-{cast,crack} lightning-zap chain-lightning thunder-crack heal-chime teleport shield-hum
+//   meteor-fall gravity-rumble summon force-push earth-wall levitate conjure-orb magic-{cast,impact} arcane-bolt necro-bolt  break-{wood,stone,glass,metal,crystal,ice,earth,cloth}
+//   building-collapse tree-{creak,fall} debris-thud door-creak chest-open chain-rattle explosion-{small,large,distant}  ui-{open,close,tick,select,error} quest-{start,complete}
+//   level-up pickup pickup-coin spell-select  step-{grass,stone,wood,water,dirt} land-thud  omni-{awaken,create,approve,displeased,listen}   (UI names are flat, very short, quiet)
+//   loops (bed or hold): flame-loop heal-loop telekinesis-hum omni-think amb-{night-field,forest,village,tavern,dungeon,graveyard,battlefield,storm,campfire,lake,wind,rain}
+//   music: music-{calm,wonder,village,tavern,tension,battle,boss,night,sacred,dungeon} loops, music-{victory,defeat} stingers.

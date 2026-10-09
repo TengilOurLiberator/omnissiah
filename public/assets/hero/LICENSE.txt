@@ -1,0 +1,5 @@
+Omnissiah hero models
+
+Monsters (goblin, goblin-shaman, orc-warrior, troll, dark-knight, demon) are modified derivatives of the KayKit Adventurers characters by Kay Lousberg (kaylousberg.com), released CC0 (public domain).
+Dragon, dragon-whelp, the Omnissiah regalia (omni-*) and the signature weapons were modelled from scratch for this game and are released CC0 as well.
+hero-palette.png is a generated colour swatch table. License: Creative Commons Zero (CC0 1.0) - free for personal, educational and commercial projects; no attribution required.

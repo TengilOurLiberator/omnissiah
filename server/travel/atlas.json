@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "places": [
+    {
+      "slug": "volcanic-island", "name": "Volcanic Island", "seed": 7,
+      "prompt": "a volcanic island at dusk, an erupting volcano with glowing lava rivers on the horizon, black rock spires, dark ocean, ominous red sky",
+      "spec": {
+        "keywords": ["volcan", "lava", "eruption", "magma", "ash"],
+        "terrain": "island", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "ocean", "level": -0.9 },
+        "ground": { "rock": "#2a2024", "sand": "#241c1e" },
+        "dressing": [ { "lib": "rock-spires", "count": 3, "near": 28, "far": 90, "scale": 1.6 }, { "lib": "dead-tree", "count": 4, "near": 14, "far": 60 }, { "lib": "boulder", "count": 6, "near": 8, "far": 50, "scale": 1.4 } ],
+        "weather": [ { "lib": "embers", "count": 140 } ],
+        "ambience": "ominous", "music": "tension", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "snowy-pine-valley", "name": "Snowy Pine Valley", "seed": 21,
+      "prompt": "a snowy alpine valley full of dark green pine trees, snow covered mountains under soft overcast winter light, cold blue grey tones",
+      "spec": {
+        "keywords": ["snow", "pine", "winter", "valley", "frozen", "ice", "arctic", "tundra"],
+        "terrain": "snowfield", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "lake", "level": -1.4 },
+        "ground": { "rock": "#8d93a3" },
+        "dressing": [ { "lib": "pine-tree", "count": 22, "near": 14, "far": 80, "scale": 1.4 }, { "lib": "boulder", "count": 4, "near": 10, "far": 50 } ],
+        "weather": [ { "lib": "snow", "intensity": 0.5, "ground": false } ],
+        "ambience": "serene", "music": "calm", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "desert-dunes-dusk", "name": "Desert Dunes at Dusk", "seed": 33,
+      "prompt": "endless desert sand dunes at dusk, warm orange and purple sky, rippled sand, distant rock mesas, long soft shadows",
+      "spec": {
+        "keywords": ["desert", "dune", "sand", "sahara", "arid", "oasis", "mesa"],
+        "terrain": "dunes", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "none" },
+        "dressing": [ { "lib": "cactus", "count": 7, "near": 12, "far": 70 }, { "lib": "boulder", "count": 4, "near": 20, "far": 90, "scale": 1.3 }, { "lib": "bone-pile", "count": 1, "near": 12, "far": 30 } ],
+        "ambience": "serene", "music": "calm", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "misty-swamp", "name": "Misty Swamp", "seed": 44,
+      "prompt": "a misty swamp at twilight, still dark water, twisted mangrove trees, hanging moss, thick fog, murky green grey light",
+      "spec": {
+        "keywords": ["swamp", "bog", "marsh", "mangrove", "fen", "mist", "murky"],
+        "terrain": "plain", "grass": 0.5, "motes": 1, "stones": false,
+        "water": { "mode": "lake", "level": -0.7 },
+        "ground": { "a": "#1d2619", "b": "#3a4730" },
+        "dressing": [ { "lib": "dead-tree", "count": 8, "near": 10, "far": 70 }, { "lib": "reed-patch", "count": 5, "near": 8, "far": 40 }, { "lib": "mushroom-patch", "count": 3, "near": 6, "far": 30 } ],
+        "sky": { "fogMul": 1.7 },
+        "weather": [ { "lib": "fireflies", "count": 70 } ],
+        "ambience": "ominous", "music": "tension", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "alpine-meadow", "name": "Alpine Meadow", "seed": 55,
+      "prompt": "a green alpine meadow full of wildflowers on a bright sunny day, snow capped peaks all around, deep blue sky with white clouds",
+      "spec": {
+        "keywords": ["meadow", "alps", "alpine", "mountain", "sunny", "flower", "hill", "highland"],
+        "terrain": "rolling", "grass": 1, "motes": 0.4, "stones": false,
+        "water": { "mode": "lake", "level": -1.4 },
+        "dressing": [ { "lib": "flower-patch", "count": 8, "near": 6, "far": 40 }, { "lib": "pine-tree", "count": 7, "near": 30, "far": 90 }, { "lib": "boulder", "count": 3, "near": 15, "far": 60 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "joyful"
+      }
+    },
+    {
+      "slug": "alien-crystal-world", "name": "Alien Crystal World", "seed": 66,
+      "prompt": "an alien planet covered in giant glowing violet and cyan crystal spires, a huge ringed planet and two moons in a teal and magenta sky, iridescent ground",
+      "spec": {
+        "keywords": ["alien", "crystal", "planet", "otherworld", "exoplanet", "cosmic", "space", "sci-fi", "scifi"],
+        "terrain": "craggy", "grass": 0, "motes": 1, "stones": false,
+        "water": { "mode": "none" },
+        "dressing": [ { "lib": "crystal-cluster", "count": 9, "near": 10, "far": 85, "scale": 1.8 }, { "lib": "rock-spires", "count": 2, "near": 40, "far": 100 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "joyful"
+      }
+    },
+    {
+      "slug": "autumn-forest-clearing", "name": "Autumn Forest Clearing", "seed": 77,
+      "prompt": "a forest clearing in autumn, trees with orange red and gold leaves all around, low golden afternoon sun with soft light shafts, fallen leaves",
+      "spec": {
+        "keywords": ["autumn", "fall", "forest", "clearing", "woods", "woodland", "grove", "leaves"],
+        "terrain": "rolling", "grass": 0.7, "motes": 0.3, "stones": false,
+        "water": { "mode": "lake", "level": -1.4 },
+        "dressing": [ { "lib": "autumn-forest", "count": 70, "radius": 70, "clearing": 14 }, { "lib": "log", "count": 2, "near": 8, "far": 25 }, { "lib": "mushroom-patch", "count": 2, "near": 8, "far": 25 } ],
+        "weather": [ { "lib": "falling-leaves", "count": 90 } ],
+        "ambience": "serene", "music": "calm", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "tropical-beach", "name": "Tropical Beach", "seed": 88,
+      "prompt": "a tropical beach with white sand and turquoise ocean, palm trees, bright sun in a blue sky with fluffy clouds",
+      "spec": {
+        "keywords": ["beach", "tropical", "palm", "tropics", "shore", "coast", "paradise", "lagoon", "ocean", "sea", "seaside"],
+        "terrain": "island", "grass": 0.15, "motes": 0, "stones": false,
+        "water": { "mode": "ocean", "level": -0.9 },
+        "ground": { "a": "#c2ae80", "b": "#d9c99a", "sand": "#e8d9b0", "rockAmount": 0 },
+        "dressing": [ { "lib": "palm-grove", "count": 14, "radius": 12, "near": 15, "far": 45 }, { "lib": "rowboat", "count": 1, "near": 20, "far": 40 }, { "lib": "boulder", "count": 3, "near": 20, "far": 60 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "joyful"
+      }
+    },
+    {
+      "slug": "canyon-floor", "name": "Canyon Floor", "seed": 99,
+      "prompt": "standing on the floor of a deep red sandstone canyon, towering layered rock walls on both sides, a narrow strip of blue sky above, warm light",
+      "spec": {
+        "keywords": ["canyon", "gorge", "ravine", "cliff", "sandstone", "badlands", "arizona"],
+        "terrain": "canyon", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "none" },
+        "dressing": [ { "lib": "boulder", "count": 8, "near": 8, "far": 60, "scale": 1.5 }, { "lib": "cactus", "count": 3, "near": 10, "far": 50 }, { "lib": "rock-cluster", "count": 3, "near": 12, "far": 50 } ],
+        "ambience": "serene", "music": "calm", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "floating-sky-islands", "name": "Floating Sky Islands", "seed": 211,
+      "prompt": "standing on a grassy floating island in the sky, the island edge and cliffs below, an endless sea of white clouds far below, several other grassy rock islands with waterfalls floating in the distance at the same height, golden sunset light, majestic fantasy landscape",
+      "spec": {
+        "keywords": ["floating", "sky island", "above the clouds", "heaven", "celestial", "clouds", "cloud", "sky"],
+        "terrain": { "baseAmp": 0.2, "hillAmp": -0.9, "islandR": 52, "islandW": 40, "seaDepth": 9, "lift": 1.9, "lakeScale": -1 }, "grass": 0.9, "motes": 1, "stones": false,
+        "water": { "mode": "ocean", "level": -1.2, "color": "#eef0f6" },
+        "ground": { "a": "#35552a", "b": "#6a8a3a", "sand": "#8a9a5a" },
+        "dressing": [ { "lib": "flower-patch", "count": 7, "near": 6, "far": 40 }, { "lib": "rock-spires", "count": 2, "near": 55, "far": 95 } ],
+        "ambience": "luminous", "music": "wonder", "oracle": "serene"
+      }
+    },
+    {
+      "slug": "haunted-moor-night", "name": "Haunted Moor at Night", "seed": 122,
+      "prompt": "a haunted moor at night under a huge pale full moon behind thin clouds, dead twisted trees, low fog over the heather, crumbling ruins in the distance, cold blue light",
+      "spec": {
+        "keywords": ["haunted", "moor", "night", "graveyard", "spooky", "ghost", "gothic", "heath", "cemetery", "moon"],
+        "terrain": "hills", "grass": 0.6, "motes": 0, "stones": false,
+        "water": { "mode": "lake", "level": -1.4 },
+        "dressing": [ { "lib": "dead-forest", "count": 22, "radius": 60 }, { "lib": "gravestone", "count": 7, "near": 10, "far": 35 }, { "lib": "ruins", "count": 1, "near": 55, "far": 75 } ],
+        "sky": { "fogMul": 1.6 },
+        "ambience": "ominous", "music": "night", "oracle": "ominous"
+      }
+    },
+    {
+      "slug": "moon-surface", "name": "The Moon", "seed": 133,
+      "prompt": "the surface of the moon, grey regolith and craters, a black sky full of stars with the blue Earth rising above the horizon, harsh white sunlight, long sharp shadows",
+      "spec": {
+        "keywords": ["moon", "lunar", "regolith", "space", "mars", "asteroid", "airless", "crater"],
+        "terrain": "craggy", "grass": 0, "motes": 0, "stones": false,
+        "water": { "mode": "none" },
+        "ground": { "rockAmount": 0.3 },
+        "dressing": [ { "lib": "boulder", "count": 14, "near": 8, "far": 70, "scale": 1.2 } ],
+        "ambience": "ominous", "music": "night", "oracle": "serene"
+      }
+    }
+  ]
+}
+

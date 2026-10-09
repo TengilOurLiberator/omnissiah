@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "an-abandoned-greenhouse-overgr-accbd6",
+  "object": {
+    "id": "round-leaf-shrub",
+    "name": "round green shrub with light green oval leaves",
+    "description": "A compact rounded shrub with many small light green oval leaves over darker green foliage.",
+    "materials": [
+      "plant"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/source/0-an-abandoned-greenhouse-overgr-accbd6.png",
+        "location_in_image": "centre-left, at the base of the back glass wall"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/an-abandoned-greenhouse-overgr-accbd6/output/round-leaf-shrub",
+    "count": 1,
+    "box": [
+      0.345,
+      0.44,
+      0.455,
+      0.572
+    ],
+    "depth": "far",
+    "size_m": [
+      1.2,
+      1,
+      1
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "cloth",
+    "impact_sound": "leafy bush rustle",
+    "score": 6.3986
+  },
+  "updated_at": "2026-10-08T18:06:01.584Z"
+}

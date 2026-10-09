@@ -1,0 +1,13 @@
+// core/games.js - world.games: MINI-GAMES with rules, scores and replay. Each is a library entry (category 'games'): "let's bowl" = lib.spawn(ctx,'bowling') or games.start('bowling').
+// USE   world.games.start('bowling' | 'archery' | 'whack' | 'football' | 'basketball' | 'towerdefense' | 'arena' | 'race' | 'dominoes' | 'siege' | 'fishing' | 'hideseek' | 'golf' | 'rhythm' ...,
+//         { x, z, yaw, level }) -> controller | null   builds the venue in front of the player (replacing the previous one) and runs the 3-2-1 countdown after ~1.2 s.
+//       lib.spawn(ctx, 'bowling', { autostart: true }) builds the same venue in YOUR creation (it goes with it); the player hits the big green button on its pedestal to play.
+//       world.games.list() -> [{ name, title, hint, aliases, best, plays, level }]   .stop() ends the round and removes the managed venue   .current -> { name, state, score, level, timeLeft } | null
+//       .scores(name?) -> { best, plays, level, last, detail } (all games when no name; best also lives in quests stat 'games.<name>.best' + localStorage)   .reload() re-imports games/*.js
+//       .on('start'|'play'|'score'|'end'|'abort'|'stop', fn({ name, score, rating, level, ... })) -> off    (also ctx.events 'games:<evt>')
+// RULES  ONE round at a time (starting another aborts the first). Lifecycle idle -> countdown -> play -> result -> (replay | idle). Walk away for ~10 s and the round is aborted; a venue made by games.start()
+//       removes itself after ~60 s far away. Everything a game makes is tracked and removed on end/abort/dispose. Rewards: XP, favour, gold; best score, level (1..5, goes up after a good result) persist.
+// BUTTONS the pedestal: BIG GREEN = play / again; small RED = stop. Press: poke it with a hand (moving), point + trigger from <= 8 m (desktop / controllers), or hit it with a weapon or spell.
+// WRITING A NEW GAME (only when the wish is a game no entry covers): games/<file>.js with  export const meta = { name, title, aliases[], description, hint, icon, distance, size, par, physics };
+//   export default function (g) { build the venue; return { reset(level), play(level), update(dt, t), stop?(why), dispose?() } }.  Read an existing file in games/ for the g.* helper API (g.at, g.builder, g.body, g.spawn,
+//   g.addScore, g.setTime, g.end, g.later, g.every, g.sfx, g.pop, g.float, g.hands ...) before writing one; a simple one-off game can be a plain creation instead.

@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "slug": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "name": "Round Tower Study",
+  "caption": "Round stone room with wooden furniture, upper shelf ledge, tiled floor",
+  "prompt": "a wizard's cluttered tower study at night",
+  "created": "2026-10-08T12:52:47.828Z",
+  "image": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+  "plate": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/1-a-wizard-s-cluttered-tower-stu-9dd9bf-plate.png",
+  "thumb": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/thumb.jpg",
+  "aspect": 1.75,
+  "fov": 80,
+  "horizon_y": 0.52,
+  "place": {
+    "slug": "blast-a-wizard-s-cluttered-tower-stu-4aedd4f6",
+    "url": "/assets/generated/places/blast-a-wizard-s-cluttered-tower-stu-4aedd4f6/pano_2048.jpg",
+    "preview": "/assets/generated/places/blast-a-wizard-s-cluttered-tower-stu-4aedd4f6/tiny.webp",
+    "from": "plate"
+  },
+  "setting": {
+    "kind": "indoor",
+    "ground": "square stone tile floor with grass and moss patches",
+    "backdrop": "curved dark blue stone wall with arched alcove and wooden le",
+    "time_of_day": "night",
+    "terrain": "plain",
+    "lighting": "warm soft overhead pool of light on the centre floor, cool dark blue ambient on walls and ceiling, moderate contrast, soft shadows under furniture, night interior",
+    "fantasy": true
+  },
+  "ambient": {
+    "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/sfx/ambient.ogg",
+    "prompt": "ambient environment, quiet stone room tone, faint wind through a tall tower, soft creaking of wooden beams",
+    "seconds": 20
+  },
+  "music": "night",
+  "objects": [
+    {
+      "id": "purple-cube-pedestal",
+      "name": "purple cube-shaped wooden pedestal",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/purple-cube-pedestal/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/purple-cube-pedestal/reference.png",
+      "position": [
+        1.82,
+        0,
+        -7.3
+      ],
+      "yaw": -0.36,
+      "scale": 0.648,
+      "size_m": [
+        0.7,
+        0.6,
+        0.7
+      ],
+      "dims": [
+        0.57,
+        0.65,
+        0.57
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 10.3,
+      "hp": 13,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/purple-cube-pedestal/impact.ogg",
+        "phrase": "impact one-shot, short decay, hollow wooden box thud hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.609,
+          0.558,
+          0.688,
+          0.66
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": 13.99
+    },
+    {
+      "id": "central-wooden-table",
+      "name": "small light brown wooden table with four square legs",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/central-wooden-table/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/central-wooden-table/reference.png",
+      "position": [
+        0.06,
+        0,
+        -7.52
+      ],
+      "yaw": -0.24,
+      "scale": 1.077,
+      "size_m": [
+        1.2,
+        0.8,
+        0.7
+      ],
+      "dims": [
+        1.08,
+        0.89,
+        0.93
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 43.8,
+      "hp": 22,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/central-wooden-table/impact.ogg",
+        "phrase": "impact one-shot, short decay, heavy wooden table thud hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.451,
+          0.535,
+          0.559,
+          0.662
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": 0.48
+    },
+    {
+      "id": "orange-shade-table-lamp",
+      "name": "table lamp with orange conical shade and turned red wooden stem",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-shade-table-lamp/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-shade-table-lamp/reference.png",
+      "position": [
+        1.83,
+        0.65,
+        -7.3
+      ],
+      "yaw": -0.31,
+      "scale": 0.55,
+      "size_m": [
+        0.3,
+        0.55,
+        0.3
+      ],
+      "dims": [
+        0.32,
+        0.55,
+        0.32
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 2.8,
+      "hp": 11,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "object",
+      "supportId": "purple-cube-pedestal",
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-shade-table-lamp/impact.ogg",
+        "phrase": "impact one-shot, short decay, small lamp clatter and crack hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.633,
+          0.475,
+          0.666,
+          0.563
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": 14.05
+    },
+    {
+      "id": "orange-wooden-chair",
+      "name": "orange wooden chair with a red panel in its tall back",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-wooden-chair/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-wooden-chair/reference.png",
+      "position": [
+        -1.54,
+        0,
+        -7.36
+      ],
+      "yaw": -0.08,
+      "scale": 1.1,
+      "size_m": [
+        0.6,
+        1.1,
+        0.6
+      ],
+      "dims": [
+        0.58,
+        1.1,
+        0.56
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 17.5,
+      "hp": 19,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/orange-wooden-chair/impact.ogg",
+        "phrase": "impact one-shot, short decay, wooden chair clattering over hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.342,
+          0.505,
+          0.409,
+          0.662
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": -11.8
+    },
+    {
+      "id": "empty-red-wooden-frame",
+      "name": "empty dark red wooden rectangular frame",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/empty-red-wooden-frame/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/empty-red-wooden-frame/reference.png",
+      "position": [
+        -3.96,
+        0,
+        -6.39
+      ],
+      "yaw": 0.7,
+      "scale": 0.9,
+      "size_m": [
+        0.8,
+        0.9,
+        0.2
+      ],
+      "dims": [
+        0.79,
+        0.9,
+        0.15
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 5.2,
+      "hp": 15,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "object",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/empty-red-wooden-frame/impact.ogg",
+        "phrase": "impact one-shot, short decay, wooden frame clattering hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.09,
+          0.43,
+          0.171,
+          0.548
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": -31.8
+    },
+    {
+      "id": "round-pedestal-side-table",
+      "name": "dark wooden round side table on a barrel-shaped base",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/round-pedestal-side-table/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/round-pedestal-side-table/reference.png",
+      "position": [
+        -2.83,
+        0,
+        -6.97
+      ],
+      "yaw": 0.14,
+      "scale": 1.1,
+      "size_m": [
+        0.7,
+        1.1,
+        0.7
+      ],
+      "dims": [
+        0.94,
+        1.1,
+        0.94
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 47.6,
+      "hp": 23,
+      "grabbable": false,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "floor",
+      "supportId": null,
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/round-pedestal-side-table/impact.ogg",
+        "phrase": "impact one-shot, short decay, wooden stand toppling thud hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.226,
+          0.477,
+          0.289,
+          0.622
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": -22.14
+    },
+    {
+      "id": "stack-of-books",
+      "name": "stack of closed hardcover books",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/stack-of-books/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/stack-of-books/reference.png",
+      "position": [
+        -3.7,
+        0.9,
+        -6.56
+      ],
+      "yaw": 0.74,
+      "scale": 0.34,
+      "size_m": [
+        0.35,
+        0.25,
+        0.25
+      ],
+      "dims": [
+        0.34,
+        0.26,
+        0.32
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 1.4,
+      "hp": 9,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "object",
+      "supportId": "empty-red-wooden-frame",
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/stack-of-books/impact.ogg",
+        "phrase": "impact one-shot, short decay, stack of books thumping down hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.138,
+          0.507,
+          0.192,
+          0.548
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.53,
+      "bearing_deg": -29.41
+    },
+    {
+      "id": "green-framed-panel",
+      "name": "small green panel in a pale yellow arched frame",
+      "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/green-framed-panel/model.glb",
+      "reference": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/green-framed-panel/reference.png",
+      "position": [
+        0.03,
+        0.89,
+        -7.52
+      ],
+      "yaw": 0.05,
+      "scale": 0.4,
+      "size_m": [
+        0.3,
+        0.4,
+        0.08
+      ],
+      "dims": [
+        0.29,
+        0.4,
+        0.05
+      ],
+      "material": "wood",
+      "breakable": true,
+      "mass": 0.3,
+      "hp": 9,
+      "grabbable": true,
+      "bounce": 0.15,
+      "friction": 0.6,
+      "fixed": false,
+      "rests": "object",
+      "supportId": "central-wooden-table",
+      "count": 1,
+      "copies": [],
+      "sound": {
+        "url": "/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/green-framed-panel/impact.ogg",
+        "phrase": "impact one-shot, short decay, small framed glass panel cracking hitting a hard floor"
+      },
+      "from": {
+        "box": [
+          0.487,
+          0.481,
+          0.516,
+          0.542
+        ],
+        "depth": "mid"
+      },
+      "distance": 7.52,
+      "bearing_deg": 0.21
+    }
+  ],
+  "sounds_pending": false,
+  "stats": {
+    "seconds": 1074,
+    "timings": {
+      "image": 165.561,
+      "uncover": 93.089,
+      "edit": 122.145,
+      "place": 234.716,
+      "objects": 375.874,
+      "sounds": 82.411
+    },
+    "selected": 8,
+    "made": 8,
+    "degraded": false
+  },
+  "warnings": [
+    "the first picture was flawed (person or character visible); dreamed again"
+  ]
+}

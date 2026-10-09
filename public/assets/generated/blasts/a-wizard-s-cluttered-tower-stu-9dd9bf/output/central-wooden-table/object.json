@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "object": {
+    "id": "central-wooden-table",
+    "name": "small light brown wooden table with four square legs",
+    "description": "Rectangular light brown wooden table with a thick top, a plain apron and four square legs.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/source/0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+        "location_in_image": "centre of the picture, middle distance"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-wizard-s-cluttered-tower-stu-9dd9bf/output/central-wooden-table",
+    "count": 1,
+    "box": [
+      0.451,
+      0.535,
+      0.559,
+      0.662
+    ],
+    "depth": "mid",
+    "size_m": [
+      1.2,
+      0.8,
+      0.7
+    ],
+    "rests_on": "floor",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "heavy wooden table thud",
+    "score": 11.854379999999999
+  },
+  "updated_at": "2026-10-08T18:04:25.703Z"
+}

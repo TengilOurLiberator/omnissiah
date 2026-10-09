@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "world": "a-goblin-market-in-a-canyon-at-10d17c",
+  "object": {
+    "id": "stacked-crate-counter-left",
+    "name": "closed brown wooden plank crate",
+    "description": "Rectangular closed crate of horizontal brown planks with raised edge battens.",
+    "materials": [
+      "wood"
+    ],
+    "source_images": [
+      "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png"
+    ],
+    "evidence": [
+      {
+        "image": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/source/0-a-goblin-market-in-a-canyon-at-10d17c.png",
+        "location_in_image": "left side on the nearest left counter top"
+      }
+    ],
+    "generate_as_3d_object": true,
+    "working_dir": "public/assets/generated/blasts/a-goblin-market-in-a-canyon-at-10d17c/output/stacked-crate-counter-left",
+    "count": 2,
+    "box": [
+      0.086,
+      0.583,
+      0.162,
+      0.669
+    ],
+    "depth": "mid",
+    "size_m": [
+      0.8,
+      0.6,
+      0.6
+    ],
+    "rests_on": "table",
+    "rests_on_id": null,
+    "break_material": "wood",
+    "impact_sound": "hollow wooden crate crack",
+    "score": 11.559479999999999
+  },
+  "updated_at": "2026-10-08T18:05:18.472Z"
+}

@@ -1,0 +1,64 @@
+{
+ "horizon_deg": 1.5,
+ "horizon_raw": 10.55,
+ "sky": {
+  "zenith": "#a0a3ad",
+  "mid": "#8d8884",
+  "horizon": "#413e33"
+ },
+ "fog": {
+  "color": "#413e33",
+  "density": 0.0042
+ },
+ "sun": {
+  "dir": [
+   -0.2829,
+   0.5194,
+   -0.8064
+  ],
+  "elevation": 31.3,
+  "azimuth": -19.3,
+  "color": "#fff4eb",
+  "strength": 0.892,
+  "visible": true
+ },
+ "ground": {
+  "a": "#1c1a17",
+  "b": "#403e3c",
+  "mid": "#69605c",
+  "mean": "#2c2b2a",
+  "far": "#38352e",
+  "lum": 0.0243
+ },
+ "sea": "#433d35",
+ "stars": 0.0,
+ "mean_luma": 0.1668,
+ "zenith_luma": 0.3681,
+ "horizon_luma": 0.0476,
+ "contrast": 1.263,
+ "sat_zenith": 0.162,
+ "sat_horizon": 0.383,
+ "seam": {
+  "before": {
+   "seam_diff": 5.022,
+   "median_adjacent_diff": 6.119,
+   "ratio": 0.821
+  },
+  "after": {
+   "seam_diff": 4.893,
+   "median_adjacent_diff": 5.864,
+   "ratio": 0.834
+  },
+  "healed": false
+ },
+ "files": {
+  "lo": "pano_2048.jpg",
+  "hi": "pano_4096.webp",
+  "tiny": "tiny.webp"
+ },
+ "bytes": {
+  "lo": 537481,
+  "hi": 833414,
+  "tiny": 564
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "slug": "a-wizard-s-cluttered-tower-stu-9dd9bf",
+  "created": "2026-10-08T12:52:47.828Z",
+  "prompt": "a wizard's cluttered tower study at night",
+  "source_image": null,
+  "options": {
+    "maxObjects": 8,
+    "seed": 3751628
+  },
+  "timings": {
+    "image": 165.561,
+    "uncover": 93.089,
+    "edit": 122.145,
+    "place": 234.716,
+    "objects": 375.874,
+    "sounds": 82.411
+  },
+  "warnings": [
+    "the first picture was flawed (person or character visible); dreamed again"
+  ],
+  "image": {
+    "file": "public\\assets\\generated\\blasts\\a-wizard-s-cluttered-tower-stu-9dd9bf\\source\\0-a-wizard-s-cluttered-tower-stu-9dd9bf.png",
+    "width": 1344,
+    "height": 768,
+    "aspect": 1.75,
+    "fov": 80
+  },
+  "sceneRetried": true,
+  "finished": "2026-10-08T18:05:17.858Z",
+  "status": "done"
+}

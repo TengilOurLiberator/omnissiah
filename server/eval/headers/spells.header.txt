@@ -1,0 +1,12 @@
+// core/spells.js — world.spells: the spell registry, casting and the spell wheel.
+//   world.spells.register({ id, name, color, cast(args), icon?, description?, rate?, hold?, onRelease? }) -> unregister()
+//     id string (re-registering an id replaces it: hot-swap). name/color/icon (emoji or 1-2 letters)/description (one short sentence) show on the wheel.
+//     A spell registered after startup becomes the SELECTED one automatically (and is announced): no need to call select().
+//     cast({ origin, direction, hand, ctx }): FRESH Vector3s (hand tip + pointing ray); hand = input.right. A spell uses its own creation's ctx. Runs in try/catch.
+//     rate (seconds): holding the trigger auto-repeats the cast every `rate` s.
+//     hold: true -> continuous spell: cast() is called EVERY FRAME while the trigger is held with { origin, direction, hand, ctx, dt, first, hold: true } (REUSED vectors: copy, never keep);
+//       onRelease({ hand, ctx }) once when released / switched away. Keep per-frame work allocation-free.
+//   world.spells.list() -> [{ id, name, color, icon, description, hold, rate }]   current()   select(id) -> bool (use it to switch to an EXISTING spell)
+//   world.spells.bodies() -> live kit bodies, for pull/push/grab spells
+// CONTROLS (tell the player): right trigger casts; right A tap = next spell, hold A = the spell wheel (point at one, release); a weapon in the right hand takes the trigger instead.
+// Emits 'spell:cast' { id, origin, direction } and 'spell:select' { id }. About 30 starter spells already exist as creations/spell-*.js (the loaded-module list names them; Grep 'export const meta' creations/spell-*.js for descriptions): check before writing a new one.

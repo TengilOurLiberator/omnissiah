@@ -1,0 +1,312 @@
+{
+  "ambient-environment-quiet-stone-2d2d51": {
+    "prompt": "ambient environment, quiet stone room tone, faint wind through a tall tower, soft creaking of wooden beams",
+    "url": "/assets/generated/audio/sfx/ambient-environment-quiet-stone-2d2d51.ogg",
+    "seconds": 20,
+    "kind": "loop",
+    "loop": true,
+    "created": "2026-10-08T13:09:26.922Z",
+    "bytes": 161087,
+    "duration": 17.85
+  },
+  "impact-one-shot-short-decay-holl-2bcd92": {
+    "prompt": "impact one-shot, short decay, hollow wooden box thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-holl-2bcd92.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:30.221Z",
+    "bytes": 9022,
+    "duration": 1.405
+  },
+  "impact-one-shot-short-decay-heav-550469": {
+    "prompt": "impact one-shot, short decay, heavy wooden table thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-heav-550469.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:33.533Z",
+    "bytes": 7292,
+    "duration": 1.5
+  },
+  "impact-one-shot-short-decay-smal-7161af": {
+    "prompt": "impact one-shot, short decay, small lamp clatter and crack hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-smal-7161af.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:36.800Z",
+    "bytes": 8530,
+    "duration": 1.235
+  },
+  "impact-one-shot-short-decay-wood-2290cf": {
+    "prompt": "impact one-shot, short decay, wooden chair clattering over hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-wood-2290cf.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:40.088Z",
+    "bytes": 8191,
+    "duration": 1.045
+  },
+  "impact-one-shot-short-decay-wood-f7eb01": {
+    "prompt": "impact one-shot, short decay, wooden frame clattering hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-wood-f7eb01.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:43.398Z",
+    "bytes": 2859,
+    "duration": 0.315
+  },
+  "impact-one-shot-short-decay-wood-6d0493": {
+    "prompt": "impact one-shot, short decay, wooden stand toppling thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-wood-6d0493.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:46.691Z",
+    "bytes": 9521,
+    "duration": 1.5
+  },
+  "impact-one-shot-short-decay-stac-c8a801": {
+    "prompt": "impact one-shot, short decay, stack of books thumping down hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-stac-c8a801.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:49.983Z",
+    "bytes": 7856,
+    "duration": 1.325
+  },
+  "impact-one-shot-short-decay-smal-c0b49e": {
+    "prompt": "impact one-shot, short decay, small framed glass panel cracking hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-smal-c0b49e.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T13:09:53.293Z",
+    "bytes": 10125,
+    "duration": 1.5
+  },
+  "ambient-environment-soft-wind-an-73e6f6": {
+    "prompt": "ambient environment, soft wind and distant ambience",
+    "url": "/assets/generated/audio/sfx/ambient-environment-soft-wind-an-73e6f6.ogg",
+    "seconds": 20,
+    "kind": "loop",
+    "loop": true,
+    "created": "2026-10-08T13:11:55.334Z",
+    "bytes": 162603,
+    "duration": 17.85
+  },
+  "a-wooden-door-slamming-shut-in-a-07bf4f": {
+    "prompt": "A wooden door slamming shut in a stone hallway.",
+    "url": "/assets/generated/audio/sfx/a-wooden-door-slamming-shut-in-a-07bf4f.ogg",
+    "seconds": 2,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T16:29:36.104Z",
+    "bytes": 10794,
+    "duration": 1.999
+  },
+  "a-rusty-iron-gate-creaking-open-ddf618": {
+    "prompt": "A rusty iron gate creaking open slowly.",
+    "url": "/assets/generated/audio/sfx/a-rusty-iron-gate-creaking-open-ddf618.ogg",
+    "seconds": 2,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T16:29:40.803Z",
+    "bytes": 9963,
+    "duration": 1.595
+  },
+  "a-tiny-glass-bell-tinkling-three-4af162": {
+    "prompt": "A tiny glass bell tinkling three times.",
+    "url": "/assets/generated/audio/sfx/a-tiny-glass-bell-tinkling-three-4af162.ogg",
+    "seconds": 2,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T16:29:44.636Z",
+    "bytes": 18384,
+    "duration": 2
+  },
+  "a-single-drop-of-water-falling-i-bf39f6": {
+    "prompt": "A single drop of water falling into a deep well.",
+    "url": "/assets/generated/audio/sfx/a-single-drop-of-water-falling-i-bf39f6.ogg",
+    "seconds": 2,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T16:29:52.407Z",
+    "bytes": 12187,
+    "duration": 2
+  },
+  "ambient-environment-low-wind-pas-f72e49": {
+    "prompt": "ambient environment, low wind passing through a rock canyon, faint rustling grass, distant evening insects",
+    "url": "/assets/generated/audio/sfx/ambient-environment-low-wind-pas-f72e49.ogg",
+    "seconds": 20,
+    "kind": "loop",
+    "loop": true,
+    "created": "2026-10-08T17:28:55.122Z",
+    "bytes": 160887,
+    "duration": 17.85
+  },
+  "impact-one-shot-short-decay-heav-b35467": {
+    "prompt": "impact one-shot, short decay, heavy wooden crate crack and thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-heav-b35467.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:28:59.501Z",
+    "bytes": 5053,
+    "duration": 0.8
+  },
+  "impact-one-shot-short-decay-dull-86e2fd": {
+    "prompt": "impact one-shot, short decay, dull heavy stone block thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-dull-86e2fd.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:29:03.120Z",
+    "bytes": 4378,
+    "duration": 0.599
+  },
+  "impact-one-shot-short-decay-soft-0358d2": {
+    "prompt": "impact one-shot, short decay, soft crumbling earth block thump hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-soft-0358d2.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:29:16.235Z",
+    "bytes": 2813,
+    "duration": 0.459
+  },
+  "impact-one-shot-short-decay-heav-56fc56": {
+    "prompt": "impact one-shot, short decay, heavy rock thud with gravel scatter hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-heav-56fc56.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:29:19.556Z",
+    "bytes": 2994,
+    "duration": 0.465
+  },
+  "ambient-environment-soft-rustlin-431df1": {
+    "prompt": "ambient environment, soft rustling leaves, gentle breeze through glass panes and metal frame, faint insect hum, distant birdsong",
+    "url": "/assets/generated/audio/sfx/ambient-environment-soft-rustlin-431df1.ogg",
+    "seconds": 20,
+    "kind": "loop",
+    "loop": true,
+    "created": "2026-10-08T17:40:26.046Z",
+    "bytes": 159470,
+    "duration": 17.85
+  },
+  "impact-one-shot-short-decay-heav-b2f303": {
+    "prompt": "impact one-shot, short decay, heavy clay block thud and crack hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-heav-b2f303.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:40:30.399Z",
+    "bytes": 9843,
+    "duration": 1.5
+  },
+  "impact-one-shot-short-decay-dens-7f85b1": {
+    "prompt": "impact one-shot, short decay, dense stone block thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-dens-7f85b1.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:40:34.228Z",
+    "bytes": 8287,
+    "duration": 1.5
+  },
+  "impact-one-shot-short-decay-soft-e08ecc": {
+    "prompt": "impact one-shot, short decay, soft leafy rustle hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-soft-e08ecc.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:40:42.188Z",
+    "bytes": 7412,
+    "duration": 1.09
+  },
+  "impact-one-shot-short-decay-flat-6595a5": {
+    "prompt": "impact one-shot, short decay, flat stone slab clack hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-flat-6595a5.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:40:46.003Z",
+    "bytes": 6468,
+    "duration": 1.005
+  },
+  "impact-one-shot-short-decay-leaf-26f528": {
+    "prompt": "impact one-shot, short decay, leafy bush rustle hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-leaf-26f528.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:40:51.883Z",
+    "bytes": 10785,
+    "duration": 1.5
+  },
+  "impact-one-shot-short-decay-smal-628310": {
+    "prompt": "impact one-shot, short decay, small rock clatter hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-smal-628310.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:40:56.016Z",
+    "bytes": 3913,
+    "duration": 0.489
+  },
+  "ambient-environment-soft-wind-th-e85141": {
+    "prompt": "ambient environment, soft wind through a rock canyon, faint creak of hanging lanterns and wooden beams, distant evening insects",
+    "url": "/assets/generated/audio/sfx/ambient-environment-soft-wind-th-e85141.ogg",
+    "seconds": 20,
+    "kind": "loop",
+    "loop": true,
+    "created": "2026-10-08T17:58:49.165Z",
+    "bytes": 163880,
+    "duration": 17.85
+  },
+  "impact-one-shot-short-decay-heav-707b06": {
+    "prompt": "impact one-shot, short decay, heavy wooden barrel thud hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-heav-707b06.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:58:52.457Z",
+    "bytes": 2263,
+    "duration": 0.279
+  },
+  "impact-one-shot-short-decay-holl-0668e2": {
+    "prompt": "impact one-shot, short decay, hollow wooden crate crack hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-holl-0668e2.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:59:02.442Z",
+    "bytes": 7175,
+    "duration": 1.19
+  },
+  "impact-one-shot-short-decay-clay-db8ba7": {
+    "prompt": "impact one-shot, short decay, clay pot shatter hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-clay-db8ba7.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:59:05.736Z",
+    "bytes": 11418,
+    "duration": 1.5
+  },
+  "impact-one-shot-short-decay-smal-bdbb79": {
+    "prompt": "impact one-shot, short decay, small wooden box clatter hitting a hard floor",
+    "url": "/assets/generated/audio/sfx/impact-one-shot-short-decay-smal-bdbb79.ogg",
+    "seconds": 1.5,
+    "kind": "oneshot",
+    "loop": false,
+    "created": "2026-10-08T17:59:09.342Z",
+    "bytes": 6064,
+    "duration": 1.204
+  }
+}

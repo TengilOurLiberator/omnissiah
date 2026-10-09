@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#0b0806">
+  <title>Omnissiah</title>
+  <style>
+    :root {
+      /* one skin with the in-game HUD (sys/hud.js UI tokens): dark walnut panels, thin brass rims, parchment text */
+      --bg: #0b0806; --ink: #f6ead2; --dim: #d2bd96; --faint: #b09c76;
+      --glass: rgba(44, 31, 20, .90); --glass-hi: rgba(62, 44, 29, .96); --edge: rgba(205, 160, 88, .55); --edge-hi: rgba(205, 160, 88, .85);
+      --panel: linear-gradient(180deg, rgba(62, 44, 29, .94), rgba(34, 23, 14, .94));
+      --shadow: 0 8px 22px rgba(18, 9, 2, .42), inset 0 1px 0 rgba(255, 222, 160, .14), inset 0 0 0 3px rgba(22, 13, 5, .34);
+      --gold: #f2c969; --gold-soft: rgba(242, 201, 105, .55); --good: #a3d58c; --bad: #ec8a76; --warn: #ecb865;
+      --gap: 12px; --col: 460px;
+      --font: Candara, "Segoe UI", "Gill Sans MT", "Gill Sans", Optima, "Trebuchet MS", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+      --serif: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+    }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--ink); font: 15px/1.4 var(--font); }
+    canvas { display: block; }
+
+    /* bottom left: connection status above the chat box */
+    #overlay { position: fixed; left: var(--gap); bottom: var(--gap); width: min(var(--col), calc(100vw - 2 * var(--gap)));
+      display: flex; flex-direction: column; align-items: stretch; gap: 7px; pointer-events: none; z-index: 5; }
+    #overlay > * { pointer-events: auto; }
+    #status { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 3px 13px 3px 11px; border-radius: 999px;
+      font-size: 13px; line-height: 18px; color: var(--dim); background: var(--panel); border: 1px solid var(--edge); box-shadow: 0 4px 12px rgba(18, 9, 2, .35); }
+    #status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--faint); }
+    #status[data-state="ok"]::before { background: var(--good); box-shadow: 0 0 6px rgba(163, 213, 140, .7); }
+    #status[data-state="busy"]::before { background: var(--gold); box-shadow: 0 0 6px rgba(242, 201, 105, .7); animation: pulse 1.1s ease-in-out infinite; }
+    #status[data-state="off"]::before { background: var(--bad); }
+    #status[data-state="wait"]::before { background: var(--warn); animation: pulse 1.1s ease-in-out infinite; }
+    #chat { box-sizing: border-box; width: 100%; padding: 10px 15px; border-radius: 14px; border: 1px solid var(--edge);
+      background: var(--panel); box-shadow: var(--shadow); color: var(--ink); font: 500 16px/1.4 var(--font); outline: none; transition: border-color .15s, box-shadow .15s; }
+    #chat::placeholder { color: var(--faint); opacity: 1; }
+    #chat:focus { border-color: var(--edge-hi); box-shadow: var(--shadow), 0 0 0 3px rgba(242, 201, 105, .16); }
+
+    /* what the Omnissiah and the player said recently (the subtitle is the main channel; this is the flat-screen history) */
+    #log { position: fixed; left: var(--gap); bottom: 100px; width: min(340px, calc(100vw - 2 * var(--gap))); box-sizing: border-box;
+      font-size: 14px; line-height: 1.35; pointer-events: none; z-index: 4; display: flex; flex-direction: column; gap: 4px;
+      -webkit-mask-image: linear-gradient(to top, #000 70%, transparent); mask-image: linear-gradient(to top, #000 70%, transparent); }
+    #log:empty { display: none; }
+    #log > div { align-self: flex-start; max-width: 100%; padding: 4px 12px; border-radius: 11px; background: rgba(34, 23, 14, .66);
+      border: 1px solid rgba(205, 160, 88, .22); text-shadow: 0 1px 2px rgba(10, 5, 0, .7); overflow-wrap: anywhere; }
+
+    /* top right: a small "?" that opens the controls card (remembered) */
+    .help-toggle { position: fixed; top: var(--gap); right: var(--gap); z-index: 6; width: 34px; height: 34px; padding: 0; border-radius: 50%;
+      border: 1px solid var(--edge-hi); background: var(--panel); box-shadow: 0 4px 12px rgba(18, 9, 2, .38); color: var(--gold); font: 700 17px/32px var(--serif); cursor: pointer; }
+    .help-toggle:hover, .help-toggle[aria-expanded="true"] { background: var(--glass-hi); border-color: var(--gold); }
+    .help-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    #help { position: fixed; top: 54px; right: var(--gap); z-index: 6; width: min(390px, calc(100vw - 2 * var(--gap))); box-sizing: border-box;
+      padding: 14px 18px 14px; border-radius: 16px; background: var(--panel); border: 1px solid var(--edge-hi);
+      box-shadow: var(--shadow); font-size: 14px; line-height: 1.5; color: var(--ink); }
+    #help[hidden] { display: none; }
+    #help h2 { margin: 0 0 8px; font: 700 18px/1.2 var(--serif); letter-spacing: .01em; color: var(--gold); }
+    #help p { margin: 0 0 9px; }
+    #help p:last-child { margin-bottom: 0; }
+    #help b { color: var(--gold); font-weight: 700; }
+    #help kbd { font: 700 12px var(--font); padding: 1px 6px; border-radius: 5px; border: 1px solid var(--edge); background: rgba(255, 236, 200, .08); }
+
+    /* the three.js VR button and the mixed-reality button boot.js adds: centred, above the chat box where they would otherwise meet it */
+    #VRButton, body > button:not(#VRButton):not(.help-toggle) { position: fixed !important; left: 50% !important; right: auto !important;
+      transform: translateX(-50%) !important; box-sizing: border-box !important; width: auto !important; min-width: 168px; padding: 11px 20px !important;
+      border: 1px solid var(--edge-hi) !important; border-radius: 12px !important; background: var(--panel) !important; color: var(--ink) !important;
+      box-shadow: 0 4px 14px rgba(18, 9, 2, .4) !important; font: 700 13px/1 var(--font) !important; letter-spacing: .1em; opacity: 1 !important; z-index: 5 !important; }
+    #VRButton { bottom: 14px !important; }
+    #VRButton:hover { border-color: var(--gold) !important; color: var(--gold) !important; }
+    /* three.js sets cursor:auto when VR is unavailable ("VR NOT SUPPORTED"): keep that state quiet instead of a shouting grey slab */
+    #VRButton[style*="cursor: auto"] { min-width: 0; padding: 6px 14px !important; font-size: 11px !important; letter-spacing: .06em; opacity: .55 !important; box-shadow: none !important; }
+    body > button:not(#VRButton):not(.help-toggle) { bottom: 62px !important; }
+    body > button:not(#VRButton):not(.help-toggle):hover { border-color: var(--gold) !important; color: var(--gold) !important; }
+    /* the intro's instruction bar (core/intro.js) wears the same skin as the HUD's objective line */
+    #omni-intro-hint { background: var(--panel) !important; border: 1px solid var(--edge-hi) !important; border-radius: 14px !important; box-shadow: var(--shadow) !important;
+      font-family: var(--font) !important; text-shadow: none !important; color: var(--ink) !important; }
+    #omni-intro-hint > div + div { color: var(--dim) !important; }
+    /* the chat box gives way to the centred buttons on narrower windows; on a phone the buttons stack above it */
+    @media (max-width: 1179px) {
+      #overlay { width: max(240px, calc(50vw - 108px)); }
+      #log { display: none; }
+    }
+    @media (max-width: 639px) {
+      #overlay { width: calc(100vw - 2 * var(--gap)); }
+      #VRButton { bottom: 100px !important; }
+      body > button:not(#VRButton):not(.help-toggle) { bottom: 148px !important; }
+    }
+    @media (max-width: 520px) { :root { --gap: 10px; } #help { top: 52px; } }
+    @keyframes pulse { 50% { opacity: .35; } }
+    @media (prefers-reduced-motion: reduce) { #status::before { animation: none !important; } }
+
+    /* loading splash: the title image, removed by the script below once window.game exists (boot.js has finished its set-up) */
+    #splash { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+      padding-bottom: 9vh; box-sizing: border-box; background: #0b0a1c center / cover no-repeat url("/assets/generated/art/title/title-bg.webp");
+      opacity: 1; transition: opacity 1.4s ease; cursor: default; }
+    #splash::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(5, 6, 10, .82), rgba(5, 6, 10, 0) 48%), radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 55%, rgba(5, 6, 10, .55)); }
+    #splash.gone { opacity: 0; pointer-events: none; }
+    #splash h1 { position: relative; margin: 0; font: 700 clamp(34px, 8.5vw, 112px)/1 Georgia, "Times New Roman", serif; letter-spacing: .14em; padding-left: .14em; color: #ffe39a;
+      text-shadow: 0 0 22px rgba(255, 190, 80, .75), 0 0 60px rgba(255, 150, 60, .45), 0 3px 4px rgba(30, 10, 50, .8); }
+    #splash p { position: relative; margin: 14px 0 0; font-size: clamp(12px, 1.6vw, 16px); letter-spacing: .22em; text-transform: uppercase; color: var(--dim); text-shadow: 0 1px 3px #000; }
+    #splash p::after { content: ""; display: inline-block; width: 6px; height: 6px; margin-left: 10px; border-radius: 50%; background: var(--gold); vertical-align: middle; animation: pulse 1.1s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { #splash { transition: none; } #splash p::after { animation: none; } }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/vendor/three/build/three.module.js",
+      "three/addons/": "/vendor/three/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="splash" role="status" aria-label="Loading Omnissiah"><h1>OMNISSIAH</h1><p>The second sun is waking</p></div>
+  <script>
+    // loading splash: fades out once boot.js has created window.game (at least 1.8 s on screen, at most 40 s; a click also dismisses it)
+    (function () {
+      var el = document.getElementById('splash'), t0 = Date.now(), done = false;
+      function finish() {
+        if (done) return; done = true; el.classList.add('gone');
+        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 1700);
+      }
+      (function poll() {
+        var age = Date.now() - t0;
+        if ((window.game && age > 1800) || age > 40000) finish(); else setTimeout(poll, 150);
+      })();
+      el.addEventListener('click', function () { if (Date.now() - t0 > 1000) finish(); });
+    })();
+  </script>
+  <div id="log" aria-live="polite"></div>
+  <button class="help-toggle" id="help-toggle" type="button" aria-expanded="false" aria-controls="help" title="Controls">?</button>
+  <div id="help" hidden>
+    <h2>Controls</h2>
+    <p><b>Talk</b> hold <kbd>T</kbd> and speak &middot; tap <kbd>N</kbd> to talk until you stop (tap again cancels) &middot; or just say &ldquo;Omnissiah, &hellip;&rdquo; &middot; or type below and press Enter.</p>
+    <p><b>Move</b> <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> &middot; click the view, then the mouse looks around &middot; <kbd>Shift</kbd> sprints &middot; <kbd>Space</kbd> or <kbd>Q</kbd> jumps.</p>
+    <p><b>Cast</b> left mouse &middot; <kbd>E</kbd> spell wheel &middot; <kbd>G</kbd> or right mouse grabs.</p>
+    <p><b>Menu</b> <kbd>M</kbd> opens it &middot; <kbd>Esc</kbd> closes it &middot; <kbd>V</kbd> enters VR.</p>
+    <p><b>In VR</b> hold the LEFT trigger to talk, tap <kbd>X</kbd> to talk until you stop, or say &ldquo;Omnissiah, &hellip;&rdquo; &middot; RIGHT trigger casts &middot; <kbd>A</kbd> spell wheel &middot; <kbd>B</kbd> jumps &middot; grips grab &middot; left stick moves, right stick turns &middot; left B opens the menu.</p>
+  </div>
+  <div id="overlay">
+    <span id="status" role="status" data-state="wait">Connecting…</span>
+    <input id="chat" placeholder="Type a wish, or say “Omnissiah, …”" autocomplete="off" spellcheck="false">
+  </div>
+  <script>
+    // the help card: collapsed by default, remembered per browser
+    (function () {
+      var btn = document.getElementById('help-toggle'), card = document.getElementById('help'), KEY = 'omnissiah.help';
+      function set(open, save) {
+        card.hidden = !open; btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (save) { try { localStorage.setItem(KEY, open ? '1' : '0'); } catch (e) { /* private mode */ } }
+      }
+      var saved = null; try { saved = localStorage.getItem(KEY); } catch (e) { /* private mode */ }
+      set(saved === '1', false);
+      btn.addEventListener('click', function () { set(card.hidden, true); btn.blur(); });
+    })();
+  </script>
+  <script type="module" src="/boot.js"></script>
+</body>
+</html>
+

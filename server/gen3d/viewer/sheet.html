@@ -1,0 +1,89 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>rig sheet</title>
+<style>html,body{margin:0;background:#dfe6ee}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// Contact-sheet renderer for rigged GLBs, driven entirely by the query string (headless Edge screenshot):
+//   glb=<url> clips=walk,idle frames=8 size=256 mode=mesh|bones|both az=40 el=14 move=<units/s> cols=8 fit=<0..1 camera distance factor>
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import * as SkeletonUtils from 'three/addons/utils/SkeletonUtils.js';
+
+const q = new URLSearchParams(location.search);
+const glbUrl = q.get('glb');
+const frames = +(q.get('frames') || 8);
+const S = +(q.get('size') || 256);
+const mode = q.get('mode') || 'mesh';
+const az = +(q.get('az') ?? 40) * Math.PI / 180, el = +(q.get('el') ?? 14) * Math.PI / 180;
+const move = +(q.get('move') || 0);
+const camDist = +(q.get('dist') || 1);
+const tint = q.get('tint');
+const out = { done: false, error: null, info: {} };
+window.__sheet = out;
+
+try {
+  const gltf = await new GLTFLoader().loadAsync(glbUrl);
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xdfe6ee);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x8899aa, 1.25));
+  const sun = new THREE.DirectionalLight(0xffffff, 2.2); sun.position.set(-2, 4, 3); scene.add(sun);
+  const root = SkeletonUtils.clone(gltf.scene);
+  scene.add(root);
+  const bbox = new THREE.Box3().setFromObject(root);
+  const size = bbox.getSize(new THREE.Vector3());
+  const R = Math.max(size.x, size.y, size.z);
+  // checker floor so planted feet are visible
+  const tex = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'); g.fillStyle = '#b9c3cf'; g.fillRect(0, 0, 64, 64); g.fillStyle = '#9aa6b4'; g.fillRect(0, 0, 32, 32); g.fillRect(32, 32, 32, 32); const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(60, 60); t.colorSpace = THREE.SRGBColorSpace; return t; })();
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.MeshBasicMaterial({ map: tex }));
+  floor.rotation.x = -Math.PI / 2; floor.position.y = -0.002; scene.add(floor);
+  root.traverse((o) => { if (o.isSkinnedMesh) { o.frustumCulled = false; if (tint) o.material = o.material.clone(); } });
+  const helpers = [];
+  if (mode !== 'mesh') {
+    root.traverse((o) => { if (o.isSkinnedMesh) { const h = new THREE.SkeletonHelper(o.skeleton.bones[0]); h.material.depthTest = false; h.material.linewidth = 2; h.renderOrder = 10; scene.add(h); helpers.push(h);
+      const pts = new THREE.Points(new THREE.BufferGeometry(), new THREE.PointsMaterial({ color: 0xff3020, size: 6, sizeAttenuation: false, depthTest: false })); pts.frustumCulled = false; pts.renderOrder = 11; scene.add(pts); helpers.push(pts); h.userData.pts = pts; } });
+  }
+  if (mode === 'bones') root.traverse((o) => { if (o.isSkinnedMesh) { o.material = new THREE.MeshBasicMaterial({ color: 0xaab2c0, transparent: true, opacity: 0.35, depthWrite: false }); } });
+  const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  renderer.setPixelRatio(1); renderer.setSize(S, S);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  const cam = new THREE.PerspectiveCamera(32, 1, 0.01, 100);
+  const mixer = new THREE.AnimationMixer(root);
+  const clipNames = (q.get('clips') || gltf.animations.map((a) => a.name).join(',')).split(',').filter(Boolean);
+  const cols = +(q.get('cols') || frames);
+  const rows = clipNames.length;
+  const sheet = document.createElement('canvas'); sheet.width = cols * S; sheet.height = Math.ceil(rows * frames / cols) * S;
+  const g = sheet.getContext('2d'); g.fillStyle = '#dfe6ee'; g.fillRect(0, 0, sheet.width, sheet.height);
+  const centre = new THREE.Vector3(0, size.y * 0.45, 0);
+  const dist = R / Math.tan(THREE.MathUtils.degToRad(32) / 2) * 0.62 * camDist;
+  const camDir = new THREE.Vector3(Math.cos(el) * Math.sin(az), Math.sin(el), Math.cos(el) * Math.cos(az));
+  let tile = 0;
+  for (const name of clipNames) {
+    const clip = gltf.animations.find((a) => a.name === name);
+    if (!clip) { out.info[name] = 'missing'; tile += frames; continue; }
+    mixer.stopAllAction();
+    const act = mixer.clipAction(clip); act.play();
+    for (let k = 0; k < frames; k++) {
+      const t = clip.duration * k / frames;
+      mixer.setTime(t);
+      root.position.set(0, 0, move * t);
+      root.updateMatrixWorld(true);
+      root.traverse((o) => { if (o.isSkinnedMesh) o.skeleton.update(); });
+      const c = centre.clone().add(new THREE.Vector3(0, 0, move * t));
+      cam.position.copy(c).addScaledVector(camDir, dist); cam.lookAt(c); cam.updateMatrixWorld(true);
+      for (const h of helpers) if (h.isSkeletonHelper) { h.updateMatrixWorld(true); const pts = []; for (const b of h.bones) pts.push(new THREE.Vector3().setFromMatrixPosition(b.matrixWorld)); h.userData.pts.geometry.setFromPoints(pts); }
+      renderer.render(scene, cam);
+      const x = (tile % cols) * S, y = Math.floor(tile / cols) * S;
+      g.drawImage(renderer.domElement, x, y);
+      g.fillStyle = '#000'; g.font = '12px sans-serif'; g.fillText(`${name} ${k}/${frames}`, x + 5, y + 14);
+      tile++;
+    }
+    out.info[name] = { duration: clip.duration };
+  }
+  // the screenshot shows this canvas only
+  document.body.innerHTML = ''; document.body.appendChild(sheet);
+  out.size = [sheet.width, sheet.height];
+  out.done = true;
+  document.title = 'SHEET_READY ' + sheet.width + 'x' + sheet.height;
+} catch (e) { out.error = String(e && e.stack || e); document.title = 'SHEET_ERROR'; document.body.textContent = out.error; }
+</script></body></html>

@@ -1,0 +1,255 @@
+﻿{
+    "reviewed":  "2026-10-09, startzone2 environment artist",
+    "method":  "All 60 source pictures (public/assets/generated/startzone/sz-*.png, contact sheet) and every Quest twin (q/sz-*.glb) plus the PC original for the doubtful ones, rendered from +Z, +X, -Z, -X in three.js (sheets in .cache/szart/sheet-*.png), plus the optimized.json warn entries.",
+    "summary":  {
+                    "keep":  55,
+                    "keep_pc_only":  2,
+                    "keep_with_fix":  1,
+                    "reuse_with_new_role":  1,
+                    "reject":  1
+                },
+    "front":  "Models have arbitrary fronts. Verified on the renders: the tent door, altar cog, pilgrim statue, lectern book, notice board, weapon rack, archery target, automaton face and most signs are on local +Z; sz-ruined-archway and sz-bridge open along local X (thin side) so their passage direction is X; sz-jetty, boat, bedroll, cart (handle at -Z) are long along Z; benches, drystone walls, gate posts (gap between the posts along X, passage along Z) are wide along X; leaning runestone carries its runes on its +X/-X faces, tall runestone on +Z/-Z. startzone.js turns each one by hand.",
+    "models":  {
+                   "sz-runestone-tall":  {
+                                             "verdict":  "keep",
+                                             "note":  "clean, glowing orange runes on +Z/-Z"
+                                         },
+                   "sz-tent":  {
+                                   "verdict":  "keep",
+                                   "note":  "door on +Z, window on the sides"
+                               },
+                   "sz-tree-oak":  {
+                                       "verdict":  "keep",
+                                       "note":  "rounded crown, reads as a toy-like oak, symmetric"
+                                   },
+                   "sz-shrine-altar":  {
+                                           "verdict":  "keep",
+                                           "note":  "brass cog emblem on +Z, offering bowl"
+                                       },
+                   "sz-pilgrim-statue":  {
+                                             "verdict":  "keep",
+                                             "note":  "hooded pilgrim, faces +Z; the navigator finds the face blank and the hands blocky: kept as the back piece of the shrine (behind the altar), not in the first forward view"
+                                         },
+                   "sz-offering-pedestal":  {
+                                                "verdict":  "keep",
+                                                "note":  "symmetric, candles"
+                                            },
+                   "sz-ruined-archway":  {
+                                             "verdict":  "keep",
+                                             "note":  "passage along local X; ivy and rubble, usable as the ring gate"
+                                         },
+                   "sz-runestone-leaning":  {
+                                                "verdict":  "keep",
+                                                "note":  "reddish rock, brass inlay is only faintly visible; runes on +X/-X"
+                                            },
+                   "sz-pillar-broken-a":  {
+                                              "verdict":  "keep",
+                                              "note":  "reads as a weathered column rather than a broken one, fine for the ring"
+                                          },
+                   "sz-pillar-broken-b":  {
+                                              "verdict":  "keep",
+                                              "note":  "short column stump with golden bands"
+                                          },
+                   "sz-campfire-logbench":  {
+                                                "verdict":  "keep",
+                                                "note":  "long along X"
+                                            },
+                   "sz-bedroll":  {
+                                      "verdict":  "keep",
+                                      "note":  "rolled up, long along Z"
+                                  },
+                   "sz-cooking-pot":  {
+                                          "verdict":  "keep",
+                                          "note":  "brings its own ring of stones: place it away from the real campfire"
+                                      },
+                   "sz-crate-stack":  {
+                                          "verdict":  "keep",
+                                          "note":  "three crates stacked into a tall box, symmetric"
+                                      },
+                   "sz-barrel":  {
+                                     "verdict":  "keep",
+                                     "note":  "warn in optimized.json (4.6k tris) but looks right"
+                                 },
+                   "sz-lantern-post":  {
+                                           "verdict":  "keep",
+                                           "note":  "arm and lantern toward local -X; glass is baked bright, a halo and (PC) a real light are added by the module"
+                                       },
+                   "sz-woodpile":  {
+                                       "verdict":  "keep",
+                                       "note":  "warn (4.6k tris), looks right"
+                                   },
+                   "sz-supply-cart":  {
+                                          "verdict":  "keep",
+                                          "note":  "handle at -Z"
+                                      },
+                   "sz-jetty":  {
+                                    "verdict":  "keep",
+                                    "note":  "deck top at 0.35 of the model height, posts hang below it: the module sinks it so the deck sits 0.55 m above the water; short and chunky"
+                                },
+                   "sz-rowing-boat":  {
+                                          "verdict":  "keep",
+                                          "note":  "long along Z"
+                                      },
+                   "sz-fishing-rack":  {
+                                           "verdict":  "keep",
+                                           "note":  "fish on both sides"
+                                       },
+                   "sz-reed-clump":  {
+                                         "verdict":  "keep",
+                                         "note":  "good, used as the shore scatter"
+                                     },
+                   "sz-signpost":  {
+                                       "verdict":  "keep",
+                                       "note":  "arrows along local X, blank boards"
+                                   },
+                   "sz-waystone":  {
+                                       "verdict":  "keep",
+                                       "note":  "glowing arrow only on the +X face, other faces plain; the controls text is NOT put on it (stone is too narrow), it marks the fork instead"
+                                   },
+                   "sz-notice-board":  {
+                                           "verdict":  "keep",
+                                           "note":  "wide blank parchment on +Z: the controls text plane is mounted on it"
+                                       },
+                   "sz-weapon-rack":  {
+                                          "verdict":  "keep",
+                                          "note":  "already carries a spear, a sword and an axe as part of the mesh; the real grabbable weapons are hung in front of it"
+                                      },
+                   "sz-archery-target":  {
+                                             "verdict":  "keep",
+                                             "note":  "face and arrows on +Z, back on -Z"
+                                         },
+                   "sz-straw-dummy":  {
+                                          "verdict":  "keep",
+                                          "note":  "post with crossbar and a sack head, thin and symmetric; reads more as a scarecrow than a straw dummy"
+                                      },
+                   "sz-armour-stand":  {
+                                           "verdict":  "keep",
+                                           "note":  "a small steel knight, faces +Z; extra at the practice yard"
+                                       },
+                   "sz-spell-lectern":  {
+                                            "verdict":  "keep",
+                                            "note":  "book on +Z"
+                                        },
+                   "sz-potion-table":  {
+                                           "verdict":  "keep",
+                                           "note":  "extra camp prop"
+                                       },
+                   "sz-tree-birch":  {
+                                         "verdict":  "keep",
+                                         "note":  "warn (4.6k tris), leaves slightly shredded on the Quest twin but fine at distance"
+                                     },
+                   "sz-tree-pine":  {
+                                        "verdict":  "keep",
+                                        "note":  "symmetric, best tree of the set"
+                                    },
+                   "sz-tree-dead":  {
+                                        "verdict":  "keep",
+                                        "note":  "flat crown (wide in X, thin in Z): turn it"
+                                    },
+                   "sz-bush":  {
+                                   "verdict":  "keep",
+                                   "note":  "broccoli-like lumps, fine as filler"
+                               },
+                   "sz-berry-bush":  {
+                                         "verdict":  "keep",
+                                         "note":  "looks like a small round tree with a trunk"
+                                     },
+                   "sz-flower-patch":  {
+                                           "verdict":  "keep_pc_only",
+                                           "note":  "ORIGINAL is a lovely flower patch; the Quest twin collapses the petals into flat green shards (genset: PC only, alt x-plant-lavender). Used on PC only (real model within 32 m); not drawn on Quest."
+                                       },
+                   "sz-mushroom-ring":  {
+                                            "verdict":  "keep_pc_only",
+                                            "note":  "ORIGINAL is a nice red toadstool cluster; the Quest twin is shredded and pink (genset: PC only). It is one cluster, not a ring: on PC several are arranged into fairy rings; never drawn on Quest."
+                                        },
+                   "sz-boulder-a":  {
+                                        "verdict":  "keep",
+                                        "note":  "good"
+                                    },
+                   "sz-boulder-b":  {
+                                        "verdict":  "reject",
+                                        "reason":  "reads as a brown mossy cube / tall block, not a boulder; the Quest twin is shredded. Not used."
+                                    },
+                   "sz-boulder-c":  {
+                                        "verdict":  "keep",
+                                        "note":  "rock cluster"
+                                    },
+                   "sz-fallen-log":  {
+                                         "verdict":  "reuse_with_new_role",
+                                         "note":  "NOT a fallen log: it is an upright broken trunk with toadstools on a grass base. Used as a standing \u0027snag\u0027 (upright, size about 1.8 m), never lying down."
+                                     },
+                   "sz-stump":  {
+                                    "verdict":  "keep",
+                                    "note":  "wide root flare"
+                                },
+                   "sz-grass-tuft":  {
+                                         "verdict":  "keep",
+                                         "note":  "reads as cattails with orange heads; warn 4.6k tris so used sparingly and mostly on PC"
+                                     },
+                   "sz-gear-buried":  {
+                                          "verdict":  "keep",
+                                          "note":  "gear face on +Z"
+                                      },
+                   "sz-automaton-broken":  {
+                                               "verdict":  "keep",
+                                               "note":  "slumped clockwork man, clock face on +Z; warn 4.6k tris but readable"
+                                           },
+                   "sz-brass-obelisk":  {
+                                            "verdict":  "keep",
+                                            "note":  "more clay/gold than brass, fine"
+                                        },
+                   "sz-astrolabe":  {
+                                        "verdict":  "keep",
+                                        "note":  "good"
+                                    },
+                   "sz-orrery":  {
+                                     "verdict":  "keep",
+                                     "note":  "good"
+                                 },
+                   "sz-pipe-wreck":  {
+                                         "verdict":  "keep",
+                                         "note":  "warn (4.6k tris), readable as a pipe frame with a coil"
+                                     },
+                   "sz-bell-frame":  {
+                                         "verdict":  "keep",
+                                         "note":  "bell faces +Z/-Z"
+                                     },
+                   "sz-stone-well":  {
+                                         "verdict":  "keep",
+                                         "note":  "good"
+                                     },
+                   "sz-bridge":  {
+                                     "verdict":  "keep",
+                                     "note":  "spans local X; deck 0.23 of its length at the crown, 0.065 at the ends"
+                                 },
+                   "sz-drystone-wall":  {
+                                            "verdict":  "keep",
+                                            "note":  "long along X, moss on top"
+                                        },
+                   "sz-gate-posts":  {
+                                         "verdict":  "keep",
+                                         "note":  "gap between posts along X, wooden gate in between"
+                                     },
+                   "sz-stairs":  {
+                                     "verdict":  "keep_with_fix",
+                                     "note":  "a detached slab FLOATS above the top step (in the source picture and in both GLBs). The module deletes every triangle above y = 0.82 of the unit model at load time, which removes the slab (stairs ascend toward -Z)."
+                                 },
+                   "sz-brazier":  {
+                                      "verdict":  "keep",
+                                      "note":  "flames are baked into the texture, symmetric"
+                                  },
+                   "sz-banner-pole":  {
+                                          "verdict":  "keep",
+                                          "note":  "banner flat in the XY plane, visible from +Z and -Z"
+                                      },
+                   "sz-chime-totem":  {
+                                          "verdict":  "keep",
+                                          "note":  "very thin, symmetric"
+                                      },
+                   "sz-cairn":  {
+                                    "verdict":  "keep",
+                                    "note":  "good"
+                                }
+               },
+    "texture_note":  "sources are brighter and more saturated than the scene lighting shows them; look fine in game."
+}

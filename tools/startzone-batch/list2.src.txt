@@ -1,0 +1,272 @@
+lg-graveyard-cairn|crypt|1.8|1|an old stone cairn with a glowing candle in a niche, mossy
+lg-gravestone-a|crypt|1.2|1|a leaning weathered gravestone with a rounded top and moss
+lg-gravestone-b|crypt|1.4|1|a tall cross-shaped stone grave marker, cracked, with ivy
+lg-crypt-door|crypt|3.0|1|a sealed stone crypt entrance with heavy carved double doors and a pointed arch
+lg-sarcophagus|crypt|2.2|1|a closed carved stone sarcophagus with a heavy lid and brass bands
+lg-mausoleum|crypt|5.0|1|a small stone mausoleum with columns, a peaked roof and iron door
+lg-graveyard-gate|crypt|3.2|1|a stone graveyard gate arch with iron bars and two skull-topped posts
+lg-iron-fence|crypt|2.5|1|a short segment of black iron graveyard fence with stone posts
+lg-dead-tree-gnarled|crypt|6.0|1|a huge gnarled dead tree with twisted bare branches and hanging roots
+lg-bone-pile|crypt|1.2|1|a pile of old bones and a skull on a stone slab
+lg-merchant-wagon|village|4.0|1|a covered merchant wagon with canvas hood, two big wheels and stacked goods
+lg-market-stall-cloth|village|3.0|1|a market stall with a striped cloth awning and a wooden counter with fruit crates
+lg-market-stall-pots|village|3.0|1|a market stall with a wooden counter, shelves of clay pots and jars, thatched roof
+lg-market-stall-meat|village|3.0|1|a market stall with hanging sausages, a wooden counter and a red awning
+lg-feast-table|village|3.5|1|a long wooden feast table loaded with bread, roast and cups, with two benches
+lg-village-cottage-a|village|6.0|1|a small thatched cottage with whitewashed walls, wooden shutters and a stone chimney
+lg-village-cottage-b|village|6.0|1|a timber-frame cottage with a tiled roof, small window boxes and a wooden door
+lg-village-longhouse|village|9.0|1|a long thatched village hall with wooden beams and a big double door
+lg-village-inn|village|8.0|1|a two-storey timber inn with a hanging brass lantern and a steep tiled roof
+lg-windmill|village|10.0|1|a stone windmill with four wooden sails and a small door
+lg-watermill|village|7.0|1|a wooden watermill building with a large waterwheel
+lg-farm-barn|village|9.0|1|a big red wooden barn with a hayloft door and a curved roof
+lg-haystack|village|2.5|1|a round golden haystack with a pitchfork-free neat conical top
+lg-hay-bale|village|1.2|1|a round hay bale tied with rope
+lg-chicken-coop|village|1.8|1|a small wooden chicken coop with a ramp and a slanted roof
+lg-dog-house|village|1.2|1|a small wooden dog house with a slanted roof
+lg-village-well|village|2.0|1|a stone village well with a wooden crank, bucket and a tiled little roof
+lg-village-fountain|village|3.0|1|a round stone fountain with a central pillar and flowing water bowl
+lg-village-gate|village|5.0|1|a wooden village gate between two log watchtowers with a pointed top
+lg-wooden-fence|village|2.5|1|a short segment of rustic wooden fence with posts and rails
+lg-garden-bed|village|1.8|1|a raised wooden garden bed full of cabbages and carrots
+lg-bakery-oven|village|2.2|1|a rounded clay bread oven with a chimney and a stack of firewood
+lg-mill-sacks|village|1.3|1|a heap of grain sacks, three tied cloth sacks stacked
+lg-toll-bridge|landmark|8.0|0|a sturdy stone toll bridge with an arched span and a small gate house at one end
+lg-toll-booth|landmark|2.6|1|a small wooden toll booth with a slanted roof and a barrier pole
+lg-troll-club|loot|2.5|1|a giant crude wooden club studded with iron nails lying on the ground
+lg-troll-cave-mouth|lair|6.0|1|a rocky cave entrance with a crude bone-decorated archway and a pile of rocks
+lg-troll-pot|lair|2.4|1|a huge iron cauldron over a pile of burnt logs with bones around it
+lg-ogre-chair|lair|2.8|1|a giant crude throne chair made of stacked logs and rocks with a fur
+lg-knight-throne|boss|3.5|1|an empty ancient stone throne with high back, brass inlays and cracked steps
+lg-throne-dais|boss|5.0|1|a round stepped stone dais with a hollow carved ring and brass cog inlays
+lg-knight-statue-empty|boss|2.6|1|a tall empty suit of plate armour standing on a stone plinth, rusty, dented
+lg-hollow-banner|boss|3.5|1|a long ragged black banner on a wooden pole with a tarnished brass spear tip
+lg-ruined-hall-wall|ruin|5.0|1|a ruined castle hall wall with a pointed window gap and fallen stones
+lg-ruined-tower|ruin|9.0|1|a broken stone watchtower with a collapsed top and ivy
+lg-castle-gatehouse|fortress|9.0|1|a stone castle gatehouse with two round towers, a portcullis arch and battlements
+lg-castle-wall|fortress|5.0|1|a straight castle wall segment with battlements and a walkway
+lg-castle-corner-tower|fortress|8.0|1|a round stone castle corner tower with a conical roof and arrow slits
+lg-keep|fortress|14.0|1|a stone castle keep with square towers, a flag and a heavy gate
+lg-drawbridge|fortress|5.0|0|a wooden drawbridge with iron chains and heavy planks, lowered
+lg-portcullis|fortress|3.5|1|a heavy iron portcullis gate set in a stone arch
+lg-wooden-palisade|fortress|3.5|1|a segment of sharpened log palisade wall with a lashed crossbar
+lg-watchtower-wood|fortress|7.0|1|a tall wooden watchtower with a platform, ladder and pointed roof
+lg-siege-tower|fortress|7.0|1|a wooden siege tower on wheels with a ladder and armoured front
+lg-catapult|fortress|3.5|1|a wooden siege catapult with a throwing arm, rope and a stone basket
+lg-ballista|fortress|2.6|1|a large wooden ballista on a wheeled frame with a thick bowstring and one bolt loaded
+lg-cannon|fortress|2.5|1|a brass and iron cannon on a wooden carriage with two wheels
+lg-cannonballs|fortress|0.9|1|a neat pyramid of iron cannonballs on a wooden pallet
+lg-spike-barricade|fortress|2.6|1|a wooden barricade of crossed sharpened stakes lashed together
+lg-enemy-tent-large|camp|5.0|1|a large dark war tent with spiked poles and a tattered red banner
+lg-enemy-tent-small|camp|3.0|1|a small ragged goblin tent made of patched hides and bones
+lg-goblin-hut|camp|3.5|1|a crooked goblin hut made of scrap wood, bones and rusty metal with a pointed roof
+lg-goblin-totem|camp|3.5|1|a crude totem pole of skulls and carved wood, painted red, with feathers
+lg-war-drum|camp|1.6|1|a big war drum made of a barrel and stretched hide on a wooden stand
+lg-campfire-ring|camp|1.4|1|a ring of stones with a pile of burning logs and embers
+lg-bone-fence|camp|2.5|1|a short fence made of bones and skulls lashed with rope
+lg-weapon-pile|camp|1.4|1|a loose pile of rusty swords, shields and axes
+lg-wooden-cage|camp|2.0|1|a wooden prison cage with thick bars and an open door
+lg-gallows|camp|4.0|1|a wooden gallows frame with a crossbeam and a short rope loop
+lg-torture-rack|camp|2.6|1|a wooden rack with leather straps and a big wheel
+lg-imp-shrine|camp|2.5|1|a small dark shrine with a red horned idol on a stone altar and black candles
+lg-dungeon-door|dungeon|3.0|1|a heavy iron-studded wooden dungeon door in a stone arch frame
+lg-dungeon-cell|dungeon|3.0|1|a stone cell wall block with iron bars and a rusty door
+lg-dungeon-stairs|dungeon|3.5|1|a spiral stone staircase going down, stone steps with a central pillar
+lg-stone-pillar-hall|dungeon|4.0|1|a thick round stone pillar with a carved capital and base, dungeon column
+lg-torch-wall|dungeon|1.2|1|an iron wall torch bracket with a burning torch on a stone block
+lg-dungeon-chest|loot|1.2|1|an iron-bound wooden treasure chest, closed, with a heavy lock
+lg-dungeon-spikes|dungeon|1.6|1|a floor plate of rusty iron spikes in a stone frame
+lg-skull-pile|dungeon|1.3|1|a heap of human skulls and bones in a stone alcove
+lg-coffin|dungeon|2.2|1|a wooden coffin with a lid slightly open, a bronze cross band
+lg-dungeon-table|dungeon|2.0|1|a heavy wooden table with candles, a skull and scattered books
+lg-chains-wall|dungeon|1.8|1|a stone wall block with heavy iron chains and shackles
+lg-trapdoor|dungeon|1.6|1|a square wooden trapdoor with an iron ring in a stone floor block
+lg-necromancer-circle|boss|3.0|1|a round stone slab carved with a glowing purple summoning circle and five skulls
+lg-necromancer-altar|boss|2.2|1|a black stone altar with purple candles, a skull and an open book
+lg-necromancer-tower|boss|11.0|1|a thin dark stone wizard tower with purple glowing windows and a crooked roof
+lg-phylactery|boss|1.0|1|a glowing purple crystal heart in a black iron cage on a stone stand
+lg-bookshelf|dungeon|2.4|1|a tall wooden bookshelf full of old books and scrolls
+lg-alchemy-table|dungeon|2.0|1|an alchemy workbench with glass flasks, bubbling tubes and a brass burner
+lg-swamp-tree|swamp|7.0|1|a big swamp mangrove tree with thick arching roots and hanging moss
+lg-swamp-dead-stump|swamp|2.5|1|a rotten hollow tree stump covered with fungus and moss
+lg-swamp-hut|swamp|5.0|1|a rickety stilt hut on wooden poles with a thatched roof and a ladder
+lg-swamp-boardwalk|swamp|4.0|0|a short wooden swamp boardwalk section with posts and a single rope handrail
+lg-swamp-lantern|swamp|1.6|1|a glowing green lantern on a bent wooden post
+lg-swamp-reeds|swamp|1.4|0|a dense clump of tall swamp reeds and cattails
+lg-giant-lilypad|swamp|1.4|0|a large green lilypad with a pink lotus flower
+lg-swamp-mushroom|swamp|1.6|1|a cluster of big glowing blue toadstools
+lg-swamp-rock|swamp|1.6|1|a dark wet mossy rock with slimy green algae
+lg-swamp-skull-stake|swamp|2.0|1|a wooden stake with a horned skull and green slime
+lg-swamp-cauldron|swamp|1.6|1|a bubbling green cauldron on three iron legs with a ladle
+lg-swamp-gate|swamp|3.5|1|an old rotten wooden gate arch overgrown with vines and glowing moss
+lg-mire-boat|swamp|3.0|0|a small flat swamp punt boat with a long pole
+lg-ancient-ruin-arch|ruin|6.0|1|a giant crumbling stone arch with carved runes, partly covered in vines
+lg-standing-circle-stone|stones|3.5|1|a huge rune-carved standing stone of a ritual circle, glowing blue runes
+lg-circle-altar|stones|2.4|1|a flat round stone altar slab with a glowing carved brass cog in the center
+lg-trilithon|stones|5.0|1|a trilithon of two big standing stones with a stone lintel across the top
+lg-dolmen|stones|3.0|1|a stone dolmen, a flat slab on several upright stones, carved with runes
+lg-fallen-obelisk|stones|4.0|1|a fallen cracked stone obelisk with carved runes lying in two pieces
+lg-three-braziers|ritual|1.8|1|a tall bronze ritual brazier on a stone base with a burning flame
+lg-brazier-stand|ritual|1.6|1|a tall stone pillar topped with a bronze fire bowl, unlit
+lg-eclipse-monolith|ritual|4.5|1|a black stone monolith with a glowing white ring symbol in its center
+lg-moon-altar|boss|3.0|1|a pale stone altar with a glowing white crescent carved on its front
+lg-moon-ruin-column|boss|5.0|1|a tall cracked marble column with a glowing blue crack and floating stones
+lg-moon-crater-rock|boss|2.4|1|a pale grey crater-rimmed moon rock with glowing blue crystal veins
+lg-regent-throne|boss|4.5|1|a towering black bone throne with crown spikes and glowing blue eyes in the back
+lg-regent-crown|loot|0.8|1|a spiked dark iron crown with blue gems on a velvet cushion
+lg-bone-arch|boss|5.0|1|a large arch made of giant ribs and bones with blue flames
+lg-ghost-lantern|boss|1.6|1|a tall iron post with a hanging cold blue-white flame lantern
+lg-draft-sun-altar|boss|3.0|1|a round golden altar with a glowing sun disc held by brass arms
+lg-quiet-sun-altar|boss|3.0|1|a round soft white stone altar with a small warm glowing orb in a brass cup
+lg-ending-altar-pair|boss|3.0|1|two stone pedestals joined by a stone bridge, one with a golden flame, one with a sword
+lg-clockwork-cathedral-arch|clockwork|7.0|1|a tall gothic brass and stone arch with clock gears set into the stonework
+lg-clockwork-pillar|clockwork|6.0|1|a tall stone pillar wrapped with brass gears and pipes
+lg-clockwork-pew|clockwork|2.4|1|a long wooden church pew with brass gear ornaments on its ends
+lg-clockwork-altar|clockwork|2.6|1|a large brass and stone altar with a big gear and a central glowing sphere
+lg-pendulum|clockwork|4.5|1|a giant brass pendulum on a stone frame, the pendulum arm hanging down
+lg-giant-clock-face|clockwork|4.0|1|a giant round brass clock face with roman numerals, set into a stone frame
+lg-gear-stack|clockwork|3.0|1|a stack of three interlocking brass gears of different sizes on a stone base
+lg-gear-tower|clockwork|8.0|1|a tall tower made of stacked brass gears and stone with a glowing top
+lg-clockwork-door|clockwork|4.0|1|a big round brass vault door with gear locks in a stone wall block
+lg-clockwork-chandelier|clockwork|2.4|1|a big brass chandelier made of rings and gears with glowing candles, hanging from a chain
+lg-clockwork-stairs|clockwork|3.5|1|a wide curved stone staircase with brass rails and gear details
+lg-pipe-organ|clockwork|6.0|1|a brass pipe organ with big pipes, gears and a small keyboard
+lg-clockwork-guard|clockwork|2.6|1|an inactive brass clockwork soldier statue, bulky, with gears showing, on a plinth
+lg-steam-boiler|clockwork|3.0|1|a big round brass steam boiler with pipes, valves and a pressure gauge
+lg-steam-pipe-elbow|clockwork|2.0|1|a thick brass steam pipe elbow with flanges and a valve
+lg-brass-lamp-post|clockwork|3.5|1|a brass street lamp post with a glowing glass lantern and gears
+lg-gear-bridge|clockwork|7.0|0|a short stone bridge with brass gear railings and glowing lanterns
+lg-tesla-coil|clockwork|3.0|1|a brass tesla coil tower with copper rings and a glowing blue top ball
+lg-machine-heart|clockwork|2.5|1|a large glowing brass machine core, a sphere of gears and light on a stone pedestal
+lg-forge-anvil|forge|1.2|1|an iron anvil on a thick log stump
+lg-forge-furnace|forge|2.6|1|a stone blacksmith furnace with a glowing opening and a brick chimney
+lg-bellows|forge|1.4|1|a big leather forge bellows with a wooden frame and handle
+lg-grindstone|forge|1.4|1|a round grindstone wheel on a wooden frame with a foot pedal
+lg-quench-barrel|forge|1.0|1|a wooden water barrel with iron hoops and a tongs hanging on the side
+lg-workshop-bench|forge|2.2|1|a heavy wooden workbench with a vise, tools and brass parts
+lg-tool-rack|forge|1.8|1|a wooden rack of hammers, tongs and saws hanging on a wall block
+lg-sawmill|forge|4.0|1|a wooden sawmill with a large circular saw blade and a log on a rail
+lg-crane|forge|5.0|1|a wooden construction crane with a rope pulley and a hanging crate
+lg-ore-cart|forge|2.2|1|a rusty mining cart on two short rail pieces filled with rocks and gold ore
+lg-mine-entrance|forge|5.0|1|a timber-framed mine entrance in a rock wall with an old lantern
+lg-gear-press|forge|2.8|1|a big iron and brass press machine with a large gear and lever
+lg-harbour-dock|harbour|6.0|0|a wooden harbour dock section with thick posts, planks and mooring ropes
+lg-harbour-crane|harbour|7.0|1|a harbour wooden crane with a long arm, rope and hook
+lg-lighthouse|harbour|14.0|1|a tall white and red stone lighthouse with a glowing lantern room
+lg-sailing-ship|harbour|12.0|0|a wooden sailing ship with two masts, furled cream sails and a carved bow
+lg-small-sailboat|harbour|5.0|0|a small wooden sailboat with one white sail and a rudder
+lg-fishing-boat|harbour|5.0|0|a stout wooden fishing boat with a small cabin and nets
+lg-ship-wreck|harbour|8.0|0|a half-sunk wrecked wooden ship hull with broken masts
+lg-anchor|harbour|1.6|1|a big iron ship anchor with a rope coil
+lg-mooring-post|harbour|1.0|1|a short thick wooden mooring post with a coil of rope
+lg-fish-crate|harbour|1.2|1|a wooden crate with silver fish and ice
+lg-net-pile|harbour|1.4|1|a heap of tangled fishing net with wooden floats
+lg-harbour-warehouse|harbour|7.0|1|a wooden harbour warehouse with a large door and a hoist beam
+lg-sea-cave-rock|harbour|5.0|1|a big sea rock stack with an arch hole and barnacles
+lg-harbour-tavern-sign|harbour|2.4|1|a stone harbour tavern building with a round window and a tiled roof
+lg-desert-rock-arch|desert|6.0|1|a sandstone rock arch in warm orange colours
+lg-desert-mesa|desert|8.0|1|a flat-topped orange sandstone butte with layered stripes
+lg-desert-boulder|desert|2.2|1|a sand-coloured rounded boulder with layers and cracks
+lg-cactus-tall|desert|3.5|1|a tall green saguaro cactus with two arms
+lg-cactus-barrel|desert|1.0|1|a round barrel cactus with pink flowers on top
+lg-dead-desert-tree|desert|3.0|1|a dry bare desert tree with twisted branches and sand-bleached bark
+lg-desert-skull|desert|1.6|1|a giant bleached horned animal skull half buried in the sand
+lg-desert-tent|desert|3.5|1|a nomad tent with a patterned red and cream cloth and wooden poles
+lg-desert-obelisk|desert|4.5|1|a sandstone obelisk with carved patterns and a golden cap
+lg-sand-dune-rock|desert|2.0|1|a mound of sand with a few rocks poking out
+lg-oasis-palm|desert|6.0|1|a tall palm tree with a curved trunk and big green fronds
+lg-ancient-sphinx|desert|9.0|1|a crumbling ancient stone sphinx statue half covered with sand
+lg-desert-pillar|desert|4.0|1|a broken sandstone pillar with hieroglyph-like carvings
+lg-snow-pine|snow|7.0|1|a tall dark green pine tree covered with snow
+lg-snow-dead-tree|snow|4.5|1|a leafless tree covered with snow and icicles
+lg-snow-boulder|snow|2.2|1|a rounded grey boulder with snow on top
+lg-ice-crystal-cluster|snow|3.0|1|a cluster of large pale blue ice crystals growing out of rock
+lg-ice-pillar|snow|4.5|1|a tall blue ice pillar with a frosty base and icicles
+lg-snow-drift|snow|2.2|1|a rounded snow drift mound with a few stones
+lg-snowman|snow|1.6|1|a chunky snowman made of three snow balls with a stick-free carrot nose, coal eyes and a scarf
+lg-snow-cabin|snow|5.0|1|a small log cabin with a snow-covered roof and a chimney
+lg-frozen-waterfall|snow|6.0|1|a frozen waterfall of blue ice on a rock wall
+lg-frost-obelisk|snow|4.0|1|a frosted dark stone obelisk with glowing icy blue runes
+lg-ice-throne|snow|3.5|1|a throne made of translucent-free solid pale blue ice with sharp crystal spikes
+lg-snow-sled|snow|2.0|1|a wooden sled with iron runners and a fur blanket
+lg-volcanic-rock|volcanic|3.0|1|a jagged black volcanic rock with glowing orange lava cracks
+lg-lava-pool-rim|volcanic|3.5|1|a rocky black rim around a glowing orange lava pool
+lg-lava-crystal|volcanic|2.4|1|a cluster of red and orange glowing crystals in black rock
+lg-obsidian-spire|volcanic|6.0|1|a tall black obsidian spire with glowing red cracks
+lg-ash-tree|volcanic|4.5|1|a charred black tree with glowing ember spots and no leaves
+lg-volcano-cone|volcanic|12.0|1|a small volcano cone with a glowing orange crater and black rock sides
+lg-fire-brazier-big|volcanic|2.4|1|a big black iron fire bowl on a tall stand with roaring flames
+lg-demon-statue|volcanic|3.5|1|a black stone statue of a horned demon idol with glowing red eyes on a plinth
+lg-lava-bridge|volcanic|6.0|0|a black stone bridge with spikes over a gap, with glowing cracks
+lg-ember-plant|volcanic|1.2|1|a thorny black plant with glowing red-orange flowers
+lg-boss-arena-pillar|arena|6.0|1|a big round stone arena pillar with a brass ring and glowing runes
+lg-boss-arena-gate|arena|7.0|1|a huge stone arena gate with two statues of guardians and a heavy iron door
+lg-boss-arena-floor|arena|8.0|1|a big round stone arena floor tile with carved circular patterns and brass inlay
+lg-boss-arena-brazier|arena|2.8|1|a tall stone arena brazier with a big flame, carved with a cog symbol
+lg-boss-arena-rubble|arena|2.5|1|a heap of broken stone blocks and columns pieces
+lg-boss-arena-spikes|arena|3.0|1|a ring of tall curved bone spikes in a rocky base
+lg-boss-arena-rune-stone|arena|3.0|1|a short wide stone with a big glowing red rune, set in a rocky base
+lg-boss-arena-bleachers|arena|5.0|1|a curved section of stone arena seating steps
+lg-treasure-chest-gold|loot|1.2|1|an open wooden treasure chest overflowing with gold coins, gems and jewellery
+lg-treasure-chest-ornate|loot|1.2|1|an ornate brass-bound closed treasure chest with blue gems
+lg-gold-pile|loot|1.4|1|a big pile of gold coins with a golden goblet and a few gems
+lg-gem-cluster|loot|1.0|1|a cluster of large colourful gems on a small rock
+lg-loot-sack|loot|0.8|1|a fat cloth sack tied at the top spilling a few gold coins
+lg-potion-red|loot|0.5|1|a round glass flask potion with red glowing liquid and a cork
+lg-potion-blue|loot|0.5|1|a tall glass flask potion with blue glowing liquid and a cork
+lg-spellbook|loot|0.6|1|a thick leather spell book with brass corners and a glowing gem on the cover, closed
+lg-scroll-stack|loot|0.8|1|a stack of rolled parchment scrolls tied with ribbons
+lg-crystal-orb|loot|0.7|1|a glowing crystal ball on a small brass stand with three claw feet
+lg-golden-goblet|loot|0.5|1|a golden goblet with red gems on its stem
+lg-silver-sword-display|loot|1.4|1|a silver sword stuck point-down in a small stone block
+lg-ember-staff|loot|1.8|1|a wooden wizard staff with a glowing orange ember crystal in a brass claw top
+lg-magic-shield|loot|1.0|1|a round steel shield with a brass cog boss and a glowing rim
+lg-war-helmet|loot|0.6|1|a steel knight helmet with a plume and a brass rim
+lg-relic-casket|loot|0.7|1|a small stone box with an ornate brass lid and a glowing keyhole
+lg-golden-key|loot|0.4|1|a big golden key with an ornate cog-shaped head
+lg-first-candle|loot|0.6|1|a single tall old candle in a brass holder with a bright flame, melted wax
+lg-ember-bundle|loot|0.6|1|a bundle of glowing orange sticks tied with twine
+lg-pell-lamp|loot|0.7|1|an old battered brass oil lamp with a glowing flame and a handle
+lg-dog-bowl-bone|loot|0.5|1|a wooden dog bowl with a big bone beside it
+lg-banquet-roast|loot|0.9|1|a golden roast boar on a wooden platter with apples
+lg-giant-cake|loot|0.9|1|a layered cake with white cream, strawberries and a candle
+lg-blacksmith-hammer|loot|0.8|1|a heavy iron blacksmith hammer with a wooden handle
+lg-war-horn|loot|0.8|1|a big curved bronze war horn with a leather strap and brass bands
+lg-saddle-horse-statue|mount|3.0|1|a stone horse statue with a saddle, rearing, on a plinth
+lg-chariot|mount|4.0|1|a wooden war chariot with two big spoked wheels and brass trim
+lg-stagecoach|mount|5.0|1|a wooden stagecoach with four wheels, a luggage rack and lanterns
+lg-hot-air-balloon|mount|6.0|1|a patched colourful hot air balloon with a wicker basket tied to the ground
+lg-airship|mount|9.0|0|a small wooden airship with a cigar-shaped balloon, brass propellers and a gondola
+lg-mech-walker|mount|4.0|1|an inactive brass steam walker mech with two stubby legs, a cockpit and gears
+lg-handcart|mount|2.2|1|a two-wheeled wooden hand cart with a handle and a few crates
+lg-rowboat-small|mount|3.0|0|a small wooden rowboat on the shore, with oars
+lg-saddle-stand|mount|1.2|1|a wooden stand holding a leather horse saddle and bridle
+lg-stable|village|6.0|1|a wooden horse stable with a slanted roof, two stalls and a hay bale
+lg-giant-gear-ruin|ruin|7.0|1|a huge broken brass gear wheel standing on its edge in a stone frame, covered with ivy
+lg-fallen-colossus-head|ruin|7.0|1|a giant broken stone head of a statue, half buried, covered with moss and ivy
+lg-giant-hand-statue|ruin|6.0|1|a giant stone hand reaching out of the ground, cracked and mossy
+lg-ruined-bridge|ruin|8.0|0|a collapsed ancient stone bridge with a broken arch
+lg-ruined-temple-front|ruin|9.0|1|a ruined temple facade with four columns, a broken triangular roof and steps
+lg-ruined-amphitheatre|ruin|9.0|1|a small curved ruined stone amphitheatre section with steps
+lg-ruined-fountain|ruin|3.5|1|a dry broken stone fountain with a cracked bowl and a statue stump
+lg-ancient-gate|ruin|8.0|1|a huge ancient stone gate with brass cog carvings, half collapsed
+lg-floating-island-rock|ruin|6.0|0|a small floating rock island with grass on top, roots hanging below and a tiny shrine
+lg-crystal-spire|ruin|6.0|1|a tall cluster of glowing blue crystals growing from rock
+lg-broken-sun-statue|ruin|5.0|1|a broken golden sun disc statue with rays, fallen over, on a stone base
+lg-wraith-gravestone|crypt|1.4|1|a black cracked grave marker with a dim blue glow and chains
+lg-lake-obelisk|landmark|3.0|0|a dark stone obelisk rising from a rocky island with pale blue light
+lg-farm-plough|village|2.2|1|a wooden hand plough with an iron blade
+lg-scarecrow|village|2.4|1|a straw scarecrow on a pole with a patched hat and tattered cloak
+lg-pumpkin-patch|village|1.6|1|a patch of big orange pumpkins on the ground with vines
+lg-apple-tree|nature|5.0|1|a round apple tree with red apples and a thick trunk
+lg-willow-tree|nature|7.0|1|a weeping willow tree with long drooping green branches
+lg-giant-mushroom|nature|3.5|1|a giant red mushroom with white spots and a thick stalk
+lg-sunflower-patch|nature|1.8|1|a patch of tall yellow sunflowers
+lg-rock-formation-big|nature|6.0|1|a large grey cliff rock formation with ledges and moss
+lg-waterfall-rock|nature|7.0|1|a rock cliff with a small waterfall pouring into a pool
+lg-crystal-cave-mouth|nature|5.0|1|a cave entrance in a rock with glowing purple crystals around its edge
+lg-wooden-bridge-long|landmark|8.0|0|a long wooden plank bridge with rope railings and sturdy posts
+lg-signal-beacon|landmark|4.5|1|a tall stone beacon tower with a big brass fire bowl on top, unlit
+lg-road-milestone|landmark|1.2|1|a short rounded road milestone stone with an arrow carved in
+lg-crossroads-shrine|landmark|2.0|1|a tiny roadside shrine of stone with a peaked roof, a candle and flowers
+lg-pet-bed|village|1.0|1|a round cushion pet bed with a blanket, in a small wooden frame
