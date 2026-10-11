@@ -107,6 +107,11 @@ Add `?quality=quest` or `?quality=pc` to the address to force a graphics tier.
 Docs: `docs/CONTRACT.md` (module API), `docs/STORY.md`, `docs/WISHES.md`, `docs/QA.md` (test results and how to run
 `tests/run.mjs`), `docs/STATUS.md` (work log).
 
-## Licence
+## Licence: free for everyone
 
-Public domain ([The Unlicense](LICENSE)): use it for anything, no credit required. Third-party model packs are CC0 and npm libraries keep their own licences; see [NOTICE.md](NOTICE.md) and [docs/ASSETS.md](docs/ASSETS.md). Not affiliated with Games Workshop, Meta or Anthropic.
+Use it for anything: play, copy, change, sell, build your own game from it. No permission, payment or credit needed.
+Code is public domain under [The Unlicense](LICENSE); the art, models and sounds made for the project are also under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Details and the few third-party exceptions: [NOTICE.md](NOTICE.md).
+Not affiliated with Games Workshop, Meta or Anthropic.
+
+AI coding agents: start with [CLAUDE.md](CLAUDE.md) (or [AGENTS.md](AGENTS.md)).

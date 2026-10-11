@@ -84,3 +84,8 @@ also said yes, however good it is:
 Looking for something to do? [docs/IMPROVEMENTS.md](docs/IMPROVEMENTS.md) lists tasks, each with where to look and what "done" means; it is written for AI coding agents and people alike.
 
 Bugs and ideas without code are welcome as issues.
+
+## Licence of contributions
+
+By opening a pull request you release your contribution into the public domain on the same terms as the rest of the project
+([The Unlicense](LICENSE), and [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) for assets): free for everyone, for any purpose. See [NOTICE.md](NOTICE.md).
